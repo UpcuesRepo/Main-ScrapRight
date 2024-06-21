@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   
+  
+   <!-- CSS -->
+   <link href="../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+    <!-- FILTER -->
+    <div class="offcanvas offcanvas-end left-radius10" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+          <button class="btn btn-dark color-white btn-lg filter-close-btn offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"><span class="material-symbols-rounded">cancel</span></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="form-group mb-3">
+                <label class="form-label">Search by Customer / Container no</label>
+                <input type="email" class="form-control h-36" placeholder="">
+            </div>
+            <div class="form-group mb-4">
+                <label class="form-label">Trip Type</label>
+                <select class="selectpicker" data-live-search="true">
+                  <option data-tokens="ketchup mustard">1</option>
+                  <option data-tokens="mustard">2</option>
+                  <option data-tokens="frosting">3</option>
+                </select>
+            </div>
+            <div class="bullet-tag mb-3">
+                <span class="bg-yellow"></span>
+                <h6 class="color-grey fs-sm fw-semibold ">allocated</h6>
+            </div>
+            <div class="bullet-tag mb-3">
+                <span class="bg-red"></span>
+                <h6 class="color-grey fs-sm fw-semibold ">Inprogress</h6>
+            </div>
+            <div class="bullet-tag mb-3">
+                <span class="bg-secondary"></span>
+                <h6 class="color-grey fs-sm fw-semibold ">Show All</h6>
+            </div>
+            <div class="bullet-tag mb-4">
+                <span class="bg-green"></span>
+                <h6 class="color-grey fs-sm fw-semibold ">Only U-Fill</h6>
+            </div>
+            <h6 class="color-black fs-md fw-bold">Schedule Date</h6>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">From</label>
+                        <input type="date" class="form-control h-36" placeholder="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">To</label>
+                        <input type="date" class="form-control h-36" placeholder="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-footer">
+          <div class="row">
+            <div class="col-md-6"><button class="btn btn-grey btn-md">clear</button></div>
+            <div class="col-md-6"><button class="btn btn-blue btn-md">search</button></div>
+          </div>
+        </div>
+    </div>
+    <div class="layout-1 style-inventory style-4 wrapper">
+        <nav class="navbar main-navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between w-100">
+                <div class="navbar-left-links d-flex">
+                    <div class="logo-part">
+                        <img src="../images/logo/scrap-right-logo.png" class="logo" alt="">
+                        <img src="../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                    </div>
+                    <div class="link-part d-flex">
+                        <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                transactions
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <div class="btn-group dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="nav-link">materials</a>
+                        <a href="javascript:void(0);" class="nav-link">customers</a>
+                        <a href="javascript:void(0);" class="nav-link">reports</a>
+                        <a href="javascript:void(0);" class="nav-link">admin</a>
+                    </div>
+                </div>
+                <div class="navbar-right-part d-flex align-items-center">
+                    <h6 class="color-white fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                    <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                        <div class="username-tag">nick v</div>
+                    </div>
+                    <div class="icon-part">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="inventory-contol-collapse d-flex">
+            <div>
+              <div class="collapse collapse-horizontal collapse-group" id="collapse1">
+                <div class="collapse-content p-0">
+                    <div class="inventory-order-tabs">
+                        <div class="nav nav-pills bg-dark" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <div class="nav-link-part">
+                            <button class="nav-link btn btn-topborder bg-white-rgba2 btn-topborder-blue me-2 active" id="v-pills-invent1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-invent1" type="button" role="tab" aria-controls="v-pills-invent1" aria-selected="true">inventory</button>
+                            <button class="nav-link btn btn-topborder bg-white-rgba2 btn-topborder-blue me-2" id="v-pills-invent2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-invent2" type="button" role="tab" aria-controls="v-pills-invent2" aria-selected="true">contract</button>
+                            <button class="nav-link btn btn-topborder bg-white-rgba2 btn-topborder-blue me-2" id="v-pills-invent3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-invent3" type="button" role="tab" aria-controls="v-pills-invent3" aria-selected="true">finished goods</button>
+                          </div>
+                          <a href="#" class="date-part underline-none d-flex align-items-center me-2">
+                            <span class="material-symbols-rounded color-white"> cached</span>
+                          </a>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade v-pills-cust show active" id="v-pills-invent1" role="tabpanel" aria-labelledby="v-pills-invent1-tab" tabindex="0">
+                            <table class="table table-responsive collapsible-table mb-0 border-radius0">
+                              <thead>
+                                <tr>
+                                  <th></th>
+                                  <th>MATERIAL DESCRIPTION</th>
+                                  <th>WIP INVENTORY</th>
+                                  <th>FG INVENTORY  </th>
+                                  <th>AVG COST</th>
+                                  <th>VALUE</th>
+                                </tr> 
+                              </thead>
+                              <tbody>
+                                <tr data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
+                                  <td>
+                                      <div class="bg-icon bg-black-rgba6">
+                                       <span class="material-symbols-rounded color-white fs-xl">expand_more</span>
+                                      </div>
+                                  </td>
+                                  <td>ALUM RUSA</td>
+                                  <td>72,189.01 lbs</td>  
+                                  <td>1,000.00 lb</td>
+                                  <td>$0.3406 /lb</td>
+                                  <td>$26,334.06</td>
+                                </tr>
+                                    <tr class="collapse show" id="collapseExample">
+                                      <td></td>
+                                      <td>AL,ALUCABOND</td>
+                                      <td>25,046.00 lb</td>  
+                                      <td>5,138.00 lbs</td>
+                                      <td>$0.0389 /lb</td>
+                                      <td>$1,014.19</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample">
+                                      <td></td>
+                                      <td>ALUM CAST</td>
+                                      <td>5,873.00 lb</td>  
+                                      <td>98.00 lb</td>
+                                      <td>$0.3397 /lb</td>
+                                      <td>$2,028.40</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample">
+                                      <td></td>
+                                      <td>ALUM SIDING</td>
+                                      <td>25,046.00 lb</td>  
+                                      <td>5,138.00 lbs</td>
+                                      <td>$0.0389 /lb</td>
+                                      <td>$1,014.19</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample">
+                                      <td></td>
+                                      <td>IRONY ALUM</td>
+                                      <td>5,873.00 lb</td>  
+                                      <td>98.00 lb</td>
+                                      <td>$0.3397 /lb</td>
+                                      <td>$2,028.40</td>
+                                    </tr>
+                                <tr data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample2">
+                                  <td>
+                                      <div class="bg-icon bg-black-rgba6">
+                                       <span class="material-symbols-rounded color-white fs-xl">expand_more</span>
+                                      </div>
+                                  </td>
+                                  <td>ALUMINUM</td>
+                                  <td>184,324.94 lbs</td>  
+                                  <td>22,373.00 lbs</td>
+                                  <td>$0.8621 /lb</td>
+                                  <td>$178,190.67</td>
+                                </tr>
+                                    <tr class="collapse show" id="collapseExample2">
+                                      <td></td>
+                                      <td>AL,ALUCABOND</td>
+                                      <td>25,046.00 lb</td>  
+                                      <td>5,138.00 lbs</td>
+                                      <td>$0.0389 /lb</td>
+                                      <td>$1,014.19</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample2">
+                                      <td></td>
+                                      <td>ALUM CAST</td>
+                                      <td>5,873.00 lb</td>  
+                                      <td>98.00 lb</td>
+                                      <td>$0.3397 /lb</td>
+                                      <td>$2,028.40</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample2">
+                                      <td></td>
+                                      <td>ALUM SIDING</td>
+                                      <td>25,046.00 lb</td>  
+                                      <td>5,138.00 lbs</td>
+                                      <td>$0.0389 /lb</td>
+                                      <td>$1,014.19</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample2">
+                                      <td></td>
+                                      <td>IRONY ALUM</td>
+                                      <td>5,873.00 lb</td>  
+                                      <td>98.00 lb</td>
+                                      <td>$0.3397 /lb</td>
+                                      <td>$2,028.40</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample2">
+                                      <td></td>
+                                      <td>AL,ALUCABOND</td>
+                                      <td>25,046.00 lb</td>  
+                                      <td>5,138.00 lbs</td>
+                                      <td>$0.0389 /lb</td>
+                                      <td>$1,014.19</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample2">
+                                      <td></td>
+                                      <td>ALUM CAST</td>
+                                      <td>5,873.00 lb</td>  
+                                      <td>98.00 lb</td>
+                                      <td>$0.3397 /lb</td>
+                                      <td>$2,028.40</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample2">
+                                      <td></td>
+                                      <td>ALUM SIDING</td>
+                                      <td>25,046.00 lb</td>  
+                                      <td>5,138.00 lbs</td>
+                                      <td>$0.0389 /lb</td>
+                                      <td>$1,014.19</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample2">
+                                      <td></td>
+                                      <td>IRONY ALUM</td>
+                                      <td>5,873.00 lb</td>  
+                                      <td>98.00 lb</td>
+                                      <td>$0.3397 /lb</td>
+                                      <td>$2,028.40</td>
+                                    </tr>
+                                <tr data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="true" aria-controls="collapseExample3">
+                                  <td>
+                                      <div class="bg-icon bg-black-rgba6">
+                                       <span class="material-symbols-rounded color-white fs-xl">expand_more</span>
+                                      </div>
+                                  </td>
+                                  <td>ALUMINUM</td>
+                                  <td>184,324.94 lbs</td>  
+                                  <td>22,373.00 lbs</td>
+                                  <td>$0.8621 /lb</td>
+                                  <td>$178,190.67</td>
+                                </tr>
+                                    <tr class="collapse show" id="collapseExample3">
+                                      <td></td>
+                                      <td>AL,ALUCABOND</td>
+                                      <td>25,046.00 lb</td>  
+                                      <td>5,138.00 lbs</td>
+                                      <td>$0.0389 /lb</td>
+                                      <td>$1,014.19</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample3">
+                                      <td></td>
+                                      <td>ALUM CAST</td>
+                                      <td>5,873.00 lb</td>  
+                                      <td>98.00 lb</td>
+                                      <td>$0.3397 /lb</td>
+                                      <td>$2,028.40</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample3">
+                                      <td></td>
+                                      <td>ALUM SIDING</td>
+                                      <td>25,046.00 lb</td>  
+                                      <td>5,138.00 lbs</td>
+                                      <td>$0.0389 /lb</td>
+                                      <td>$1,014.19</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample3">
+                                      <td></td>
+                                      <td>IRONY ALUM</td>
+                                      <td>5,873.00 lb</td>  
+                                      <td>98.00 lb</td>
+                                      <td>$0.3397 /lb</td>
+                                      <td>$2,028.40</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample3">
+                                      <td></td>
+                                      <td>AL,ALUCABOND</td>
+                                      <td>25,046.00 lb</td>  
+                                      <td>5,138.00 lbs</td>
+                                      <td>$0.0389 /lb</td>
+                                      <td>$1,014.19</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample3">
+                                      <td></td>
+                                      <td>ALUM CAST</td>
+                                      <td>5,873.00 lb</td>  
+                                      <td>98.00 lb</td>
+                                      <td>$0.3397 /lb</td>
+                                      <td>$2,028.40</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample3">
+                                      <td></td>
+                                      <td>ALUM SIDING</td>
+                                      <td>25,046.00 lb</td>  
+                                      <td>5,138.00 lbs</td>
+                                      <td>$0.0389 /lb</td>
+                                      <td>$1,014.19</td>
+                                    </tr>
+                                    <tr class="collapse show" id="collapseExample3">
+                                      <td></td>
+                                      <td>IRONY ALUM</td>
+                                      <td>5,873.00 lb</td>  
+                                      <td>98.00 lb</td>
+                                      <td>$0.3397 /lb</td>
+                                      <td>$2,028.40</td>
+                                    </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="tab-pane fade v-pills-cust" id="v-pills-invent2" role="tabpanel" aria-labelledby="v-pills-invent2-tab" tabindex="0">
+                              2
+                          </div>
+                          <div class="tab-pane fade v-pills-cust" id="v-pills-invent3" role="tabpanel" aria-labelledby="v-pills-invent3-tab" tabindex="0">
+                              3
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-section">
+              <div class="btn-group w-100">
+                <nav class="navbar-h-98 inventory-navbar navbar-expand-xl w-100">
+                  <div class="title-part d-flex align-items-center">
+                    <button type="button" class="btn btn-skyblue color-black btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"><span class="material-symbols-rounded">menu_open</span></button>
+                    <h6 class="fs-xl color-secondary text-caps fw-extrabold mb-0 ms-3">inventory control center</h6>
+                  </div>
+                  <div class="select-input-part d-flex align-items-center justify-content-end w-50">
+                    <div class="form-group w-23p me-3">
+                      <select class="selectpicker" data-live-search="true">
+                        <option data-tokens="ketchup mustard">Search By Material</option>
+                        <option data-tokens="mustard">2</option>
+                        <option data-tokens="frosting">3</option>
+                      </select>
+                    </div>
+                    <div class="form-group w-16p me-3">
+                      <select class="selectpicker" data-live-search="true">
+                        <option data-tokens="ketchup mustard">Choose Location</option>
+                        <option data-tokens="mustard">2</option>
+                        <option data-tokens="frosting">3</option>
+                      </select>
+                    </div>
+                    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop" class="btn btn-dark color-white btn-lg"><span class="material-symbols-rounded">tune</span></button>
+                  </div>
+                </nav>
+              </div>
+              <div class="content-section">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+  <script src="../assets/dist/js/all.min.js"></script>
+  </body>
+</html>

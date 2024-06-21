@@ -1,0 +1,202 @@
+//*************************************
+// THIS FILE INCLUDES GENERAL VARIABLES
+// PLEASE DON'T ADD SPECIFIC THEME VARIABLES
+//*************************************
+ 
+//  =======================
+//  FONT ICON FAMILY
+//  =======================
+$font-icon-family: "Material Icons Round", sans-serif;
+ 
+//  =======================
+//  GRID BREAKPOINT
+//  =======================
+$grid-breakpoints: (
+  xs: 0,
+  sm: 577px,
+  md: 769px,
+  lg: 993px,
+  xl: 1201px,
+  xxl: 1401px
+);
+ 
+//  =======================
+//  FONTS
+//  =======================
+// FONT SIZE
+$font-size-xs:  0.625rem;  //10px
+$font-size-11:  0.6875rem; //11px
+$font-size-sm:  0.75rem;   //12px
+$font-size-md:  0.875rem;  //14px
+$font-size-lg:  1.125rem;  //18px
+$font-size-xl:  1.25rem;   //20px
+$font-size-14:  14px;      //14px
+$font-size-13:  0.813rem;  //13px
+$font-size-15:  0.9375rem; //15px
+$font-size-16:  1rem;      //16px
+$font-size-20:  1.25rem;   //20px
+$font-size-22:  1.375rem;  //22px
+$font-size-23:  1.4375rem; //23px
+$font-size-24:  1.5rem;    //24px
+$font-size-26:  1.625rem;  //26px
+$font-size-28:  1.75rem;   //28px
+$font-size-30:  1.875rem;  //30px
+$font-size-32:  2rem;      //32px
+$font-size-34:  2.125rem;  //34px
+$font-size-36:  2.25rem;   //36px
+$font-size-40:  2.5rem;    //40px
+ 
+//  =======================
+//  LETTER SPACING
+//  =======================
+$letter-spacing-btn: 0.2em;
+$letter-spacing10:   0.1em;
+$letter-spacing-7:   0.7px;
+$letter-spacing-08:   0.8px;
+$letter-spacing-09:  0.9px;
+$letter-spacing-1:   1.15px;
+$letter-spacing-108: 1.8px;
+ 
+//  =======================
+//  TEXT STYLE
+//  =======================
+$text-uppercase:  uppercase;
+ 
+// FONT WEIGHT
+$font-200: 200;
+$font-300: 300;
+$font-400: 400;
+$font-500: 500;
+$font-600: 600;
+$font-700: 700;
+$font-800: 800;
+$font-900: 900;
+ 
+// =====================
+// LIGHT THEME COLORS //
+// =====================
+$primary:             #0D3967;
+$secondary:           #3384D8;
+$light-blue-1:        #BBD3F5;
+$light-blue-2:        #EFF5FF;
+$light-blue-3:        #F0F5FE;
+$light-blue-4:        #CCDDF5;
+$light-blue-5:        #4A82D2;
+$light-blue-6:        #CFDDF3;
+$dark:                #000000;
+$grey-1:              #555555;
+$grey-2:              #D6D6D6;
+$grey-3:              #D5D5D5;
+$grey-4:              #F7F7F7;
+$grey-5:              #D3D3D3;
+$grey-6:              #A5A5A5;
+$grey-7:              #707070;
+$grey-8:              #383838;
+$grey-9:              #666666;
+$grey-10:             #DBDBDB;
+$body-bg:             #ffffff;
+$orange:              #E68B0F;
+$disabled:            #CBCBCB;
+ 
+//GENERAL COLORS
+$yellow:              #ffd033;
+$red:                 #E51010;
+$green:               #25C143;
+$green-2:             #AAC41D;
+$dark-green:          #4C884D;
+$pink:                #DE42C0;
+$light-pink:          #FC9BCF;
+$bottle-green:        #1293B2;
+$purple:              #8527F2;
+$blue:                #380FE6;
+$tabbing-bg:            #E6E6E6;
+     
+// RGBA
+$blur:               rgba(255, 255, 255, 0.1);
+$primary-rgba:       rgba(13, 57, 103, 0.1);
+$primary-rgba-80:    rgba(13, 57, 103, 0.8);
+$black-rgba:         rgba(0, 0, 0, 0.7);
+$black-rgba6:        rgba(0, 0, 0, 0.6);
+$white-rgba2:        rgba(255, 255, 255, 0.2);
+$secondary-rgb4:     rgba(51, 132, 216, 0.4);
+$secondary-rgb3:     rgba(51, 132, 216, 0.3);
+$grey-8-rgb4:        rgba(56, 56, 56, 0.4);
+$grey-1-rgb4:        rgba(85, 85, 85, 0.4);
+$grey-1-rgb5:        rgba(85, 85, 85, 0.56);
+$red2:               rgba(229, 16, 16, 0.2);
+$red1:               rgba(229, 16, 16, 0.1);
+$yellow-rgba-2:       rgba(255, 208, 51, 0.2); 
+ 
+//  =======================
+//  SHADOW
+//  =======================  
+$shadow-hover:        0px 3px 20px rgba(213,213,213,0.10);  // INPUT SHADOW FOCUS    (SR)
+$drop-down-shadow:    0px 10px 20px rgba(0, 0, 0, 0.16);      // (SR)
+$shadow-sm:           0px 2px 10px $grey-2;
+$shadow-md:           0px 5px 10px $grey-2;
+$shadow-md2:          0px 5px 15px $grey-2;
+$shadow-lg:           0px 5px 20px rgba(0, 0, 0, 0.16);
+$shadow-xl:           0px 10px 30px $grey-2;
+$shadow-pagination:   0px 3px 10px #00000029;
+ 
+ 
+ 
+//  =======================
+//  RADIUS
+//  =======================
+$radius-xs:       2px;
+$radius-sm:       5px;
+$radius-md:       8px;
+$radius-lg:      10px;
+$radius-xl:      20px;
+$radius-xxl:     30px;
+$radius-full:    100%;
+$radius-switch:  12px;
+$radius-filter:  10px 0px 0px 10px;
+$radius-filter-menu: 0px 10px 10px;
+ 
+ 
+//  =======================
+//  LINE HEIGHT
+//  =======================
+$line-height-18:  18px;
+$line-height-20:  20px;
+$line-height-22:  22px;
+$line-height-24:  24px;
+$line-height-28:  28px;
+$line-height-30:  30px;
+$line-height-36:  36px;
+$line-height-40:  40px;
+$line-height-50:  50px;
+$line-height-60:  60px;
+ 
+ 
+//  =======================
+//  BORDER
+//  =======================
+$border-grey:              1px solid $grey-3;
+$border-grey5:             1px solid $grey-5;
+$border-dashed-grey:       1px dashed $grey-1;
+$border-dashed-blue:       1px dashed $light-blue-5;
+$border-primary-10:        1px solid $primary-rgba;
+ 
+ 
+//  =======================
+//  PADDING VARIABLES
+//  =======================
+$padding-forminput:     8px 10px;
+$padding-forminput-sm:  10px 20px;
+$padding20:             20px;
+$padding15:             15px;
+$padding10:             10px;
+ 
+// FORM
+$form-height36:   36px;
+$form-height30:   30px;
+ 
+ 
+// SVG ICONS
+$scale-balance: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-scale-balance" width="24" height="24" fill="%23d5d5d5" viewBox="0 0 24 24"><path d="M12,3C10.73,3 9.6,3.8 9.18,5H3V7H4.95L2,14C1.53,16 3,17 5.5,17C8,17 9.56,16 9,14L6.05,7H9.17C9.5,7.85 10.15,8.5 11,8.83V20H2V22H22V20H13V8.82C13.85,8.5 14.5,7.85 14.82,7H17.95L15,14C14.53,16 16,17 18.5,17C21,17 22.56,16 22,14L19.05,7H21V5H14.83C14.4,3.8 13.27,3 12,3M12,5A1,1 0 0,1 13,6A1,1 0 0,1 12,7A1,1 0 0,1 11,6A1,1 0 0,1 12,5M5.5,10.25L7,14H4L5.5,10.25M18.5,10.25L20,14H17L18.5,10.25Z" /></svg>');
+$outbound:      url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20" fill="#3384D8"><path d="M580-538v94q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625 12.825 0 21.325-8.625T640-444v-166q0-12.75-8.625-21.375T610-640H444q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T444-580h93L325-368q-9 9-9 21.158 0 12.158 8.609 21Q334-317 346.467-317q12.466 0 21.533-9l212-212ZM480.266-80q-82.734 0-155.5-31.5t-127.266-86q-54.5-54.5-86-127.341Q80-397.681 80-480.5q0-82.819 31.5-155.659Q143-709 197.5-763t127.341-85.5Q397.681-880 480.5-880q82.819 0 155.659 31.5Q709-817 763-763t85.5 127Q880-563 880-480.266q0 82.734-31.5 155.5T763-197.684q-54 54.316-127 86Q563-80 480.266-80Zm.234-60Q622-140 721-239.5t99-241Q820-622 721.188-721 622.375-820 480-820q-141 0-240.5 98.812Q140-622.375 140-480q0 141 99.5 240.5t241 99.5Zm-.5-340Z"/></svg>');
+$briefcase-green:url('data:image/svg+xml,<%3Fxml version="1.0" encoding="UTF-8"%3F><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-briefcase-plus-outline" width="24" height="24" fill="%2325C143" viewBox="0 0 24 24"><path d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V13.53C21.42,13 20.75,12.6 20,12.34V8H4V19H12.08C12.2,19.72 12.45,20.39 12.8,21H4A2,2 0 0,1 2,19V8A2,2 0 0,1 4,6H8V4A2,2 0 0,1 10,2M14,6V4H10V6H14M14,17H17V14H19V17H22V19H19V22H17V19H14V17Z" /></svg>');
+$delete-grey :url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="%23d5d5d5"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>');

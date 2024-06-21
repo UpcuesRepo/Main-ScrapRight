@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   
+  
+   <!-- CSS -->
+   <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+    <div class="layout-1 style-5 wrapper">
+        <nav class="navbar main-navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between w-100">
+                <div class="navbar-left-links d-flex">
+                    <div class="logo-part">
+                        <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+                        <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                    </div>
+                    <div class="link-part d-flex">
+                        <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                transactions
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <div class="btn-group dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="nav-link">materials</a>
+                        <a href="javascript:void(0);" class="nav-link">customers</a>
+                        <a href="javascript:void(0);" class="nav-link">reports</a>
+                        <a href="javascript:void(0);" class="nav-link">admin</a>
+                    </div>
+                </div>
+                <div class="navbar-right-part d-flex align-items-center">
+                    <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                    <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                        <div class="username-tag">nick v</div>
+                    </div>
+                    <div class="icon-part">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar-expand-xl bg-white pad-10 shadow-lg-custom d-flex align-items-center justify-content-between position-relative">
+          <div class="color-secondary text-caps fw-extrabold fs-xl">QUICKBOOK TRANSECTION</div>
+            <div class="btn-row d-flex align-items-center justify-content-end mb-1 w-80p">
+              <div class="w-44p pxy10-15 radius-lg bg-form-box-blue3 me-2">
+                <div class="fs-16 fw-extrabold color-secondary mb-2">SEARCH</div>
+                <div class="d-flex">
+                  <div class="form-group w-39p me-2">
+                    <label class="form-label">Ticket / Ref / Customer Info</label>
+                    <input type="email" class="form-control h-36" placeholder="">
+                  </div>
+                  <div class="form-group mw-28p me-2">
+                      <label class="form-label">From</label>
+                      <input type="date" class="form-control h-36" placeholder="">
+                  </div>
+                  <div class="form-group w-36p">
+                      <label class="form-label">To</label>
+                      <div class="d-flex">
+                        <input type="date" class="form-control h-36 w-77p me-2" placeholder="">
+                        <button class="btn btn-blue btn-xs"><span class="material-symbols-rounded">search</span></button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-32p pxy10-15 radius-lg bg-grey-4">
+                <div class="fs-16 fw-extrabold color-secondary mb-2">SYNC CASH</div>
+                <div class="d-flex align-items-center">
+                  <div class="fs-sm fw-bold mt-4 me-2">Date Range:</div>
+                  <div class="form-group w-34p me-2">
+                    <label class="form-label">From</label>
+                    <input type="date" class="form-control h-36" placeholder="">
+                  </div>
+                  <div class="form-group w-45p">
+                      <label class="form-label">To</label>
+                      <div class="d-flex">
+                        <input type="date" class="form-control h-36 w-77p me-2" placeholder="">
+                        <button class="btn btn-blue btn-xs"><span class="material-symbols-rounded">search</span></button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <div class="content-section bg-light-blue2">
+          <div class="table-wrapper">
+            <table class="table table-bottom-no-border quickbook-table mb-0 overflow-hidden">
+              <thead>
+                <tr>
+                  <th scope="col" class="fw-extrabold">TICKETS #</th>
+                  <th scope="col" class="fw-extrabold">CHECK</th>
+                  <th scope="col" class="fw-extrabold">CUSTOMER NAME</th>
+                  <th scope="col" class="fw-extrabold">DATE RANGE</th>
+                  <th scope="col" class="fw-extrabold">UPLOAD TYPE</th>
+                  <th scope="col" class="fw-extrabold">STATUS</th>
+                  <th scope="col" class="fw-extrabold">RESYNC</th>
+                  <th scope="col" class="fw-extrabold">UPLOAD TIME</th>
+                  <th scope="col" class="fw-extrabold"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2189</td>
+                  <td>44566561</td>
+                  <td>RAYMOND RANDALL DAVIS</td>
+                  <td>9/18/2023 - 9/18/2022</td>
+                  <td>AP (Bill)</td>
+                  <td>Success</td>
+                  <td><div class="box box-grey color-grey fs-11 fw-semibold text-caps">resync</div></td>
+                  <td>9/18/2023 1:29 AM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2189</td>
+                  <td>44566561</td>
+                  <td>RAYMOND RANDALL DAVIS</td>
+                  <td>9/18/2023 - 9/18/2022</td>
+                  <td>AP (Bill)</td>
+                  <td>Success</td>
+                  <td><div class="box box-grey color-grey fs-11 fw-semibold text-caps">resync</div></td>
+                  <td>9/18/2023 1:29 AM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2189</td>
+                  <td>44566561</td>
+                  <td>RAYMOND RANDALL DAVIS</td>
+                  <td>9/18/2023 - 9/18/2022</td>
+                  <td>AP (Bill)</td>
+                  <td>Success</td>
+                  <td><div class="box box-grey color-grey fs-11 fw-semibold text-caps">resync</div></td>
+                  <td>9/18/2023 1:29 AM</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2189</td>
+                  <td>44566561</td>
+                  <td>RAYMOND RANDALL DAVIS</td>
+                  <td>9/18/2023 - 9/18/2022</td>
+                  <td>AP (Bill)</td>
+                  <td>Success</td>
+                  <td><div class="box box-grey color-grey fs-11 fw-semibold text-caps">resync</div></td>
+                  <td>9/18/2023 1:29 AM</td>
+                  <td></td>
+                </tr>
+                <tr> 
+                  <td class="failed">2189</td>
+                  <td class="failed">44566561</td>
+                  <td class="failed">RAYMOND RANDALL DAVIS</td>
+                  <td class="failed">9/18/2023 - 9/18/2022</td>
+                  <td class="failed">AP (Bill)</td>
+                  <td class="failed">Failed</td>
+                  <td class="failed"><div class="box box-grey color-grey fs-11 fw-semibold text-caps">resync</div></td>
+                  <td class="failed">9/18/2023 1:29 AM</td>
+                  <td class="failed" class="d-flex"></td>
+                </tr>
+                <tr>
+                  <td class="failed">2189</td>
+                  <td class="failed">44566561</td>
+                  <td class="failed">RAYMOND RANDALL DAVIS</td>
+                  <td class="failed">9/18/2023 - 9/18/2022</td>
+                  <td class="failed">AP (Bill)</td>
+                  <td class="failed">Failed</td>
+                  <td class="failed"><div class="box box-grey color-grey fs-11 fw-semibold text-caps">resync</div></td>
+                  <td class="failed">9/18/2023 1:29 AM</td>
+                  <td class="failed" class="d-flex"></td>
+                </tr>
+                <tr>
+                  <td class="failed">2189</td>
+                  <td class="failed">44566561</td>
+                  <td class="failed">RAYMOND RANDALL DAVIS</td>
+                  <td class="failed">9/18/2023 - 9/18/2022</td>
+                  <td class="failed">AP (Bill)</td>
+                  <td class="failed">Failed</td>
+                  <td class="failed"><div class="box box-grey color-grey fs-11 fw-semibold text-caps">resync</div></td>
+                  <td class="failed">9/18/2023 1:29 AM</td>
+                  <td class="failed" class="d-flex"></td>
+                </tr>
+                <tr>
+                  <td class="failed">2189</td>
+                  <td class="failed">44566561</td>
+                  <td class="failed">RAYMOND RANDALL DAVIS</td>
+                  <td class="failed">9/18/2023 - 9/18/2022</td>
+                  <td class="failed">AP (Bill)</td>
+                  <td class="failed">Failed</td>
+                  <td class="failed"><div class="box box-grey color-grey fs-11 fw-semibold text-caps">resync</div></td>
+                  <td class="failed">9/18/2023 1:29 AM</td>
+                  <td class="failed" class="d-flex"></td>
+                </tr>
+                <tr>
+                  <td class="failed">2189</td>
+                  <td class="failed">44566561</td>
+                  <td class="failed">RAYMOND RANDALL DAVIS</td>
+                  <td class="failed">9/18/2023 - 9/18/2022</td>
+                  <td class="failed">AP (Bill)</td>
+                  <td class="failed">Failed</td>
+                  <td class="failed"><div class="box box-grey color-grey fs-11 fw-semibold text-caps">resync</div></td>
+                  <td class="failed">9/18/2023 1:29 AM</td>
+                  <td class="failed" class="d-flex"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="bg-primary d-flex justify-content-center pad-15">
+              <div class="pagination-inventory color-white fs-sm fw-bold d-flex align-items-center">
+                <a href="#" class="disabled bg-icon bg-white d-flex justify-content-center align-items-center underline-none me-2">
+                  <span class="material-symbols-rounded color-disabled fs-sm">arrow_back_ios</span>
+                </a>
+                1 - 3 of 3
+                <a href="#" class="clickable bg-icon bg-white d-flex justify-content-center align-items-center underline-none ms-2">
+                  <span class="material-symbols-rounded color-black fs-sm">arrow_forward_ios</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   
+  
+   <!-- CSS -->
+   
+   <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+
+    <div class="offcanvas offcanvas-end left-radius10" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel" aria-modal="true" role="dialog">
+      <div class="offcanvas-header">
+        <button class="btn btn-dark color-white btn-lg filter-close-btn offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"><span class="material-symbols-rounded">cancel</span></button>
+      </div>
+      <div class="offcanvas-body p-0">
+          <div class="new-ticket-leftmenu tabbing-bg">
+            <div class="inbound-tabbing">
+              
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade v-pills-cust show active" id="v-pills-inbound" role="tabpanel" aria-labelledby="v-pills-inbound-tab" tabindex="0">
+                  <button class="ticket-detail w-100 pad-10 border-bottom-tabbing">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="text-caps fs-11 fw-extrabold txt-color">
+                        TICKET NUMBER
+                      </div>
+                      <div class="text-caps fs-11 fw-extrabold txt-color">
+                        #123456
+                      </div>
+                    </div>
+                    <div class="text-caps fs-sm fw-extrabold txt-color text-align-left letter-space7 mb-2">
+                      TICKET NUMBER
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="text-caps fs-11 fw-extrabold txt-color">
+                        VEHICLE INFO
+                      </div>
+                      <div class="text-caps fs-11 fw-extrabold txt-color">
+                        WHITE FORD  NJE 123
+                      </div>
+                    </div>
+                  </button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="offcanvas-footer">
+        <div class="row">
+          <div class="col-md-6"><button class="btn btn-grey btn-md">clear</button></div>
+          <div class="col-md-6"><button class="btn btn-blue btn-md">search</button></div>
+        </div>
+      </div>
+  </div>
+    <div class="layout-1 style-2 height-100">
+       
+  
+     
+        <nav class="navbar main-navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between w-100">
+                <div class="navbar-left-links d-flex">
+                    <div class="logo-part">
+                        <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+                        <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                    </div>
+                    <div class="link-part d-flex">
+                        <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                        <!-- <a href="javascript:void(0);" class="nav-link">transactions</a> -->
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                transactions
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <div class="btn-group dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="nav-link">materials</a>
+                        <a href="javascript:void(0);" class="nav-link">customers</a>
+                        <a href="javascript:void(0);" class="nav-link">reports</a>
+                        <a href="javascript:void(0);" class="nav-link">admin</a>
+                    </div>
+                </div>
+                <div class="navbar-right-part d-flex align-items-center">
+                    <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                    <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                        <div class="username-tag">nick v</div>
+                    </div>
+                    <div class="icon-part">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex height-100">
+         
+            <div class="ticket-leftmenu w-35p">
+              <div class="head-part d-flex justify-content-between align-items-center">
+                  <div class="left-part w-34p">
+                      <h6 class="color-grey-6 fs-15 fw-bold">User:<span class="fs-md color-secondary ms-2">Nick V</span></h6>
+                      <div class="form-group w-100">
+                          <input type="date" class="form-control h-36" placeholder="">
+                      </div>
+                  </div>
+                  <div class="right-part">
+                      <div class="arrow-btn d-flex">
+                          <button class="btn btn-light btn-md left-radius10 border-right">
+                            <span class="material-symbols-rounded">arrow_back_ios</span>
+                          </button>
+                          <button class="btn btn-light btn-md right-radius10">
+                            <span class="material-symbols-rounded">arrow_forward_ios</span>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="ticket-part d-flex justify-content-between align-items-center">
+                  <div class="left-part">
+                      <h6 class="color-grey-6 fs-md fw-bold">Ticket#:</h6>
+                      <div class="ticket-num d-flex">
+                          <h6 class="color-secondary fs-lg fw-bold me-2 mb-0">4603</h6>
+                          <a href="#"><span class="material-symbols-rounded me-2">merge</span></a>
+                          <a href="#"><span class="material-symbols-rounded">cancel</span></a>
+                      </div>
+                  </div>
+                  <div class="right-part d-flex align-items-center">
+                      <div class="inner-left">
+                          <h6 class="color-grey-6 fs-15 fw-bold">Start:</h6>
+                          <h6 class="color-grey-6 fs-15 fw-bold mb-0">End:</h6>
+                      </div>
+                      <div class="inner-right">
+                          <h6 class="color-black fs-md fw-bold">05:24:51am</h6>
+                          <h6 class="color-black fs-md fw-bold mb-0">03:06:57pm</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="customer-part">
+                  <div class="heading d-flex justify-content-between align-items-center mb-3">
+                      <h6 class="color-black fs-md fw-bold mb-0">Customer Info:</h6>
+                      <div class="icon d-flex">
+                          <a href="#"><span class="material-symbols-rounded me-2">edit</span></a>
+                          <a href="#"><span class="material-symbols-rounded">search</span></a>
+                      </div>
+                  </div>
+                  <div class="content-part d-flex justify-content-between">
+                      <div class="info d-flex justify-content-between">
+                          <div class="left">
+                              <h6 class="color-black fs-sm">Name</h6>
+                              <h6 class="color-black fs-sm">ID/License</h6>
+                              <h6 class="color-black fs-sm">Make/Model</h6>
+                              <h6 class="color-black fs-sm">Vehicle Plate</h6>
+                          </div>
+                          <div class="right">
+                              <h6 class="color-secondary fw-bold fs-sm">Nick V</h6>
+                              <h6 class="color-secondary fw-bold fs-sm">Nick V</h6>
+                              <h6 class="color-secondary fw-bold fs-sm">Acura/Legend</h6>
+                              <h6 class="color-secondary fw-bold fs-sm">AB1235</h6>
+                          </div>
+                      </div>
+                      <div class="card-group">
+                          <div class="content">
+                              Scan License
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <table class="table table-bottom-no-border border-radius0 mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="fs-sm fw-extrabold">gross</th>
+                      <th scope="col" class="fs-sm fw-extrabold">tare</th>
+                      <th scope="col" class="fs-sm fw-extrabold">net</th>
+                      <th scope="col" class="fs-sm fw-extrabold">price</th>
+                      <th scope="col" class="fs-sm fw-extrabold">total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>34</td>
+                      <td>34</td>
+                      <td>34</td>
+                      <td>34</td>
+                      <td>34</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>11</td>
+                      <td>11</td>
+                      <td>11</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td>00</td>
+                      <td>00</td>
+                      <td>00</td>
+                      <td>00</td>
+                      <td>00</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>44</td>
+                      <td>44</td>
+                      <td>44</td>
+                      <td>44</td>
+                      <td>44</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>14</td>
+                      <td>14</td>
+                      <td>14</td>
+                      <td>14</td>
+                    </tr>
+                  </tbody>
+              </table>
+              <table class="blue-table">
+                  <tbody>
+                    <tr>
+                      <td>GROSS <br> 100</td>
+                      <td>TARE <br> 200</td>
+                      <td>NET <br> 123</td>
+                      <td>#ITEMS <br> 120</td>
+                      <td>TOTAL <br> <span class="color-green">$100.00</span></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>Payable Now:</td>
+                      <td></td>
+                      <td></td>
+                      <td></td> 
+                      <td><span class="color-green">$0.00</span></td>
+                    </tr>
+                  </tfoot>
+              </table>
+              <div class="signature-box">
+                  <div class="signature-card">
+                      <div class="top-part d-flex">
+                          <div class="left-part"></div>
+                          <div class="right-part"></div>
+                      </div>
+                      <div class="bottom-part d-flex justify-content-between align-items-center">
+                          <div class="left-part">
+                              SIGNATURE
+                          </div>
+                          <div class="right-part">
+                              THUMBPRINT
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-strip d-flex justify-content-between">
+                  <div class="left-part d-flex">
+                      <span class="material-symbols-rounded me-2">
+                          attach_file
+                      </span>
+                      <h6 class="color-black fs-sm text-caps fw-extrabold m-0">ATTACHED <br>  FILES &amp; NOTES</h6>
+                  </div>
+                  <div class="right-part d-flex">
+                      <span class="material-symbols-rounded me-2">
+                          account_circle
+                      </span>
+                      <h6 class="color-black fs-sm text-caps fw-extrabold m-0">SELLERS  <br>  IMAGE</h6>
+                  </div>
+              </div>
+             </div>
+          
+          <div class="content-section d-flex flex-column justify-content-between p-0 height-100 w-100">
+            
+            <div class="top-part">
+                 
+              <nav class="navbar-h-98 inventory-navbar navbar-expand-xl w-100 ">
+                <div class="d-flex align-items-center px-20">
+                  <div class="fs-20 fw-extrabold color-secondary me-2">
+                    SELECT A MATERIAL GROUP:
+                  </div>
+                  
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="border-right-grey">
+                    <div class="input-part d-flex me-3">
+                      <div class="form-group w-54p me-3">
+                          <input type="email" class="form-control h-36" placeholder="Msg Strip Field">
+                      </div>
+                      <div class="form-group w-35p me-3">
+                          <input type="email" class="form-control h-36" placeholder="Customer Code">
+                      </div>
+                      <button class="btn btn-dark btn-xs padding-5"><span class="material-symbols-rounded">search</span></button>
+                  </div>
+                  </div>
+                  <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop" class="btn btn-dark color-white btn-lg"><span class="material-symbols-rounded">tune</span></button>
+                </div>
+              </nav>
+                 
+                
+               
+              <div class="content-section d-flex flex-column flex-wrap justify-content-between p-0 height-100">
+                <div class="title-part pad-15">
+                    <div class="material-card scanning-card">
+                        <div class="head-part d-flex align-items-center justify-content-between">
+                            <div class="title">
+                                <h6 class="color-black text-caps fs-26 letter-space7 fw-extrabold m-0">pay details for ticket#: 4645</h6>
+                            </div>
+                            <div class="button-part d-flex">
+                                <button class="btn btn-light text-caps btn-md with-icon"><span class="material-symbols-rounded me-1">chevron_left</span>back</button>
+                            </div>
+                        </div>
+                        <div class="input-part d-flex align-items-center justify-content-between">
+                            <div class="blank-box w-65p"></div>
+                            <div class="total-part d-flex">
+                                <div class="amount-desc me-5">
+                                    <h6 class="color-black fs-lg text-caps fw-bold text-end mb-3">total ticket amount:</h6>
+                                    <h6 class="color-black fs-lg text-caps fw-bold text-end m-0">total eligible pay amount:</h6>
+                                </div>
+                                <div class="amount">
+                                    <h6 class="color-black fs-lg text-caps fw-extrabold mb-3">$40.00</h6>
+                                    <h6 class="color-black fs-lg text-caps fw-extrabold m-0">$40.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-part d-flex justify-content-between">
+                            <div class="left-part d-flex flex-column justify-content-between">
+                                <div class="input-section d-flex w-50">
+                                    <div class="form-group w-60p me-3">
+                                        <label class="form-label">Amount</label>
+                                        <input type="text" class="form-control focus-blue h-36" placeholder="">
+                                    </div>
+                                    <div class="form-group w-40p">
+                                        <label class="form-label">Method</label>
+                                        <select class="selectpicker" data-live-search="true">
+                                          <option data-tokens="ketchup mustard">Cash</option>
+                                          <option data-tokens="mustard">2</option>
+                                          <option data-tokens="frosting">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="button-part">
+                                    <div class="row-1 d-flex">
+                                        <button class="btn btn-grey btn-md me-2 mb-3">split payment by items</button>
+                                        <button class="btn btn-grey btn-md me-2 mb-3">clear split payments</button>
+                                    </div>
+                                    <div class="row-2 d-flex">
+                                        <button class="btn btn-blue btn-md me-2">pay & email</button>
+                                        <button class="btn btn-blue btn-md me-2">pay & email</button>
+                                        <button class="btn btn-blue btn-md me-2">pay & print</button>
+                                        <button class="btn btn-blue btn-md me-2">pay w/o printing</button>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="right-part w-45p">
+                                <div class="calculator-section">
+                                    <table>
+                                      <tr>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 me-1">7</button></td>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 me-1">8</button></td>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 me-1">9</button></td>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3">+</button></td>
+                                      </tr>
+                                      <tr>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 me-1">4</button></td>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 me-1">5</button></td>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 me-1">6</button></td>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3">-</button></td>
+                                      </tr>
+                                      <tr>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 me-1">1</button></td>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 me-1">2</button></td>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 me-1">3</button></td>
+                                        <td rowspan="2"><button class="btn btn-light btn-xxl radius-lg border-d3 letter-space7">enter</button></td>
+                                      </tr>
+                                      <tr>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 fs-xl me-1">del</button></td>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 me-1">0</button></td>
+                                        <td><button class="btn btn-light btn-xl radius-lg border-d3 me-1">.</button></td>
+                                      </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-btn d-flex justify-content-end align-items-end">
+                    <button class="btn btn-skyblue btn-md left-top-radius10 border-right">
+                      <span class="material-symbols-rounded">bookmark_added</span><br>
+                      ticket is<br>compliant
+                    </button>
+                    <button class="btn btn-skyblue btn-md border-right border-radius0">
+                      <span class="material-symbols-rounded">print</span><br>
+                      print weight<br>ticket
+                    </button>
+                    <button class="btn btn-skyblue btn-md border-right border-radius0">
+                      <span class="material-symbols-rounded">print</span><br>
+                      print <br>receipt
+                    </button>
+                    <button class="btn btn-skyblue btn-md border-right border-radius0">
+                      <span class="material-symbols-rounded">payments</span><br>
+                      pay out <br>ticket
+                    </button>
+                    <button class="btn btn-skyblue btn-md border-right border-radius0">
+                      <span class="material-symbols-rounded">add_circle</span><br>
+                      ADD A <br>MATERIAL
+                    </button>
+                    <button class="btn btn-skyblue border-right border-radius0">
+                      <span class="material-symbols-rounded">cancel</span><br>
+                      CANCEL <br>TICKET
+                    </button>
+                    <button class="btn btn-skyblue border-right border-radius0">
+                      <span class="material-symbols-rounded">library_add</span><br>
+                      START A <br> NEW TICKET
+                    </button>
+                    <button class="btn btn-skyblue border-radius0">
+                      <span class="material-symbols-rounded">search</span><br>
+                      SEARCH <br> FOR TICKETS
+                    </button>
+                </div>        
+            </div>
+            
+            </div>
+            
+            
+          
+        </div>
+        </div>
+        
+    </div>
+    <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- CSS -->
+
+    <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+    <title>ScrapRight</title>
+</head>
+
+<body>
+
+    <div class="offcanvas offcanvas-end left-radius10" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel" aria-modal="true" role="dialog">
+        <div class="offcanvas-header">
+            <button class="btn btn-dark color-white btn-lg filter-close-btn offcanvas-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"><span class="material-symbols-rounded">cancel</span></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <div class="new-ticket-leftmenu tabbing-bg">
+                <div class="inbound-tabbing">
+
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade v-pills-cust show active" id="v-pills-inbound" role="tabpanel"
+                            aria-labelledby="v-pills-inbound-tab" tabindex="0">
+                            <button class="ticket-detail w-100 pad-10 border-bottom-tabbing">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <div class="text-caps fs-11 fw-extrabold txt-color">
+                                        TICKET NUMBER
+                                    </div>
+                                    <div class="text-caps fs-11 fw-extrabold txt-color">
+                                        #123456
+                                    </div>
+                                </div>
+                                <div class="text-caps fs-sm fw-extrabold txt-color text-align-left letter-space7 mb-2">
+                                    TICKET NUMBER
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-caps fs-11 fw-extrabold txt-color">
+                                        VEHICLE INFO
+                                    </div>
+                                    <div class="text-caps fs-11 fw-extrabold txt-color">
+                                        WHITE FORD NJE 123
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-footer">
+            <div class="row">
+                <div class="col-md-6"><button class="btn btn-grey btn-md">clear</button></div>
+                <div class="col-md-6"><button class="btn btn-blue btn-md">search</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="layout-1 style-2 height-100">
+
+
+
+        <nav class="navbar main-navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between w-100">
+                <div class="navbar-left-links d-flex">
+                    <div class="logo-part">
+                        <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+                        <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                    </div>
+                    <div class="link-part d-flex">
+                        <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                        <!-- <a href="javascript:void(0);" class="nav-link">transactions</a> -->
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                transactions
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <div class="btn-group dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Action
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item active" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="nav-link">materials</a>
+                        <a href="javascript:void(0);" class="nav-link">customers</a>
+                        <a href="javascript:void(0);" class="nav-link">reports</a>
+                        <a href="javascript:void(0);" class="nav-link">admin</a>
+                    </div>
+                </div>
+                <div class="navbar-right-part d-flex align-items-center">
+                    <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                    <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                        <div class="username-tag">nick v</div>
+                    </div>
+                    <div class="icon-part">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex height-100">
+
+            <div class="ticket-leftmenu w-35p">
+                <h6 class="color-dark fs-lg fw-bold text-center mb-0 p-3 border-bottom d-flex justify-content-between">
+                    <span>Ticket # 1111</span> <a href="#" class="me-2 fs-sm  position-relative align-items-center d-flex">
+                        <span class="material-symbols-rounded color-blackrgb6">check</span>
+                        Sort By %
+                    </a>
+                </h6>
+                <div class="ticket-part d-flex justify-content-between align-items-center">
+                    <div class="left-part">
+                        <div class="color-dark fs-sm ">Vendor:</div>
+                        <div class="color-dark fs-sm ">Date: 01/31/2024 4:31 AM</div>
+
+                        <div class="color-dark fs-sm ">Check Material:
+                            Aluminum Breakage (sort) - 0.0 lb</div>
+
+                    </div>
+
+                </div>
+
+
+                <table class="table table-bottom-no-border border-radius0 mb-0">
+                    <thead>
+                        <th scope="col" class="fs-sm fw-extrabold">name</th>
+                        <th scope="col" class="fs-sm fw-extrabold">gross</th>
+                        <th scope="col" class="fs-sm fw-extrabold">tare</th>
+                        <th scope="col" class="fs-sm fw-extrabold">net</th>
+                        <th scope="col" class="fs-sm fw-extrabold"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>Aluminum Breakage (sort)</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td><a href="#" class="me-2 position-relative">
+                                    <span class="material-symbols-rounded color-blackrgb6">delete</span>
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <td>Aluminum MLC (sort)</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td>0.0</td>
+                            <td><a href="#" class="me-2 position-relative">
+                                    <span class="material-symbols-rounded color-blackrgb6">delete</span>
+                                </a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <table class="blue-table h-auto">
+                    <tbody>
+                        <tr>
+                            <td>Materials: 2</td>
+                            <td>Net Wt. 0.0 lb</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="content-section d-flex flex-column justify-content-between p-3 height-100 w-100">
+                <div class="bg-white p-3 radius-lg height-100">
+                    <nav class="d-flex justify-content-between align-items-center border p-3 radius-lg">
+                        <div class="color-secondary text-caps fw-extrabold fs-md">Ticket #: 1009</div>
+
+                     
+                          <div class="d-flex">
+                            <button class="btn btn-grey with-icon  h-36 radius-sm me-2">Request Bin</button>
+                            <button class="btn btn-border with-icon me-2">Print Recipt</button>
+                            <button class="btn btn-border with-icon ">Email Recipt</button>
+                          </div>
+                      </nav>
+                      <div class="border p-3 radius-lg mt-2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h6 class="bold mt-2">Aluminum Car Rim</h6>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group mb-3 d-flex">
+            <div class="col-6">Name:</div>
+            <div class="col-6 fw-bold ">Value</div>
+          </div>
+          <div class="form-group mb-3 d-flex">
+            <div class="col-6">ID/Licence:</div>
+            <div class="col-6 fw-bold">Value</div>
+          </div>
+          <div class="form-group mb-3 d-flex">
+            <div class="col-6">Vehicle Plate:</div>
+            <div class="col-6 fw-bold">Value</div>
+          </div>
+          <div class="form-group mb-3 d-flex">
+            <div class="col-6">Driver ID/Licence:</div>
+            <div class="col-6 fw-bold">Value</div>
+          </div>
+          <div class="form-group mb-3 d-flex">
+            <div class="col-6">Signature:</div>
+            <div class="col-6 fw-bold"><img src="../../images/backgrounds/a1.jpg" alt="" /></div>
+          </div>
+        
+
+          
+    </div>
+    <div class="col-md-4">
+        <div class="form-group mb-3 d-flex">
+            <div class="col-6">Address:</div>
+            <div class="col-6 fw-bold">Value</div>
+          </div>
+          <div class="form-group mb-3 d-flex">
+            <div class="col-6">Pay To:</div>
+            <div class="col-6 fw-bold">Value</div>
+          </div>
+          <div class="form-group mb-3 d-flex">
+            <div class="col-6">Driver:</div>
+            <div class="col-6 fw-bold">Value</div>
+          </div>
+          <div class="form-group mb-3 d-flex">
+            <div class="col-6">Total Weight Received:</div>
+            <div class="col-6 fw-bold">100.00 LB</div>
+          </div>
+          <div class="form-group mb-3 d-flex">
+            <div class="col-6">Thumbprint:</div>
+            <div class="col-6 fw-bold"><img src="../../images/backgrounds/a1.jpg" alt="" /></div>
+          </div>
+    </div>
+    <div class="col-md-4">
+        <div class="bg-light p-3">
+      <img src="../../images/backgrounds/a1.jpg" alt="" />
+      <img src="../../images/backgrounds/a1.jpg" alt="" />
+    </div>
+    </div>
+    <div class="col-md-12 mt-2">
+        <div class="bg-light p-3 fw-extrabold text-success align-items-center">
+$1000.00 / Paid 05/06/2024  <img src="../../images/icons/paid.png" width="60" alt="" />
+</div>
+    </div>
+</div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../../assets/dist/js/all.min.js"></script>
+</body>
+
+</html>

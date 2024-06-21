@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
+   
+   
+  
+   <!-- CSS -->
+   <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+    <div class="loader-div">
+      <div id="loader"></div>
+    </div>
+    <div class="layout-1 style-2 height-100">
+        <nav class="navbar main-navbar navbar-expand-xl">
+          <div class="d-flex justify-content-between w-100">
+              <div class="navbar-left-links d-flex">
+                  <div class="logo-part">
+                      <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+                      <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                  </div>
+                  <div class="link-part d-flex">
+                      <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                      <div class="dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              transactions
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                              <div class="btn-group dropend">
+                                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Action
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                              </div>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                      </div>
+                      <a href="javascript:void(0);" class="nav-link">materials</a>
+                      <a href="javascript:void(0);" class="nav-link">customers</a>
+                      <a href="javascript:void(0);" class="nav-link">reports</a>
+                      <a href="javascript:void(0);" class="nav-link">admin</a>
+                  </div>
+              </div>
+              <div class="navbar-right-part d-flex align-items-center">
+                  <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                  <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                      <div class="username-tag">nick v</div>
+                  </div>
+                  <div class="icon-part">
+                      <a href="#">
+                          <span class="material-symbols-rounded">logout</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </nav>
+        <div class="d-flex height-100">
+            <div class="user-permission-left-menu bg-white">
+                <ul class="nav-links">
+                    <li>
+                        <a href="javascript:void()">
+                            <div>administrator</div>
+                            <span class="material-symbols-rounded">delete</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void()">
+                            <div>driver</div>
+                            <span class="material-symbols-rounded">delete</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void()">
+                            <div>mobisig</div>
+                            <span class="material-symbols-rounded">delete</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void()">
+                            <div>cashier</div>
+                            <span class="material-symbols-rounded">delete</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void()">
+                            <div>scale</div>
+                            <span class="material-symbols-rounded">delete</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void()">
+                            <div>test</div>
+                            <span class="material-symbols-rounded">delete</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void()">
+                            <div>new tester all permission</div>
+                            <span class="material-symbols-rounded">delete</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void()">
+                            <div>test r</div>
+                            <span class="material-symbols-rounded">delete</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void()">
+                            <div>test scale permission</div>
+                            <span class="material-symbols-rounded">delete</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-section w-100">
+                <div class="d-flex justify-content-end w-100 mb-3">
+                    <button type="button" class="btn btn-light with-icon h-36" data-bs-toggle="modal" data-bs-target="#addUser"><span class="material-symbols-rounded me-2">person_add</span>add user permission level</button>
+                </div>
+                <div class="material-tabs inventory-card bg-white">
+                    <div class="nav nav-pills mb-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <button class="nav-link btn btn-topborder me-2 active" id="v-pills-userp-1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-userp-1" type="button" role="tab" aria-controls="v-pills-userp-1" aria-selected="true">basic</button>
+                      <button class="nav-link btn btn-topborder me-2" id="v-pills-userp-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-userp-2" type="button" role="tab" aria-controls="v-pills-userp-2" aria-selected="false">ticket</button>
+                      <button class="nav-link btn btn-topborder me-2" id="v-pills-userp-3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-userp-3" type="button" role="tab" aria-controls="v-pills-userp-3" aria-selected="false">inventory</button>
+                      <button class="nav-link btn btn-topborder me-2" id="v-pills-userp-4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-userp-4" type="button" role="tab" aria-controls="v-pills-userp-4" aria-selected="false">customer/business</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-userp-1" role="tabpanel" aria-labelledby="v-pills-userp-1-tab" tabindex="0">
+                        <div class="info-tab-content d-flex">
+                          <div class="left-info-tab p-20">
+                            <div class="d-flex justify-content-between mb-3">
+                              <div class="form-group w-50 me-3">
+                                <label class="form-label">Title:</label>
+                                <input type="email" class="form-control h-36" placeholder="">
+                              </div>
+                              <div class="form-group w-50">
+                                <label class="form-label">Default Screen</label>
+                                <select class="selectpicker" data-live-search="true">
+                                  <option data-tokens="ketchup mustard">1</option>
+                                  <option data-tokens="mustard">2</option>
+                                  <option data-tokens="frosting">3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="form-label">Inventory Role</label>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <div class="form-group w-50 me-3">
+                                  <select class="selectpicker" data-live-search="true">
+                                    <option data-tokens="ketchup mustard">1</option>
+                                    <option data-tokens="mustard">2</option>
+                                    <option data-tokens="frosting">3</option>
+                                  </select>
+                                </div>
+                                <div class="form-check form-inline">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">
+                                    Hide Aggregate Data On Dashboard
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="right-info-tab p-20 w-100">
+                            <div class="card-tabbing p-20 margin-b-20">
+                              <dl class="mb-2">
+                                <dt>
+                                  <div class="form-check form-inline mb-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label fs-sm fw-bold color-secondary" for="check1">Dashboard</label>
+                                  </div>
+                                </dt>
+                                <dd>
+                                  <div class="form-check form-inline mb-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-1" for="check1">Calendar</label>
+                                  </div>
+                                </dd>
+                              </dl>
+                              <dl class="mb-2">
+                                <dt>
+                                  <div class="form-check form-inline mb-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label fs-sm fw-bold color-secondary" for="check1">Transactions</label>
+                                  </div>  
+                                </dt>
+                                <dd>
+                                  <dl>
+                                    <dt>
+                                      <div class="form-check form-inline mb-2">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">Ticketing</label>
+                                      </div>
+                                    </dt>
+                                    <dd>
+                                      <table class="w-100">
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Pay Ticket</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Print Receipt</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Void Ticket</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Halt pay when out of compliance</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Cancel Ticket</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Un-Void Ticket</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Un-Cancel Ticket</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Disable receipt printing for open ticket</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </dd>
+                                    <dt>
+                                      <table class="w-100">
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">Full-Size Tickets Entry</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">MLTS Review</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">AP</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">AP Review Screen</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">Check Register</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">Admin Ticket Review</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">Inventory</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">Customer Display</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">ATM Transactions</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">QuickBooks Transactions</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">NMVTIS</label>
+                                            </div>
+                                          </td>
+                                          <td></td>
+                                        </tr>
+                                      </table>
+                                    </dt>
+                                  </dl>
+                                </dd>
+                              </dl>
+                              <dl class="mb-2">
+                                <dt>
+                                  <div class="form-check form-inline mb-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label fs-sm fw-bold color-secondary" for="check1">Materials</label>
+                                  </div>  
+                                </dt>
+                                <dd>
+                                  <dl>
+                                    <dt>
+                                      <table class="w-100">
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">Material Groups</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">Material Types</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">Materials</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">Price List</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">Cinema Display Screen</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">Material Index</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label style-1" for="check1">SOW</label>
+                                            </div>
+                                          </td>
+                                          <td></td>
+                                        </tr>
+                                      </table>
+                                    </dt>
+                                  </dl>
+                                </dd>
+                              </dl>
+                              <dl class="mb-2">
+                                <dt>
+                                  <div class="form-check form-inline mb-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label fs-sm fw-bold color-secondary" for="check1">Customers</label>
+                                  </div>  
+                                </dt>
+                                <dd>
+                                  <dl>
+                                    <dt>
+                                        <div class="form-check form-inline mb-2 me-5">
+                                          <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                          <label class="form-check-label style-1" for="check1">Businesses</label>
+                                        </div>
+                                        <div class="form-check form-inline mb-2">
+                                          <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                          <label class="form-check-label style-1" for="check1">Customers</label>
+                                        </div>
+                                    </dt>
+                                  </dl>
+                                </dd>
+                              </dl>
+                              <dl>
+                                <dt>
+                                  <div class="form-check form-inline mb-2">
+                                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label fs-sm fw-bold color-secondary" for="check1">Reports</label>
+                                  </div>  
+                                </dt>
+                                <dd>
+                                  <dl>
+                                    <dt>
+                                      <div class="form-check form-inline mb-2">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">Purchase Reports</label>
+                                      </div>
+                                    </dt>
+                                    <dd>
+                                      <table class="w-100">
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Purchase Summary</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">VIN Report</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Material Purchase Report</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Material Acquisition Report</label>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Supplier Purchase Summary</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Daily Summary Report</label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="form-check form-inline mb-2">
+                                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                              <label class="form-check-label fs-sm color-grey" for="check1">Contamination Report</label>
+                                            </div>
+                                          </td>
+                                          <td></td>
+                                        </tr>
+                                      </table>
+                                    </dd>
+                                  </dl>
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                              <button class="btn btn-blue btn-md">save user group</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-userp-2" role="tabpanel" aria-labelledby="v-pills-userp-2-tab" tabindex="0">
+                        <div class="pxy30-25">
+                          <table class="w-100 user-permission">
+                            <tr>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Allow to Start Ticket</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Allow to Pay Zero</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Allow to Change Ticket’s Date</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Show keyboard code box</label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Allow to Pay w/o Printing</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Prevent 0 gross</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Allow to Email Ticket</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Allow to Advance Pay</label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Restrict Listing of AP Tickets</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Display Only Approved AP Tickets</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Display material note on interactive ticket</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Display vehicle plate # edit field on interactive ticket</label>
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="bg-grey-4 pxy15-25">
+                          <div class="fs-16 mb-2 fw-extrabold text-caps letter-space7">weight's permission</div>
+                          <table class="w-100 user-permission">
+                            <tr>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Gross Weight Must Be Read by Scale</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Gross Weight Entry Cannot Be Edited</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Tare Weight Must Be Read by Scale</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Tare Weight Entry Cannot be Edited</label>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Do Not Allow a Material to be Deleted</label>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="form-check form-inline me-3">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Read Weights from</label>
+                                </div>
+                              </td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="pxy15-25">
+                          <div class="fs-16 mb-2 fw-extrabold text-caps letter-space7">payment permission</div>
+                          <div class="d-flex align-items-center">
+                            <div class="form-group w-16p me-3">
+                              <label class="form-label">Weight Master Limit</label>
+                              <input type="email" class="form-control h-36" placeholder="">
+                            </div>
+                            <div class="form-group w-16p me-3">
+                              <label class="form-label">Cash Limit</label>
+                              <input type="email" class="form-control h-36" placeholder="">
+                            </div>
+                            <div class="form-group w-16p me-3">
+                              <label class="form-label">Check Limit</label>
+                              <input type="email" class="form-control h-36" placeholder="">
+                            </div>
+                            <div class="form-group w-16p me-3">
+                              <label class="form-label">ID / Registration #:</label>
+                              <input type="email" class="form-control h-36" placeholder="">
+                            </div>
+                            <div class="form-group w-16p me-3">
+                              <label class="form-label">ID / Registration #:</label>
+                              <input type="email" class="form-control h-36" placeholder="">
+                            </div>
+                            <div class="form-check form-inline mt-3">
+                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                              <label class="form-check-label style-1" for="check1">Default checkbox</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bg-grey-4 pxy15-25 d-flex mb-5">
+                          <div class="pricing me-4 ">
+                            <div class="fs-16 mb-3 fw-extrabold text-caps letter-space7">pricing</div>
+                            <dl>
+                              <dt>
+                                <div class="form-check form-inline mb-2">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Allow to View Price</label>
+                                </div>
+                              </dt>
+                              <dd>
+                                <div class="form-check form-inline">
+                                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                  <label class="form-check-label style-1" for="check1">Allow to Edit Price?</label>
+                                </div>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="card-lg pxy15-25 bg-white radius-lg shadow-xl">
+                            <div class="d-flex align-items-center mb-3">
+                              <div class="form-check form-inline me-3">
+                                <div class="d-flex align-items-center">
+                                  <input class="form-check-input add-after2 me-2" type="radio" name="flexRadioDefault" id="radio1">
+                                  <label class="form-check-label d-flex align-items-center">By +/- <input type="email" class="form-control width-50 h-30 mx-1" placeholder="">%</label>
+                                </div>
+                              </div>
+                              <div class="form-check form-inline">
+                                <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                <label class="form-check-label" for="radio1">Unlimited</label>
+                              </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                              <div class="form-check form-inline me-3">
+                                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                <label class="form-check-label style-1" for="check1">Enable High/Low Pricing if applicable</label>
+                              </div>
+                              <div class="form-check form-inline">
+                                <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                <label class="form-check-label style-1" for="check1">Modify Material Price from Grid</label>
+                              </div>
+                            </div>
+                            <div class="form-check form-inline">
+                              <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                              <label class="form-check-label style-1" for="check1">Bulk Material Price Edit</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-end pad-15">
+                          <button class="btn btn-blue btn-md">save user group</button>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-userp-3" role="tabpanel" aria-labelledby="v-pills-userp-3-tab" tabindex="0">3</div>
+                      <div class="tab-pane fade" id="v-pills-userp-4" role="tabpanel" aria-labelledby="v-pills-userp-4-tab" tabindex="0">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+</html> 

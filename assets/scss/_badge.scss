@@ -1,0 +1,46 @@
+.badge{
+    padding: 10px;
+    font-size: $font-size-xs;
+    font-weight: $font-700;
+    border-radius: $radius-lg;
+    text-transform: $text-uppercase;
+    width: 48px;
+    &.badge-open{
+        color: $green;
+        border: 1px solid $green;
+    }
+    &.badge-paid{
+        color: $black;
+        border: 1px solid $black;
+    }
+}
+.bg-icon{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.bg-icon-square{
+    height: 14px;
+    width: 14px;
+    padding: 1px;
+}
+.box{
+    padding: 3px 5px;
+    line-height: 16px;
+    display: inline;
+    &.box-green{
+        border:1px solid $green;
+    }
+    &.box-secondary{
+        border:1px solid $secondary;
+    }
+    &.box-orange{
+        border:1px solid $orange;
+    }
+    &.box-red{
+        border:1px solid $red;
+    }
+    &.box-grey{
+        border:1px solid $grey-1;
+    }
+}

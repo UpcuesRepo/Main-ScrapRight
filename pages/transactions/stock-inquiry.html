@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <!-- FAVICON -->
+ <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+ <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+ <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+ <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+ <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+ <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+ <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+ <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+ <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+ <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+ <link rel="manifest" href="../images/favicon/manifest.json">
+ <meta name="msapplication-TileColor" content="#ffffff">
+ <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+ <meta name="theme-color" content="#ffffff">
+
+
+ <!-- CSS -->
+ <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+ <title>ScrapRight</title>
+</head>
+
+<body>
+ <div class="layout-1 style-5 wrapper">
+  <nav class="navbar main-navbar navbar-expand-xl">
+   <div class="d-flex justify-content-between w-100">
+    <div class="navbar-left-links d-flex">
+     <div class="logo-part">
+      <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+      <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+     </div>
+     <div class="link-part d-flex">
+      <a href="javascript:void(0);" class="nav-link">dashboard</a>
+      <div class="dropdown">
+       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        transactions
+       </a>
+       <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li>
+         <div class="btn-group dropend">
+          <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">
+           Action
+          </a>
+          <ul class="dropdown-menu">
+           <li><a class="dropdown-item active" href="#">Action</a></li>
+           <li><a class="dropdown-item" href="#">Another action</a></li>
+           <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+         </div>
+        </li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+       </ul>
+      </div>
+      <a href="javascript:void(0);" class="nav-link">materials</a>
+      <a href="javascript:void(0);" class="nav-link">customers</a>
+      <a href="javascript:void(0);" class="nav-link">reports</a>
+      <a href="javascript:void(0);" class="nav-link">admin</a>
+     </div>
+    </div>
+    <div class="navbar-right-part d-flex align-items-center">
+     <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+     <div class="text-caps color-orange fs-md fw-extrabold me-3">
+      <div class="username-tag">nick v</div>
+     </div>
+     <div class="icon-part">
+      <a href="#">
+       <span class="material-symbols-rounded">logout</span>
+      </a>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar-h-98 navbar-expand-xl">
+   <div class="color-secondary text-caps fw-extrabold fs-xl">Stock Inquiry</div>
+
+  </nav>
+  <div class="content-section bg-light-blue2 p-25 height-100">
+   <div class="bg-white radius-lg p-3 mb-3">
+    <div class="row">
+     <div class="col-md-4">
+      <div class="d-flex align-items-center mb-3">
+       <div class="w-30p fs-16 fw-bold">Agency</div>
+       <div class="form-group w-70p">
+        <input type="text" class="form-control h-36" />
+       </div>
+      </div>
+      <div class="d-flex align-items-center mb-3">
+       <div class="w-30p fs-16 fw-bold">VIN</div>
+       <div class="form-group w-70p">
+        <input type="text" class="form-control h-36" />
+       </div>
+      </div>
+      <div class="d-flex align-items-center mb-3">
+       <div class="w-30p fs-16 fw-bold">Make</div>
+       <div class="form-group w-70p">
+        <input type="text" class="form-control h-36" />
+       </div>
+      </div>
+      <div class="d-flex align-items-center mb-3">
+       <div class="w-30p fs-16 fw-bold">Model</div>
+       <div class="form-group w-70p">
+        <input type="text" class="form-control h-36" />
+       </div>
+      </div>
+
+
+     </div>
+     <div class="col-md-4">
+      <div class="d-flex align-items-center mb-3">
+       <div class="w-30p fs-16 fw-bold">Status</div>
+       <div class="form-group w-70p">
+        <select class="selectpicker">
+         <option value="-1">All</option>
+         <option value="0">Select</option>
+         <option value="1">Submitted</option>
+         <option value="2">Pending</option>
+         <option value="3">Excluded</option>
+
+        </select>
+       </div>
+      </div>
+      <div class="d-flex align-items-center mb-3">
+       <div class="w-30p fs-16 fw-bold">Style</div>
+       <div class="form-group w-70p">
+        <input type="text" class="form-control h-36" />
+       </div>
+      </div>
+      <div class="d-flex align-items-center mb-3">
+       <div class="w-30p fs-16 fw-bold">Color</div>
+       <div class="form-group w-70p">
+        <input type="text" class="form-control h-36" />
+       </div>
+      </div>
+      <div class="d-flex align-items-center mb-3">
+       <div class="w-30p fs-16 fw-bold">Name</div>
+       <div class="form-group w-70p">
+        <input type="text" class="form-control h-36" />
+       </div>
+      </div>
+
+     </div>
+     <div class="col-md-4">
+      <div class="d-flex align-items-center mb-3">
+       <div class="w-30p fs-16 fw-bold">Ticket From</div>
+       <div class="form-group w-30p">
+        <input type="date" class="form-control h-36" />
+       </div>
+       <div class="w-10p fs-16 fw-bold text-center">To</div>
+       <div class="form-group w-30p">
+        <input type="date" class="form-control h-36" />
+       </div>
+      </div>
+      <div class="d-flex align-items-center mb-3">
+       <div class="w-30p fs-16 fw-bold">Date Created</div>
+       <div class="form-group w-30p">
+        <input type="date" class="form-control h-36" />
+       </div>
+       <div class="w-10p fs-16 fw-bold text-center">To</div>
+       <div class="form-group w-30p">
+        <input type="date" class="form-control h-36" />
+       </div>
+      </div>
+      <div class="d-flex align-items-center mb-3">
+       <div class="w-30p">&nbsp;</div>
+       <div class="w-70p">
+        <div class="form-check mb-3">
+         <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+         <label class="form-check-label style-1" for="check1">
+          Include crushed?
+         </label>
+        </div>
+        <div class="form-check mb-3">
+         <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+         <label class="form-check-label style-1" for="check1">
+          Include sold?
+         </label>
+        </div>
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-md-12 text-center">
+      <hr/>
+      <button class="btn btn-blue btn-h40 me-2">Search</button>
+      <button class="btn btn-grey btn-h40 me-2">Clear</button>
+      <button class="btn btn-blue btn-h40 me-2">Export PDF</button>
+      <button class="btn btn-blue btn-h40 me-2">Add 123 CSV</button>
+      <button class="btn btn-blue btn-h40 me-2">ISO Claim Search CSV</button>
+      <button class="btn btn-blue btn-h40 me-2">MV7 Report</button>
+      <button class="btn btn-blue btn-h40 me-2">Texas DMV Report</button>
+      <button class="btn btn-blue btn-h40 me-2">Kansas D2 Report</button>
+      <button class="btn btn-blue btn-h40 me-2">Truck Report</button>
+     </div>
+    </div>
+   </div>
+
+   <div class="table-wrapper">
+    <table class="table table-bottom-no-border mb-0 table-font-16 text-left radius-lg overflow-hidden">
+     <thead>
+      <tr>
+       <th scope="col" class="fw-extrabold bg-light-blue-4">Stock No.</th>
+       <th scope="col" class="fw-extrabold bg-light-blue-4">VIN</th>
+       <th scope="col" class="fw-extrabold bg-light-blue-4">Make</th>
+       <th scope="col" class="fw-extrabold bg-light-blue-4">Model</th>
+       <th scope="col" class="fw-extrabold bg-light-blue-4">Name</th>
+       <th scope="col" class="fw-extrabold bg-light-blue-4">Date</th>
+       <th scope="col" class="fw-extrabold bg-light-blue-4">Status</th>
+       <th scope="col" class="fw-extrabold bg-light-blue-4"></th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>44566560</td>
+       <td>s4s6f4s6f4s</td>
+       <td>2008</td>
+       <td>Honda</td>
+       <td>CR-V</td>
+       <td>test</td>
+       <td>09/14/2023</td>
+       <td>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">Check</span>
+        </a>
+        <a href="#" class="me-2 position-relative" data-bs-toggle="tooltip" title="Tooltip on top">
+         <span class="material-symbols-rounded color-blackrgb6">Send</span>
+        </a>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">pending</span>
+        </a>
+        <a href="#" class="position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">download</span>
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>44566560</td>
+       <td>s4s6f4s6f4s</td>
+       <td>2008</td>
+       <td>Honda</td>
+       <td>CR-V</td>
+       <td>test</td>
+       <td>09/14/2023</td>
+       <td>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">Check</span>
+        </a>
+        <a href="#" class="me-2 position-relative" data-bs-toggle="tooltip" title="Tooltip on top">
+         <span class="material-symbols-rounded color-blackrgb6">Send</span>
+        </a>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">pending</span>
+        </a>
+        <a href="#" class="position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">download</span>
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>44566560</td>
+       <td>s4s6f4s6f4s</td>
+       <td>2008</td>
+       <td>Honda</td>
+       <td>CR-V</td>
+       <td>test</td>
+       <td>09/14/2023</td>
+       <td>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">Check</span>
+        </a>
+        <a href="#" class="me-2 position-relative" data-bs-toggle="tooltip" title="Tooltip on top">
+         <span class="material-symbols-rounded color-blackrgb6">Send</span>
+        </a>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">pending</span>
+        </a>
+        <a href="#" class="position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">download</span>
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>44566560</td>
+       <td>s4s6f4s6f4s</td>
+       <td>2008</td>
+       <td>Honda</td>
+       <td>CR-V</td>
+       <td>test</td>
+       <td>09/14/2023</td>
+       <td>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">Check</span>
+        </a>
+        <a href="#" class="me-2 position-relative" data-bs-toggle="tooltip" title="Tooltip on top">
+         <span class="material-symbols-rounded color-blackrgb6">Send</span>
+        </a>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">pending</span>
+        </a>
+        <a href="#" class="position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">download</span>
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>44566560</td>
+       <td>s4s6f4s6f4s</td>
+       <td>2008</td>
+       <td>Honda</td>
+       <td>CR-V</td>
+       <td>test</td>
+       <td>09/14/2023</td>
+       <td>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">Check</span>
+        </a>
+        <a href="#" class="me-2 position-relative" data-bs-toggle="tooltip" title="Tooltip on top">
+         <span class="material-symbols-rounded color-blackrgb6">Send</span>
+        </a>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">pending</span>
+        </a>
+        <a href="#" class="position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">download</span>
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>44566560</td>
+       <td>s4s6f4s6f4s</td>
+       <td>2008</td>
+       <td>Honda</td>
+       <td>CR-V</td>
+       <td>test</td>
+       <td>09/14/2023</td>
+       <td>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">Check</span>
+        </a>
+        <a href="#" class="me-2 position-relative" data-bs-toggle="tooltip" title="Tooltip on top">
+         <span class="material-symbols-rounded color-blackrgb6">Send</span>
+        </a>
+        <a href="#" class="me-2 position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">pending</span>
+        </a>
+        <a href="#" class="position-relative">
+         <span class="material-symbols-rounded color-blackrgb6">download</span>
+        </a>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </div>
+ <script src="../../assets/dist/js/all.min.js"></script>
+
+</body>
+
+</html>

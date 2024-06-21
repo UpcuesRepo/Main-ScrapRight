@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   
+  
+   <!-- CSS -->
+   <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+    <div class="layout-1 style-5 wrapper">
+        <nav class="navbar main-navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between w-100">
+                <div class="navbar-left-links d-flex">
+                    <div class="logo-part">
+                        <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+                        <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                    </div>
+                    <div class="link-part d-flex">
+                        <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                transactions
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <div class="btn-group dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="nav-link">materials</a>
+                        <a href="javascript:void(0);" class="nav-link">customers</a>
+                        <a href="javascript:void(0);" class="nav-link">reports</a>
+                        <a href="javascript:void(0);" class="nav-link">admin</a>
+                    </div>
+                </div>
+                <div class="navbar-right-part d-flex align-items-center">
+                    <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                    <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                        <div class="username-tag">nick v</div>
+                    </div>
+                    <div class="icon-part">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar-h-98 navbar-expand-xl">
+          <div class="color-secondary text-caps fw-extrabold fs-xl">DO NOT BUY AUDIT</div>
+            <div class="btn-row d-flex align-items-center justify-content-end mb-1 w-80p">
+            <div class="form-group w-23p me-2">
+              <label class="form-label">Ticket # / Customer / State / License#:</label>
+              <input type="email" class="form-control h-36" placeholder="">
+            </div>
+            <div class="form-group w-11p me-2">
+              <label class="form-label">From</label>
+              <input type="date" class="form-control h-36" placeholder="">
+            </div>
+            <div class="form-group w-38p">
+              <label class="form-label">To</label>
+              <div class="d-flex align-items-center">
+                <input type="date" class="form-control h-36 mw-28p me-2" placeholder="">
+                <div class="form-check form-inline">
+                  <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                  <label class="form-check-label style-1" for="check1">Show Only DNB</label>
+                </div>
+                <button class="btn btn-blue btn-xs ms-2"><span class="material-symbols-rounded">search</span></button>
+                <button class="btn btn-grey with-icon radius-sm mx-2 h-36">EXPORT REPORT</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="content-section bg-light-blue2 p-25 height-100">
+          <div class="table-wrapper">
+            <table class="table table-bottom-no-border mb-0 table-font-16 text-left radius-lg overflow-hidden">
+              <thead>
+                <tr>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">TICKET</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">CUSTOMER NAME</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">LICENCE</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">DOB</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">STATE</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">DATE</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">STATUS</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>44566560</td>
+                  <td>Amanda Hummer</td>
+                  <td>appcri</td>
+                  <td>09/14/2023</td>
+                  <td>AL</td>
+                  <td>04/11/2023 3:29 PM</td>
+                  <td>Check Failed</td>
+                  <td class="d-flex">
+                    <a href="#" class="me-2 position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 fs-22">cached</span>
+                    </a>
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="rgba(0, 0, 0, 0.6)" d="m17 21l-2.75-3l1.16-1.16L17 18.43l3.59-3.59l1.16 1.41M12.8 21H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2h14c1.11 0 2 .89 2 2v7.8c-.61-.35-1.28-.6-2-.72V5H5v14h7.08c.12.72.37 1.39.72 2m-.8-4H7v-2h5m2.68-2H7v-2h10v1.08c-.85.14-1.63.46-2.32.92M17 9H7V7h10"/></svg>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+  <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+.offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
+    --bs-offcanvas-width: 340px;
+    &.offcanvas-end{
+        top: 60px;
+    }
+    &#offcanvastickettitle{
+        top: 0;
+        width: 475px;
+        .offcanvas-body{
+            padding: 0;
+        }
+    }
+    &#offcanvasticket1{
+        width: 1235px;
+        height: 540px;
+        .offcanvas-body{
+            padding: 0;
+            .filter-content{
+                .ticket-left-part{
+                    border-right: 1px solid $light-blue-5;
+                    width: 52%;
+                    .ticket-row{
+                        border-bottom: 1px solid $light-blue-5;
+                        .ticket-part{
+                            padding: 20px;
+                            width: 100%;
+                            .right-part{
+                                .inner-right{
+                                    margin-left: 15px;
+                                }
+                            }
+                        }
+                        .ticket-row-inner-right{
+                            border-left: 1px solid $light-blue-5;
+                            padding: 20px;
+                        }
+                    }
+                    .customer-part{
+                        padding: 15px 20px;
+                        border-bottom: 1px solid $light-blue-5;
+                        .content-part{
+                            .info {
+                                margin-right: 20px;
+                                width: 100%;
+                                .right {
+                                    text-align: end;
+                                } 
+                                h6{
+                                    &:not(:last-child){
+                                        margin-bottom: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .signature-box {
+                        padding: 20px;
+                        .signature-card{
+                            width: 100%;
+                        }
+                    }
+                    .footer-strip{
+                        padding: 13px 15px;
+                    }
+                }
+                .ticket-right-part{
+                    width: 48%;
+                }
+            }
+        }
+    }
+  }
+.offcanvas-header{
+    position: relative;
+    padding: 0;
+    .offcanvas-close{
+        position: absolute;
+        left: -60px;
+        top: 10px;
+    }
+}
+.offcanvas-footer{
+    padding: 1rem 1rem;
+    border-top: 1px solid $light-blue-4;
+    .btn{
+        width: 100%;
+    }
+}
+.offcanvas-backdrop{
+    background-color: $primary;
+    top: 60px;
+    border: 1px solid $grey-7;
+    &.show{
+        opacity: 70%;
+        // &::before{
+        //     content: '';
+        //     position: absolute;
+        //     width: calc(100% - 340px);
+        //     height: 100%; 
+        // }
+    }
+}
+.offcanvas-body{
+    padding: 1rem;
+    position: relative; 
+}
+.backdrop-100{
+    .offcanvas-backdrop{
+        top: 0;
+    }
+}

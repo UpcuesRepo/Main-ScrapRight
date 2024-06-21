@@ -1,0 +1,304 @@
+.modal {
+   .modal-body {
+      /* min-height: 600px; */
+   }
+
+   .modal-dialog {
+      .modal-content {
+         .modal-header {
+            border-bottom: 1px solid $light-blue-4;
+
+            .modal-close-btn {
+               z-index: -1;
+               position: absolute;
+               right: -55px;
+               top: 0;
+            }
+         }
+
+
+         .modal-footer {
+            border-top: 1px solid $light-blue-4;
+            display: flex;
+            justify-content: center;
+         }
+      }
+
+      &.modal-sm {
+         max-width: 45.1%;
+      }
+
+      &.modal-basic-car {
+         .modal-content {
+            .modal-footer {
+               display: flex;
+               justify-content: center;
+
+               .btn {
+                  margin: 0 10px;
+                  text-transform: capitalize;
+               }
+            }
+         }
+      }
+
+      &.modal-lg {
+         max-width: 87%;
+
+         .modal-content {
+            .modal-body {
+               padding: 25px;
+               display: flex;
+
+               .left-part {
+                  margin-right: 25px;
+                  width: 50%;
+
+                  .input-row {
+                     &:not(:last-child) {
+                        margin-bottom: 15px;
+                     }
+
+                     .form-group {
+                        width: 100%;
+
+                        &:not(:last-child) {
+                           margin-right: 20px;
+                        }
+
+                        // .dropdown{
+                        //     button{
+                        //         width: 225px;
+                        //     }   
+                        // }
+                     }
+
+                     .form-box {
+                        .form-group {
+                           &.w-70p {
+                              width: 70%;
+                           }
+                        }
+                     }
+
+                     // a{
+                     //     &.icon-tag{
+                     //         &:visited{
+                     //             color: $black;
+                     //         }
+                     //     }
+                     // }
+                  }
+               }
+
+               .right-part {
+                  width: 50%;
+               }
+            }
+         }
+      }
+
+      &.modal-md {
+         max-width: 1170px;
+
+         .modal-content {
+            .modal-body {
+               padding: 0;
+            }
+         }
+      }
+
+      &.modal-905 {
+         max-width: 52.4%;
+
+         &.purchase-summary {
+            .modal-body {
+               padding: 0;
+
+               .grey-strip {
+                  background-color: $grey-4;
+                  padding: 30px 25px;
+               }
+            }
+         }
+
+         &.material-scanning {
+            .modal-header {
+               .head-part {
+                  .button-part {
+                     .btn-light {
+                        text-transform: uppercase;
+
+                        &.btn-md {
+                           padding: 10px;
+                        }
+
+                        span {
+                           font-size: 30px;
+                        }
+                     }
+                  }
+               }
+            }
+
+            .modal-body {
+               .bottom-part {
+                  .left-part {
+                     .button-part {
+                        .btn {
+                           &.btn-md {
+                              padding: 15px;
+                              font-size: $font-size-sm;
+                           }
+                        }
+                     }
+                  }
+
+                  .right-part {
+                     .calculator-section {
+                        table {
+                           tr {
+                              td {
+                                 .btn {
+                                    &.btn-xl {
+                                       height: 70px;
+                                       width: 70px;
+
+                                       &.btn-light {
+                                          font-size: $font-size-24;
+                                       }
+                                    }
+
+                                    &.btn-xxl {
+                                       height: 150px;
+                                       width: 70px;
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      &.modal-595 {
+         max-width: 34.1%;
+      }
+
+      &.modal-685 {
+         max-width: 39.3%;
+      }
+
+      &.modal-w-38p {
+         max-width: 38%;
+      }
+
+      &.modal-465 {
+         max-width: 26.6%;
+      }
+
+      &.modal-1100 {
+         max-width: 63.6%;
+      }
+
+      &.modal-1340 {
+         max-width: 77.5%;
+      }
+   }
+}
+
+.modal-backdrop.show {
+   background-color: $primary;
+   opacity: 70%;
+}
+
+.search-btn {
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 36px !important;
+   line-height: 8px;
+   border-radius: 0px 5px 5px 0px;
+}
+
+.table-scroll-h {
+   height: 300px;
+   overflow-y: scroll;
+}
+
+.modal {
+   .material-tabs {
+      .material-tab-inside {
+         .modal-checkbox {
+            margin-right: 10px;
+         }
+      }
+   }
+
+   .form-check {
+      &.form-inline {
+         margin-right: 10px;
+      }
+   }
+}
+
+.black-box {
+   background: black;
+   border-radius: 10px;
+
+   .form-control {
+      background: black;
+      border: 0px;
+      border-bottom: #424242 solid 1px;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+      height: 100px;
+      text-align: right;
+   }
+}
+
+.mr-3 {
+   margin-right: 1rem !important;
+}
+
+.font-lg {
+   font-size: 60px; 
+}
+
+.btn-large {
+   font-size: 1rem;
+   background-color: #555;
+   color: #fff;
+   border: 1px solid #d3d3d3;
+   text-align: center;
+   height: 80px;
+   line-height: 80px;
+   text-decoration: none;
+   width: 100%;
+   display: inline-block;
+   margin: 10px 0px;
+   border-radius: 10px;
+   &:hover{
+      background: #3384d8;
+      color: #fff;
+   }
+}
+
+.dropdown.bootstrap-select {
+   &.w-auto {
+      width: auto !important;
+   }
+}
+
+.package-popup{
+   .btn.btn-xl {
+      height: 70px;
+   }
+   .btn.btn-xxl {
+      height: 130px;
+   }
+}

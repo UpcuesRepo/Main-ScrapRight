@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <!-- FAVICON -->
+ <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+ <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+ <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+ <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+ <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+ <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+ <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+ <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+ <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+ <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+ <link rel="manifest" href="../images/favicon/manifest.json">
+ <meta name="msapplication-TileColor" content="#ffffff">
+ <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+ <meta name="theme-color" content="#ffffff">
+
+
+ <!-- CSS -->
+
+ <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+ <title>ScrapRight</title>
+</head>
+
+<body>
+
+ <div class="offcanvas offcanvas-end left-radius10" tabindex="-1" id="offcanvasWithBackdrop"
+  aria-labelledby="offcanvasWithBackdropLabel" aria-modal="true" role="dialog">
+  <div class="offcanvas-header">
+   <button class="btn btn-dark color-white btn-lg filter-close-btn offcanvas-close" data-bs-dismiss="offcanvas"
+    aria-label="Close"><span class="material-symbols-rounded">cancel</span></button>
+  </div>
+  <div class="offcanvas-body p-0">
+   <div class="new-ticket-leftmenu tabbing-bg">
+    <div class="inbound-tabbing">
+
+     <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade v-pills-cust show active" id="v-pills-inbound" role="tabpanel"
+       aria-labelledby="v-pills-inbound-tab" tabindex="0">
+       <button class="ticket-detail w-100 pad-10 border-bottom-tabbing">
+        <div class="d-flex justify-content-between mb-2">
+         <div class="text-caps fs-11 fw-extrabold txt-color">
+          TICKET NUMBER
+         </div>
+         <div class="text-caps fs-11 fw-extrabold txt-color">
+          #123456
+         </div>
+        </div>
+        <div class="text-caps fs-sm fw-extrabold txt-color text-align-left letter-space7 mb-2">
+         TICKET NUMBER
+        </div>
+        <div class="d-flex justify-content-between">
+         <div class="text-caps fs-11 fw-extrabold txt-color">
+          VEHICLE INFO
+         </div>
+         <div class="text-caps fs-11 fw-extrabold txt-color">
+          WHITE FORD NJE 123
+         </div>
+        </div>
+       </button>
+
+      </div>
+
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="offcanvas-footer">
+   <div class="row">
+    <div class="col-md-6"><button class="btn btn-grey btn-md">clear</button></div>
+    <div class="col-md-6"><button class="btn btn-blue btn-md">search</button></div>
+   </div>
+  </div>
+ </div>
+ <div class="layout-1 style-2 height-100">
+
+
+
+  <nav class="navbar main-navbar navbar-expand-xl">
+   <div class="d-flex justify-content-between w-100">
+    <div class="navbar-left-links d-flex">
+     <div class="logo-part">
+      <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+      <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+     </div>
+     <div class="link-part d-flex">
+      <a href="javascript:void(0);" class="nav-link">dashboard</a>
+      <!-- <a href="javascript:void(0);" class="nav-link">transactions</a> -->
+      <div class="dropdown">
+       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        transactions
+       </a>
+       <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li>
+         <div class="btn-group dropend">
+          <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">
+           Action
+          </a>
+          <ul class="dropdown-menu">
+           <li><a class="dropdown-item active" href="#">Action</a></li>
+           <li><a class="dropdown-item" href="#">Another action</a></li>
+           <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+         </div>
+        </li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+       </ul>
+      </div>
+      <a href="javascript:void(0);" class="nav-link">materials</a>
+      <a href="javascript:void(0);" class="nav-link">customers</a>
+      <a href="javascript:void(0);" class="nav-link">reports</a>
+      <a href="javascript:void(0);" class="nav-link">admin</a>
+     </div>
+    </div>
+    <div class="navbar-right-part d-flex align-items-center">
+     <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+     <div class="text-caps color-orange fs-md fw-extrabold me-3">
+      <div class="username-tag">nick v</div>
+     </div>
+     <div class="icon-part">
+      <a href="#">
+       <span class="material-symbols-rounded">logout</span>
+      </a>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <div class="d-flex height-100">
+
+   <div class="ticket-leftmenu w-35p">
+    <h6 class="color-dark fs-lg fw-bold text-center mb-0 py-3 border-bottom">Outbound Ticket</h6>
+    <div class="ticket-part d-flex justify-content-between align-items-center">
+     <div class="left-part">
+      <div class="color-dark fs-sm ">User: superadmin superadmin</div>
+     </div>
+     <div class="right-part d-flex align-items-center">
+      <div class="color-dark fs-sm">02/03/2024
+      </div>
+     </div>
+    </div>
+
+    <table class="table table-bottom-no-border border-radius0 mb-0">
+     <thead>
+      <tr>
+       <td class="fs-sm ">Ship To:</td>
+       <td class="fs-sm ">Sold To:</td>
+       <td class="fs-sm "><a href="">Edit</a></td>
+      </tr>
+      <tr>
+       <td class="fs-sm ">Contact Name:</td>
+       <td class="fs-sm ">Carrier Info:</td>
+       <td class="fs-sm "><a href="">Truck #:</a></td>
+      </tr>
+     </thead>
+
+    </table>
+    <div class="row p-2">
+        <div class="col-md-6">
+            <select id="drpCarrierName" class="selectpicker">
+                <option value="0">Select</option>
+                
+                <option value="5">
+                    SEA - CRIME LAB BABY</option>
+                
+                <option value="35">
+                    testing 123</option>
+                
+                <option value="37">
+                    TEST 23412341</option>
+                
+                <option value="66">
+                    MaxTest</option>
+                
+            </select>
+        </div>
+        <div class="col-md-6"><input type="text" class="form-control"></div>
+    </div>
+    <table class="table table-bottom-no-border border-radius0 mb-0">
+     <thead>
+      <tr>
+       <th scope="col" class="fs-sm fw-extrabold">tare</th>
+       <th scope="col" class="fs-sm fw-extrabold">gross</th>
+       <th scope="col" class="fs-sm fw-extrabold">net</th>
+       <th scope="col" class="fs-sm fw-extrabold">price</th>
+       <th scope="col" class="fs-sm fw-extrabold">total</th>
+      </tr>
+     </thead>
+     <tbody>
+
+      <tr>
+       <td>12</td>
+       <td>12</td>
+       <td>12</td>
+       <td>14</td>
+       <td>14</td>
+      </tr>
+      <tr>
+       <td>44</td>
+       <td>44</td>
+       <td>44</td>
+       <td>14</td>
+       <td>14</td>
+      </tr>
+      <tr>
+       <td>14</td>
+       <td>14</td>
+       <td>14</td>
+       <td>14</td>
+       <td>14</td>
+      </tr>
+     </tbody>
+    </table>
+    <table class="blue-table h-auto">
+     <tbody>
+      <tr>
+
+       <td>TOTAL <span class="color-green">$100.00</span></td>
+      </tr>
+     </tbody>
+    </table>
+    <div class="p-3">
+     <label>Note:</label>
+     <textarea class="form-control"></textarea>
+
+    </div>
+   </div>
+
+   <div class="content-section d-flex flex-column justify-content-between p-3 height-100 w-100">
+
+    <div class="bg-white p-3 radius-lg height-100">
+        <div class="inventory-order-tabs inventory-card bg-white mb-5">
+            <div class="nav nav-pills blue-strip" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <div class="nav-link-part">
+                <button class="nav-link btn btn-topborder btn-topborder-blue me-2 active" id="v-pills-customer-tab" data-bs-toggle="pill" data-bs-target="#v-pills-customer" type="button" role="tab" aria-controls="v-pills-customer" aria-selected="true">Basic Info</button>
+                <button class="nav-link btn btn-topborder btn-topborder-blue me-2" id="v-pills-contract-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contract" type="button" role="tab" aria-controls="v-pills-contract" aria-selected="false" tabindex="-1">Carrier</button>
+                <button class="nav-link btn btn-topborder btn-topborder-blue me-2" id="v-pills-shipper-tab" data-bs-toggle="pill" data-bs-target="#v-pills-shipper" type="button" role="tab" aria-controls="v-pills-shipper" aria-selected="false" tabindex="-1">Misc</button>
+                
+              </div>
+              
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade v-pills-cust active show" id="v-pills-customer" role="tabpanel" aria-labelledby="v-pills-customer-tab" tabindex="0">
+                
+                <div class="p-20">
+                    <div class="row">
+                        <div class="col-4">
+
+                            <div class="title-strip d-flex align-items-center mb-2 radius-lg">
+                                <div class="">
+                                <h6 class="fs-md text-caps fw-extrabold mb-0">Sold To</h6>
+                                </div>
+                                
+                            </div>
+
+                            <div class="form-content-box">
+                                <div class="combo-box bg-grey-4">
+                                <div class="blue-box bg-form-box-blue3">
+                                    <div class="form-group">
+                                    
+                                    <div class="dropdown bootstrap-select">
+                                        <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Search by Business</option>
+                                            <option data-tokens="mustard">2</option>
+                                            <option data-tokens="frosting">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="form-content-part">
+                                    
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div class="form-group w-30p">
+                                                
+                                                <input type="email" class="form-control h-36" placeholder="City">
+                                            </div>
+
+                                            <div class="form-group w-30p">
+                                                
+                                                <div class="dropdown bootstrap-select"><select class="selectpicker" data-live-search="true">
+                                                <option data-tokens="ketchup mustard">State</option>
+                                                <option data-tokens="mustard">2</option>
+                                                <option data-tokens="frosting">3</option>
+                                                </select>
+                                            </div>
+                                            </div>
+
+                                            <div class="form-group w-30p">
+                                                
+                                                <input type="email" class="form-control h-36" placeholder="Zip">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Fax">
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Email">
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Website">
+                                        </div>
+                                </div>
+
+
+                              
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+
+                            <div class="title-strip d-flex align-items-center mb-2 radius-lg">
+                                <div class="">
+                                <h6 class="fs-md text-caps fw-extrabold mb-0">SHIP TO</h6>
+                                </div>
+                                
+                            </div>
+
+                            <div class="form-content-box">
+                                <div class="combo-box bg-grey-4">
+                                <div class="blue-box bg-form-box-blue3">
+                                    <div class="d-flex justify-content-between mb-2">
+                                    <div class="form-group w-55p">
+                                    
+                                    <div class="dropdown bootstrap-select">
+                                        <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Search by Business</option>
+                                            <option data-tokens="mustard">2</option>
+                                            <option data-tokens="frosting">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-check form-inline ms-3">
+                                    <input class="form-check-input add-after mt-1" type="checkbox" value="" id="check1">
+                                    <label class="form-check-label style-1" for="check1">
+                                      Same as Sold To
+                                    </label>
+                                  </div>
+                                </div>
+                            </div>
+
+                                <div class="form-content-part">
+                                    
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div class="form-group w-30p">
+                                                
+                                                <input type="email" class="form-control h-36" placeholder="City">
+                                            </div>
+
+                                            <div class="form-group w-30p">
+                                                
+                                                <div class="dropdown bootstrap-select"><select class="selectpicker" data-live-search="true">
+                                                <option data-tokens="ketchup mustard">State</option>
+                                                <option data-tokens="mustard">2</option>
+                                                <option data-tokens="frosting">3</option>
+                                                </select>
+                                            </div>
+                                            </div>
+
+                                            <div class="form-group w-30p">
+                                                
+                                                <input type="email" class="form-control h-36" placeholder="Zip">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Fax">
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Email">
+                                        </div>
+
+                                        <div class="form-check form-inline mb-2">
+                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                            <label class="form-check-label style-1" for="check1">
+                                                Charge 3rd Party Freight to
+                                            </label>
+                                          </div>
+                                </div>
+
+
+                              
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+
+                            <div class="title-strip d-flex align-items-center mb-2 radius-lg">
+                                <div class="">
+                                <h6 class="fs-md text-caps fw-extrabold mb-0">CONTACT PERSON</h6>
+                                </div>
+                                
+                            </div>
+
+                            <div class="form-content-box">
+                                <div class="combo-box bg-grey-4">
+                                <div class="blue-box bg-form-box-blue3">
+                                   
+                                    <div class="form-group">
+                                    
+                                    <div class="dropdown bootstrap-select">
+                                        <select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">Search by Business</option>
+                                            <option data-tokens="mustard">2</option>
+                                            <option data-tokens="frosting">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                               
+                                
+                            </div>
+
+                                <div class="form-content-part">
+                                    
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div class="form-group w-30p">
+                                                
+                                                <input type="email" class="form-control h-36" placeholder="City">
+                                            </div>
+
+                                            <div class="form-group w-30p">
+                                                
+                                                <div class="dropdown bootstrap-select"><select class="selectpicker" data-live-search="true">
+                                                <option data-tokens="ketchup mustard">State</option>
+                                                <option data-tokens="mustard">2</option>
+                                                <option data-tokens="frosting">3</option>
+                                                </select>
+                                            </div>
+                                            </div>
+
+                                            <div class="form-group w-30p">
+                                                
+                                                <input type="email" class="form-control h-36" placeholder="Zip">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Fax">
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            
+                                            <input type="text" class="form-control h-36" placeholder="Email">
+                                        </div>
+
+                                        <div class="form-check form-inline mb-2">
+                                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                            <label class="form-check-label style-1" for="check1">
+                                                Charge 3rd Party Freight to
+                                            </label>
+                                          </div>
+                                </div>
+
+
+                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                
+              </div>
+              <div class="tab-pane fade v-pills-cust" id="v-pills-contract" role="tabpane2" aria-labelledby="v-pills-contract-tab" tabindex="0">
+                <div class="p-20">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="title-strip d-flex align-items-center mb-2 radius-lg">
+                                <div class="">
+                                <h6 class="fs-md text-caps fw-extrabold mb-0">CARRIER INFO</h6>
+                                </div>
+                                
+                            </div>
+
+                            <div class="form-content-box">
+                                <div class="combo-box bg-grey-4">
+                                
+                                <div class="form-content-part">
+                                    <div class="d-flex justify-content-between ">
+                                            <div class="form-group w-30p mb-2">
+                                    
+                                                <div class="dropdown bootstrap-select">
+                                                    <label class="form-label">Carrier:</label>
+                                                    <select class="selectpicker" data-live-search="true">
+                                                        <option data-tokens="ketchup mustard">Carrier</option>
+                                                        <option data-tokens="mustard">2</option>
+                                                        <option data-tokens="frosting">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                      
+                                   
+
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">Truck No.:</label>
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">Vessel Name :</label>
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">Trailer No. :</label>
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">Reference No :</label>
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">SID:</label>
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">Container No :</label>
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+
+                                        <div class="form-group w-30p">
+                                            <label class="form-label">Container Size :</label>
+                                            <div class="dropdown bootstrap-select"><select class="selectpicker" data-live-search="true">
+                                            <option data-tokens="ketchup mustard">State</option>
+                                            <option data-tokens="mustard">2</option>
+                                            <option data-tokens="frosting">3</option>
+                                            </select>
+                                        </div>
+                                        </div>
+
+                                        <div class="form-group mb-2 w-30p">
+                                            
+                                        </div>
+                                    </div>
+                                        
+
+                                    
+                                </div>
+
+
+                              
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        
+                    </div>
+                </div>
+              </div>
+              <div class="tab-pane fade v-pills-cust" id="v-pills-shipper" role="tabpanel" aria-labelledby="v-pills-shipper-tab" tabindex="0">
+                <div class="p-20">
+                    <div class="row">
+                        <div class="col-12">
+
+                           
+
+                            <div class="form-content-box">
+                                <div class="combo-box bg-grey-4">
+                                
+                                <div class="form-content-part">
+                                    <div class="d-flex justify-content-between ">
+                                            <div class="form-group w-30p mb-2">
+                                    
+                                                <div class="dropdown bootstrap-select">
+                                                    <label class="form-label">Payment Terms:</label>
+                                                    <select class="selectpicker" data-live-search="true">
+                                                        <option data-tokens="ketchup mustard">Carrier</option>
+                                                        <option data-tokens="mustard">2</option>
+                                                        <option data-tokens="frosting">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                      
+                                   
+
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">Customer PO# :</label>
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">Freight Charge :</label>
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">Booking No. :</label>
+                                            <input type="text" class="form-control h-36" placeholder="Street">
+                                        </div>
+
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">COD Amount :</label>
+                                            <input type="text" class="form-control h-36" placeholder="COD Amount">
+                                        </div>
+
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">Seal No. :</label>
+                                            <input type="text" class="form-control h-36" placeholder="Seal No.">
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">FOB :</label>
+                                            <input type="text" class="form-control h-36" placeholder="FOB">
+                                        </div>
+
+                                        <div class="form-group w-30p">
+                                            <label class="form-label">Appointment# :</label>
+                                            <input type="text" class="form-control h-36" placeholder="Appointment">
+                                        </div>
+                                        
+
+                                        <div class="form-group w-30p">
+                                            <label class="form-label">Special Instruction :</label>
+                                            <input type="text" class="form-control h-36" placeholder="Appointment">
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="form-group mb-2 w-30p">
+                                            <label class="form-label">Mill Ticket No. :</label>
+                                            <input type="text" class="form-control h-36" placeholder="FOB">
+                                        </div>
+
+                                        <div class="form-group w-30p">
+                                            <label class="form-label">Note :</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+                                        </div>
+                                        
+
+                                        <div class="form-group w-30p">
+                                           
+                                        </div>
+                                    </div>
+                                        
+
+                                    
+                                </div>
+
+
+                              
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="btn-part justify-content-center align-items-center d-flex bg-grey-4 p-20">
+                <button class="btn btn-blue btn-h40 me-3">save</button>
+                <button class="btn btn-grey btn-h40">close</button>
+              </div>
+        </div>
+
+    </div>
+
+   </div>
+
+   
+   
+  </div>
+
+ </div>
+ <script src="../../assets/dist/js/all.min.js"></script>
+</body>
+
+</html>

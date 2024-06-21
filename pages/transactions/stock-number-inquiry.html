@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- CSS -->
+  <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+  <title>ScrapRight</title>
+</head>
+
+<body>
+  <div class="layout-1 style-5 wrapper">
+    <nav class="navbar main-navbar navbar-expand-xl">
+      <div class="d-flex justify-content-between w-100">
+        <div class="navbar-left-links d-flex">
+          <div class="logo-part">
+            <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+            <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+          </div>
+          <div class="link-part d-flex">
+            <a href="javascript:void(0);" class="nav-link">dashboard</a>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                transactions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <div class="btn-group dropend">
+                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Action
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <a href="javascript:void(0);" class="nav-link">materials</a>
+            <a href="javascript:void(0);" class="nav-link">customers</a>
+            <a href="javascript:void(0);" class="nav-link">reports</a>
+            <a href="javascript:void(0);" class="nav-link">admin</a>
+          </div>
+        </div>
+        <div class="navbar-right-part d-flex align-items-center">
+          <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+          <div class="text-caps color-orange fs-md fw-extrabold me-3">
+            <div class="username-tag">nick v</div>
+          </div>
+          <div class="icon-part">
+            <a href="#">
+              <span class="material-symbols-rounded">logout</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar-h-98 navbar-expand-xl">
+      <div class="color-secondary text-caps  d-inline-flex fw-extrabold fs-xl">Stock Number Inquiry
+        <span class="text-dark align-items-center d-inline-flex mx-3">
+          <span class="material-symbols-rounded form-inline">
+            picture_as_pdf
+          </span> 24-1043</span>
+      </div>
+      <div class="btn-row d-flex align-items-center justify-content-end mb-1 w-50p">
+        <button class="btn btn-grey with-icon radius-sm margin-t-20 me-2 h-36">
+          <span class="material-symbols-rounded me-2">arrow_back_ios</span>Back to Search Result</button>
+      </div>
+    </nav>
+    <div class="content-section bg-light-blue2 p-25 height-100">
+      <div class="bg-white radius-lg p-3 mb-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="coin-dispenser-card position-relative ">
+              <div class="border-bottom-grey p-20 ">
+                <div class="title fs-14 fw-bold bg-white line-height20 px-1">General Information</div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Date Created</div>
+                      <div class="form-group w-70p">
+                        <input type="date" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Date Received</div>
+                      <div class="form-group w-70p">
+                        <input type="date" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">VIN</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Year</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Make</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Modal</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Style</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Color</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Mileage</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">State</div>
+                      <div class="form-group w-70p">
+                        <select class="selectpicker">
+                          <option></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Tag No.</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Title Flag</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Title</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Mercury Switch</div>
+                      <div class="form-group w-70p">
+                        <div class="form-check form-inline mb-1">
+                          <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                          <label class="form-check-label style-1" for="check1">
+                            Removed or N/A
+                          </label>
+                        </div>
+                        <div class="form-check form-inline mb-1">
+                          <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                          <label class="form-check-label style-1" for="check1">
+                            Not Removed
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">VIN Title Attachment</div>
+                      <div class="form-group w-70p">
+                        <input type="file" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                      <div class="w-20p fs-14 fw-bold">Ticket Range</div>
+                      <div class="d-flex justify-content-between align-items-center w-80p">
+                        <div class="form-group w-45p">
+                          <input type="date" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="fs-14 fw-bold">to</div>
+                        <div class="form-group w-45p">
+                          <input type="date" class="form-control h-36" placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="coin-dispenser-card position-relative ">
+              <div class="border-bottom-grey p-20 row">
+                <div class="title fs-14 fw-bold bg-white line-height20 px-1">Purchase Information</div>
+
+                <div class="d-flex align-items-center mb-3">
+                  <div class="w-30p fs-14 fw-bold">Ticket Number</div>
+                  <div class="form-group w-70p">
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <div class="w-30p fs-14 fw-bold">Name</div>
+                  <div class="form-group w-70p d-flex justified-content-between">
+                    <input type="text" class="form-control me-1" placeholder="First Name" />
+                    <input type="text" class="form-control" placeholder="Last Name" />
+
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <div class="w-30p fs-14 fw-bold">Business Name</div>
+                  <div class="form-group w-70p">
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <div class="w-30p fs-14 fw-bold">Price</div>
+                  <div class="form-group w-70p">
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <div class="w-30p fs-14 fw-bold">Vehicle Location</div>
+                  <div class="form-group w-70p">
+                    <div class=" d-flex">
+                      <input type="text" class="form-control form-inline" placeholder="Street" />
+                      <input type="text" class="form-control form-inline" placeholder="city" />
+                      <select class="selectpicker form-inline">
+                        <option>State</option>
+                      </select>
+                      <input type="text" class="form-control form-inline" placeholder="Zip" />
+                    </div>
+                    <div class="form-check form-inline mb-1 mt-2">
+                      <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                      <label class="form-check-label style-1" for="check1">
+                        Use Customer / Biz Address
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="w-30p fs-14 fw-bold">Towing Company</div>
+                  <div class="form-group w-70p">
+                    <div class="row">
+                      <div class="col-md-6"> <input type="text" class="form-control" placeholder="Company Name" /></div>
+                      <div class="col-md-6">
+                        <div class="form-check form-inline mb-3 mt-2">
+                          <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                          <label class="form-check-label style-1" for="check1">
+                            Third Party
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class=" row">
+                      <div class="col-md-6">
+                        <select class="selectpicker w-100">
+                          <option>Select Operator</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <select class="selectpicker w-100">
+                          <option>Select</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class=" d-flex mt-3">
+                      <input type="text" class="form-control form-inline" placeholder="Street" />
+                      <input type="text" class="form-control form-inline" placeholder="city" />
+                      <select class="selectpicker form-inline">
+                        <option>State</option>
+                      </select>
+                      <input type="text" class="form-control form-inline" placeholder="Zip" />
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="coin-dispenser-card position-relative mt-4">
+              <div class="border-bottom-grey p-20">
+                <div class="title fs-14 fw-bold bg-white line-height20 px-1">Sale Information</div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Transaction Number</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Date Sold</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Sale Price</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Disposition Text</div>
+                      <div class="form-group w-70p">
+                        <select class="selectpicker">
+                          <option></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Company Name</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Name</div>
+                      <div class="form-group w-70p d-flex justified-content-between">
+                        <input type="text" class="form-control me-1" placeholder="First Name" />
+                        <input type="text" class="form-control" placeholder="Last Name" />
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="d-flex align-items-center">
+                      <div class="w-30p fs-14 fw-bold">Export Out of USA</div>
+                      <div class="form-group w-70p">
+                        <div class="form-check form-inline mt-2">
+                          <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="coin-dispenser-card position-relative mt-4">
+              <div class="border-bottom-grey pxy40-20">
+                <div class="title fs-14 fw-bold bg-white line-height20 px-1">Environmental Study</div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Environmental Study</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Action Performed</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="w-30p fs-14 fw-bold">Inspection By</div>
+                      <div class="form-group w-70p">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+              <!-- <div class="p-20 d-flex justify-content-end">
+        <button class="btn btn-blue btn-h40 me-2">CANCEL</button>
+        <button class="btn btn-blue with-icon btn-h40 me-2"><span
+          class="material-symbols-rounded">download</span>DOWNLOAD FILE</button>
+        <button class="btn btn-blue btn-h40">UPLOAD TICKET INFORMATION</button>
+       </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../assets/dist/js/all.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   
+  
+   <!-- CSS -->
+   <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+    <div class="layout-1 style-5 wrapper">
+        <nav class="navbar main-navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between w-100">
+                <div class="navbar-left-links d-flex">
+                    <div class="logo-part">
+                        <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+                        <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                    </div>
+                    <div class="link-part d-flex">
+                        <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                transactions
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <div class="btn-group dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="nav-link">materials</a>
+                        <a href="javascript:void(0);" class="nav-link">customers</a>
+                        <a href="javascript:void(0);" class="nav-link">reports</a>
+                        <a href="javascript:void(0);" class="nav-link">admin</a>
+                    </div>
+                </div>
+                <div class="navbar-right-part d-flex align-items-center">
+                    <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                    <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                        <div class="username-tag">nick v</div>
+                    </div>
+                    <div class="icon-part">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar-h-98 navbar-expand-xl">
+          <div class="color-secondary text-caps fw-extrabold fs-xl me-5">PRICE LIST</div>
+          <div class="btn-row d-flex align-items-center mb-1 w-55p">
+              <div class="form-group mw-28p me-2">
+                  <input type="email" class="form-control h-36" placeholder="">
+              </div>
+              <button class="btn btn-blue with-icon h-36 radius-sm me-2">apply</button>
+              <button class="btn btn-dark with-icon h-36 radius-sm me-2">clear expiration dates</button>
+          </div>
+          <button class="btn btn-border with-icon"><img src="../../images/icons/briefcase_plus_outline_icon.svg" class="me-2" alt="">add price list</button>
+        </nav>
+        <div class="content-section bg-light-blue2 p-25 height-100">
+          <div class="table-wrapper">
+            <table class="table table-bottom-no-border mb-0 table-font-16 radius-lg overflow-hidden">
+              <thead>
+                <tr>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">TITLE</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">DESCRIPTION</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4"></th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4"></th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">EXPIRATION DATE</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">GLOBAL</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4">QUALIFIED</th>
+                  <th scope="col" class="fw-extrabold bg-light-blue-4"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Alloy Price</td>
+                  <td>Candy cane</td>
+                  <td></td>
+                  <td></td>
+                  <td>09/01/2023</td>
+                  <td class="d-flex justify-content-center">
+                    <div class="bg-icon bg-green">
+                      <span class="material-symbols-rounded color-white fs-xl">done</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex justify-content-center">
+                      <div class="bg-icon bg-green">
+                        <span class="material-symbols-rounded color-white fs-xl">done</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="d-flex">
+                    <a href="#" class="position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 me-2">content_copy</span>
+                    </a>
+                    <a href="#" class="position-relative mx-2">
+                      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-table-arrow-down" width="24" height="24" fill="rgba(0, 0, 0, 0.6)" viewBox="0 0 24 24"><path d="M4 3H18C19.11 3 20 3.9 20 5V12.08C18.45 11.82 16.92 12.18 15.68 13H12V17H13.08C12.97 17.68 12.97 18.35 13.08 19H4C2.9 19 2 18.11 2 17V5C2 3.9 2.9 3 4 3M4 7V11H10V7H4M12 7V11H18V7H12M4 13V17H10V13H4M15.94 18.5H17.94V14.5H19.94V18.5H21.94L18.94 21.5L15.94 18.5" /></svg>
+                    </a>
+                    <a href="#" class="position-relative me-2">
+                      <?xml version="1.0" ?><svg fill="none" height="24" stroke-width="1.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 18" stroke="rgba(0, 0, 0, 0.6)" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V14M12 14L15.5 10.5M12 14L8.5 10.5" stroke="rgba(0, 0, 0, 0.6)" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4Z" stroke="rgba(0, 0, 0, 0.6)" stroke-width="1.5"/></svg>
+                    </a>
+                    <a href="#" class="position-relative me-2">
+                      <span class="material-symbols-rounded color-blackrgb6 me-2">edit</span>
+                    </a>
+                    <a href="#" class="position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6">delete</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Alloy Price</td>
+                  <td>Candy cane</td>
+                  <td></td>
+                  <td></td>
+                  <td>09/01/2023</td>
+                  <td class="d-flex justify-content-center">
+                    <div class="bg-icon bg-green">
+                      <span class="material-symbols-rounded color-white fs-xl">done</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex justify-content-center">
+                      <div class="bg-icon bg-green">
+                        <span class="material-symbols-rounded color-white fs-xl">done</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="d-flex">
+                    <a href="#" class="position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 me-2">content_copy</span>
+                    </a>
+                    <a href="#" class="position-relative mx-2">
+                      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-table-arrow-down" width="24" height="24" fill="rgba(0, 0, 0, 0.6)" viewBox="0 0 24 24"><path d="M4 3H18C19.11 3 20 3.9 20 5V12.08C18.45 11.82 16.92 12.18 15.68 13H12V17H13.08C12.97 17.68 12.97 18.35 13.08 19H4C2.9 19 2 18.11 2 17V5C2 3.9 2.9 3 4 3M4 7V11H10V7H4M12 7V11H18V7H12M4 13V17H10V13H4M15.94 18.5H17.94V14.5H19.94V18.5H21.94L18.94 21.5L15.94 18.5" /></svg>
+                    </a>
+                    <a href="#" class="position-relative me-2">
+                      <?xml version="1.0" ?><svg fill="none" height="24" stroke-width="1.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 18" stroke="rgba(0, 0, 0, 0.6)" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V14M12 14L15.5 10.5M12 14L8.5 10.5" stroke="rgba(0, 0, 0, 0.6)" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4Z" stroke="rgba(0, 0, 0, 0.6)" stroke-width="1.5"/></svg>
+                    </a>
+                    <a href="#" class="position-relative me-2">
+                      <span class="material-symbols-rounded color-blackrgb6 me-2">edit</span>
+                    </a>
+                    <a href="#" class="position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6">delete</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Alloy Price</td>
+                  <td>Candy cane</td>
+                  <td></td>
+                  <td></td>
+                  <td>09/01/2023</td>
+                  <td class="d-flex justify-content-center">
+                    <div class="bg-icon bg-green">
+                      <span class="material-symbols-rounded color-white fs-xl">done</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex justify-content-center">
+                      <div class="bg-icon bg-green">
+                        <span class="material-symbols-rounded color-white fs-xl">done</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="d-flex">
+                    <a href="#" class="position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 me-2">content_copy</span>
+                    </a>
+                    <a href="#" class="position-relative mx-2">
+                      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-table-arrow-down" width="24" height="24" fill="rgba(0, 0, 0, 0.6)" viewBox="0 0 24 24"><path d="M4 3H18C19.11 3 20 3.9 20 5V12.08C18.45 11.82 16.92 12.18 15.68 13H12V17H13.08C12.97 17.68 12.97 18.35 13.08 19H4C2.9 19 2 18.11 2 17V5C2 3.9 2.9 3 4 3M4 7V11H10V7H4M12 7V11H18V7H12M4 13V17H10V13H4M15.94 18.5H17.94V14.5H19.94V18.5H21.94L18.94 21.5L15.94 18.5" /></svg>
+                    </a>
+                    <a href="#" class="position-relative me-2">
+                      <?xml version="1.0" ?><svg fill="none" height="24" stroke-width="1.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 18" stroke="rgba(0, 0, 0, 0.6)" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V14M12 14L15.5 10.5M12 14L8.5 10.5" stroke="rgba(0, 0, 0, 0.6)" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4Z" stroke="rgba(0, 0, 0, 0.6)" stroke-width="1.5"/></svg>
+                    </a>
+                    <a href="#" class="position-relative me-2">
+                      <span class="material-symbols-rounded color-blackrgb6 me-2">edit</span>
+                    </a>
+                    <a href="#" class="position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6">delete</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Alloy Price</td>
+                  <td>Candy cane</td>
+                  <td></td>
+                  <td></td>
+                  <td>09/01/2023</td>
+                  <td class="d-flex justify-content-center">
+                    <div class="bg-icon bg-green">
+                      <span class="material-symbols-rounded color-white fs-xl">done</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex justify-content-center">
+                      <div class="bg-icon bg-green">
+                        <span class="material-symbols-rounded color-white fs-xl">done</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="d-flex">
+                    <a href="#" class="position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6 me-2">content_copy</span>
+                    </a>
+                    <a href="#" class="position-relative mx-2">
+                      <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-table-arrow-down" width="24" height="24" fill="rgba(0, 0, 0, 0.6)" viewBox="0 0 24 24"><path d="M4 3H18C19.11 3 20 3.9 20 5V12.08C18.45 11.82 16.92 12.18 15.68 13H12V17H13.08C12.97 17.68 12.97 18.35 13.08 19H4C2.9 19 2 18.11 2 17V5C2 3.9 2.9 3 4 3M4 7V11H10V7H4M12 7V11H18V7H12M4 13V17H10V13H4M15.94 18.5H17.94V14.5H19.94V18.5H21.94L18.94 21.5L15.94 18.5" /></svg>
+                    </a>
+                    <a href="#" class="position-relative me-2">
+                      <?xml version="1.0" ?><svg fill="none" height="24" stroke-width="1.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 18" stroke="rgba(0, 0, 0, 0.6)" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V14M12 14L15.5 10.5M12 14L8.5 10.5" stroke="rgba(0, 0, 0, 0.6)" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4Z" stroke="rgba(0, 0, 0, 0.6)" stroke-width="1.5"/></svg>
+                    </a>
+                    <a href="#" class="position-relative me-2">
+                      <span class="material-symbols-rounded color-blackrgb6 me-2">edit</span>
+                    </a>
+                    <a href="#" class="position-relative">
+                      <span class="material-symbols-rounded color-blackrgb6">delete</span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+  <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+</html>

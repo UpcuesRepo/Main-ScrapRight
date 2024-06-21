@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+   
+    <!-- CSS -->
+    <link href="../assets/dist/css/default.css" rel="stylesheet" />
+    <title>ScrapRight</title>
+  </head>
+  <body>
+      <div class="desktop-filter">
+        <div class="offcanvas offcanvas-end left-radius10" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+          
+            <div class="offcanvas-header">
+              <button class="btn btn-dark color-white btn-lg filter-close-btn offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"><span class="material-symbols-rounded">cancel</span></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="form-group mb-3">
+                    <label class="form-label">Search by Customer / Container no</label>
+                    <input type="email" class="form-control h-36" placeholder="">
+                </div>
+                <div class="form-group mb-4">
+                    <label class="form-label">Trip Type</label>
+                    <select class="selectpicker" data-live-search="true">
+                      <option data-tokens="ketchup mustard">1</option>
+                      <option data-tokens="mustard">2</option>
+                      <option data-tokens="frosting">3</option>
+                    </select>
+                </div>
+                <div class="bullet-tag mb-3">
+                    <span class="bg-yellow"></span>
+                    <h6 class="color-grey fs-sm fw-semibold ">allocated</h6>
+                </div>
+                <div class="bullet-tag mb-3">
+                    <span class="bg-red"></span>
+                    <h6 class="color-grey fs-sm fw-semibold ">Inprogress</h6>
+                </div>
+                <div class="bullet-tag mb-3">
+                    <span class="bg-secondary"></span>
+                    <h6 class="color-grey fs-sm fw-semibold ">Show All</h6>
+                </div>
+                <div class="bullet-tag mb-4">
+                    <span class="bg-green"></span>
+                    <h6 class="color-grey fs-sm fw-semibold ">Only U-Fill</h6>
+                </div>
+                <h6 class="color-black fs-md fw-bold">Schedule Date</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">From</label>
+                            <input type="date" class="form-control h-36" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">To</label>
+                            <input type="date" class="form-control h-36" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer">
+              <div class="row">
+                <div class="col-md-6"><button class="btn btn-grey btn-md">clear</button></div>
+                <div class="col-md-6"><button class="btn btn-blue btn-md">search</button></div>
+              </div>
+            </div>
+        </div>
+        <!-- add top parent class "backdrop-100" to get 100% height back drop  -->
+        <div class="offcanvas offcanvas-top border-radius0" tabindex="-1" id="offcanvasticket1" aria-labelledby="offcanvasWithBackdropLabel">
+          <div class="offcanvas-body">
+              <div class="filter-content d-flex">
+                <div class="ticket-left-part">
+                  <div class="ticket-row d-flex">
+                    <div class="ticket-part d-flex justify-content-between align-items-center">
+                      <div class="left-part">
+                          <h6 class="color-grey-6 fs-md fw-bold">Ticket#:</h6>
+                          <div class="ticket-num d-flex">
+                              <h6 class="color-secondary fs-lg fw-bold me-2 mb-0">4603</h6>
+                              <a href="#"><span class="material-symbols-rounded me-2">merge</span></a>
+                              <a href="#"><span class="material-symbols-rounded">cancel</span></a>
+                          </div>
+                      </div>
+                      <div class="right-part d-flex align-items-center">
+                          <div class="inner-left">
+                              <h6 class="color-grey-6 fs-15 fw-bold">Start:</h6>
+                              <h6 class="color-grey-6 fs-15 fw-bold mb-0">End:</h6>
+                          </div>
+                          <div class="inner-right">
+                              <h6 class="color-black fs-md fw-bold">05:24:51am</h6>
+                              <h6 class="color-black fs-md fw-bold mb-0">03:06:57pm</h6>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="ticket-row-inner-right w-40p">
+                      <h6 class="color-grey-6 fs-15 fw-bold">User:<span class="fs-md color-secondary ms-2">Nick V</span></h6>
+                      <div class="form-group w-100">
+                          <input type="date" class="form-control h-36" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customer-part">
+                    <div class="heading d-flex justify-content-between align-items-center mb-2">
+                        <h6 class="color-black fs-md fw-bold mb-0">Customer Info:</h6>
+                        <div class="icon d-flex">
+                            <a href="#"><span class="material-symbols-rounded me-2">edit</span></a>
+                            <a href="#"><span class="material-symbols-rounded">search</span></a>
+                        </div>
+                    </div>
+                    <div class="content-part d-flex justify-content-between">
+                        <div class="info d-flex justify-content-between">
+                            <div class="left">
+                                <h6 class="color-black fs-sm">Name</h6>
+                                <h6 class="color-black fs-sm">ID/License</h6>
+                                <h6 class="color-black fs-sm">Make/Model</h6>
+                                <h6 class="color-black fs-sm m-0">Vehicle Plate</h6>
+                            </div>
+                            <div class="right">
+                                <h6 class="color-secondary fw-bold fs-sm">Nick V</h6>
+                                <h6 class="color-secondary fw-bold fs-sm">Nick V</h6>
+                                <h6 class="color-secondary fw-bold fs-sm">Acura/Legend</h6>
+                                <h6 class="color-secondary fw-bold fs-sm m-0">AB1235</h6>
+                            </div>
+                        </div>
+                        <div class="card-group">
+                            <div class="content">
+                                Scan License
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="signature-box">
+                    <div class="signature-card">
+                        <div class="top-part d-flex">
+                            <div class="left-part"></div>
+                            <div class="right-part"></div>
+                        </div>
+                        <div class="bottom-part d-flex justify-content-between align-items-center">
+                            <div class="left-part">
+                                SIGNATURE
+                            </div>
+                            <div class="right-part">
+                                THUMBPRINT
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="footer-strip d-flex justify-content-between">
+                    <div class="left-part d-flex">
+                        <span class="material-symbols-rounded me-2">
+                            attach_file
+                        </span>
+                        <h6 class="color-black fs-sm text-caps fw-extrabold m-0">ATTACHED <br>  FILES &amp; NOTES</h6>
+                    </div>
+                    <div class="right-part d-flex">
+                        <span class="material-symbols-rounded me-2">
+                            account_circle
+                        </span>
+                        <h6 class="color-black fs-sm text-caps fw-extrabold m-0">SELLERS  <br>  IMAGE</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="ticket-right-part">
+                  <table class="table table-bottom-no-border border-radius0 mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="fs-sm fw-extrabold">gross</th>
+                        <th scope="col" class="fs-sm fw-extrabold">tare</th>
+                        <th scope="col" class="fs-sm fw-extrabold">net</th>
+                        <th scope="col" class="fs-sm fw-extrabold">price</th>
+                        <th scope="col" class="fs-sm fw-extrabold">total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                      </tr>
+                      <tr>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>34</td>
+                        <td>34</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>11</td>
+                        <td>11</td>
+                        <td>11</td>
+                        <td>11</td>
+                      </tr>
+                      <tr>
+                        <td>00</td>
+                        <td>00</td>
+                        <td>00</td>
+                        <td>00</td>
+                        <td>00</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>12</td>
+                      </tr>
+                      <tr>
+                        <td>44</td>
+                        <td>44</td>
+                        <td>44</td>
+                        <td>44</td>
+                        <td>44</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>14</td>
+                        <td>14</td>
+                        <td>14</td>
+                        <td>14</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="blue-table">
+                      <tbody>
+                        <tr>
+                          <td>GROSS <br> 100</td>
+                          <td>TARE <br> 200</td>
+                          <td>NET <br> 123</td>
+                          <td>#ITEMS <br> 120</td>
+                          <td>TOTAL <br> <span class="color-green">$100.00</span></td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td>Payable Now:</td>
+                          <td></td>
+                          <td></td>
+                          <td></td> 
+                          <td><span class="color-green">$0.00</span></td>
+                        </tr>
+                      </tfoot>
+                  </table>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="offcanvas offcanvas-start border-radius0" tabindex="-1" id="offcanvastickettitle" aria-labelledby="offcanvasWithBackdropLabel">
+          <div class="offcanvas-body">
+            <div class="ticket-leftmenu">
+              <div class="head-part d-flex justify-content-between align-items-center">
+                  <div class="left-part w-34p">
+                      <h6 class="color-grey-6 fs-15 fw-bold">User:<span class="fs-md color-secondary ms-2">Nick V</span></h6>
+                      <div class="form-group w-100">
+                          <input type="date" class="form-control h-36" placeholder="">
+                      </div>
+                  </div>
+                  <div class="right-part">
+                      <div class="arrow-btn d-flex">
+                          <button class="btn btn-light btn-md left-radius10 border-right">
+                            <span class="material-symbols-rounded">arrow_back_ios</span>
+                          </button>
+                          <button class="btn btn-light btn-md right-radius10">
+                            <span class="material-symbols-rounded">arrow_forward_ios</span>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="ticket-part d-flex justify-content-between align-items-center">
+                  <div class="left-part">
+                      <h6 class="color-grey-6 fs-md fw-bold">Ticket#:</h6>
+                      <div class="ticket-num d-flex">
+                          <h6 class="color-secondary fs-lg fw-bold me-2 mb-0">4603</h6>
+                          <a href="#"><span class="material-symbols-rounded me-2">merge</span></a>
+                          <a href="#"><span class="material-symbols-rounded">cancel</span></a>
+                      </div>
+                  </div>
+                  <div class="right-part d-flex align-items-center">
+                      <div class="inner-left">
+                          <h6 class="color-grey-6 fs-15 fw-bold">Start:</h6>
+                          <h6 class="color-grey-6 fs-15 fw-bold mb-0">End:</h6>
+                      </div>
+                      <div class="inner-right">
+                          <h6 class="color-black fs-md fw-bold">05:24:51am</h6>
+                          <h6 class="color-black fs-md fw-bold mb-0">03:06:57pm</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="customer-part">
+                  <div class="heading d-flex justify-content-between align-items-center mb-3">
+                      <h6 class="color-black fs-md fw-bold mb-0">Customer Info:</h6>
+                      <div class="icon d-flex">
+                          <a href="#"><span class="material-symbols-rounded me-2">edit</span></a>
+                          <a href="#"><span class="material-symbols-rounded">search</span></a>
+                      </div>
+                  </div>
+                  <div class="content-part d-flex justify-content-between">
+                      <div class="info d-flex justify-content-between">
+                          <div class="left">
+                              <h6 class="color-black fs-sm">Name</h6>
+                              <h6 class="color-black fs-sm">ID/License</h6>
+                              <h6 class="color-black fs-sm">Make/Model</h6>
+                              <h6 class="color-black fs-sm">Vehicle Plate</h6>
+                          </div>
+                          <div class="right">
+                              <h6 class="color-secondary fw-bold fs-sm">Nick V</h6>
+                              <h6 class="color-secondary fw-bold fs-sm">Nick V</h6>
+                              <h6 class="color-secondary fw-bold fs-sm">Acura/Legend</h6>
+                              <h6 class="color-secondary fw-bold fs-sm">AB1235</h6>
+                          </div>
+                      </div>
+                      <div class="card-group">
+                          <div class="content">
+                              Scan License
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <table class="table table-bottom-no-border border-radius0 mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="fs-sm fw-extrabold">gross</th>
+                      <th scope="col" class="fs-sm fw-extrabold">tare</th>
+                      <th scope="col" class="fs-sm fw-extrabold">net</th>
+                      <th scope="col" class="fs-sm fw-extrabold">price</th>
+                      <th scope="col" class="fs-sm fw-extrabold">total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>34</td>
+                      <td>34</td>
+                      <td>34</td>
+                      <td>34</td>
+                      <td>34</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>11</td>
+                      <td>11</td>
+                      <td>11</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td>00</td>
+                      <td>00</td>
+                      <td>00</td>
+                      <td>00</td>
+                      <td>00</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>44</td>
+                      <td>44</td>
+                      <td>44</td>
+                      <td>44</td>
+                      <td>44</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>14</td>
+                      <td>14</td>
+                      <td>14</td>
+                      <td>14</td>
+                    </tr>
+                  </tbody>
+              </table>
+              <table class="blue-table">
+                  <tbody>
+                    <tr>
+                      <td>GROSS <br> 100</td>
+                      <td>TARE <br> 200</td>
+                      <td>NET <br> 123</td>
+                      <td>#ITEMS <br> 120</td>
+                      <td>TOTAL <br> <span class="color-green">$100.00</span></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>Payable Now:</td>
+                      <td></td>
+                      <td></td>
+                      <td></td> 
+                      <td><span class="color-green">$0.00</span></td>
+                    </tr>
+                  </tfoot>
+              </table>
+              <div class="signature-box">
+                  <div class="signature-card">
+                      <div class="top-part d-flex">
+                          <div class="left-part"></div>
+                          <div class="right-part"></div>
+                      </div>
+                      <div class="bottom-part d-flex justify-content-between align-items-center">
+                          <div class="left-part">
+                              SIGNATURE
+                          </div>
+                          <div class="right-part">
+                              THUMBPRINT
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-strip d-flex justify-content-between">
+                  <div class="left-part d-flex">
+                      <span class="material-symbols-rounded me-2">
+                          attach_file
+                      </span>
+                      <h6 class="color-black fs-sm text-caps fw-extrabold m-0">ATTACHED <br>  FILES &amp; NOTES</h6>
+                  </div>
+                  <div class="right-part d-flex">
+                      <span class="material-symbols-rounded me-2">
+                          account_circle
+                      </span>
+                      <h6 class="color-black fs-sm text-caps fw-extrabold m-0">SELLERS  <br>  IMAGE</h6>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- add top parent class "backdrop-100" to get 100% height back drop  -->
+      </div>      
+      
+      
+      <div id="osk" class="osk" style="position: fixed; bottom: 0px; right: -1728px; width: 100%; background: url(&quot;/img/osk/kbd_bkd.png&quot;) repeat-x; display: block; left: 0px;"><div id="numberPad"><input type="button" value="+" id="oskPlus" class="key"><input type="button" value="+1" id="oskPlusOne" style="display:none;" class="keyPlusMinus"><input type="button" value="9" class="key"><input type="button" value="8" class="key"><input type="button" value="7" class="key"><input type="button" value="-" id="oskMinus" class="key"><input type="button" value="-1" id="oskMinusOne" style="display:none;" class="keyPlusMinus"><input type="button" value="6" class="key"><input type="button" value="5" class="key"><input type="button" value="4" class="key"><input type="button" value="enter" class="key_numpad_enter"><input type="button" value="3" class="key"><input type="button" value="2" class="key"><input type="button" value="1" class="key"><input type="button" value="." class="key"><input type="button" value="0" id="zeroNumKey" class="key"><input type="button" value="del" class="key_numpad_delete"></div><div id="keyboard"><input type="button" value="del" class="key_delete"><input type="button" value="P" class="key"><input type="button" value="O" class="key"><input type="button" value="I" class="key"><input type="button" value="U" class="key"><input type="button" value="Y" class="key"><input type="button" value="T" class="key"><input type="button" value="R" class="key"><input type="button" value="E" class="key"><input type="button" value="W" class="key"><input type="button" value="Q" class="key"><input type="button" value="enter" class="key_enter"><input type="button" value="L" class="key"><input type="button" value="K" class="key"><input type="button" value="J" class="key"><input type="button" value="H" class="key"><input type="button" value="G" class="key"><input type="button" value="F" class="key"><input type="button" value="D" class="key"><input type="button" value="S" class="key"><input type="button" value="A" class="key"><input type="button" value="shift" class="key_shift"><input type="button" value="/" class="key"><input type="button" value="." class="key"><input type="button" value="," class="key"><input type="button" value="M" class="key"><input type="button" value="N" class="key"><input type="button" value="B" class="key"><input type="button" value="V" class="key"><input type="button" value="C" class="key"><input type="button" value="X" class="key"><input type="button" value="Z" class="key"><input type="button" value="Caps Lock" class="key_shift_small"><input type="button" value="→" class="key"><input type="button" value="↓" class="key"><input type="button" value="↑" class="key"><input type="button" value="←" class="key"><input type="button" value=" " class="key_space"><input type="button" value="tab" class="key_tab"></div></div>
+    
+
+    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop" class="btn btn-dark color-white btn-lg"><span class="material-symbols-rounded">tune</span></button>
+    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasticket1" aria-controls="offcanvasticket1" class="mb-3 ticket-box d-flex flex-column align-items-center justify-content-center">
+      <h6 class="color-secondary text-caps fs-md fw-extrabold m-0">4603</h6>
+      <h6 class="color-grey fs-sm fw-extrabold m-0">Nick V</h6>
+    </button>
+    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastickettitle" aria-controls="offcanvastickettitle" class="title px-20">
+      <h6 class="color-black text-caps fs-16 fw-extrabold m-0">open tickets</h6>
+    </button>
+
+
+
+        
+    
+
+   
+
+
+    <script src="../assets/dist/js/all.min.js"></script>
+  </body>
+</html>

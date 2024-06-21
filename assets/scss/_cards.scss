@@ -1,0 +1,917 @@
+.card {
+    background-color: $white;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-sm;
+    &.dispatch-card{
+        padding: 10px;
+        .row-1{
+            .icon-part{
+                a{
+                    span{
+                        font-size: $font-size-16;
+                        &.lock{
+                            color: $primary;
+                        }
+                        &.arrow{
+                            color: $grey-6;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+    &.upd-dispatch-card{
+        padding-bottom: 20px;
+        .top-part{
+            padding: 10px;
+            .row-1{
+                .icon-part{
+                    a{
+                        span{
+                            font-size: $font-size-16;
+                            &.lock{
+                                color: $primary;
+                            }
+                            &.arrow{
+                                color: $grey-6;
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+        .strip{
+            padding: 10px;
+            font-size: $font-size-sm;
+            font-weight: $font-600;
+            &.yellow-strip{
+                background-color: $yellow-rgba-2;
+                color: $orange;
+            }
+            &.red-strip{
+                background-color: $red2;
+                color: $red;   
+            }
+        }
+        .bottom-part{
+            padding: 10px;
+        }
+        #check, #check-a, #check-b, #check-c{
+            display: none;
+            &:checked{
+                ~ .read-more-text{
+                    display: block;
+                }
+                ~ label{
+                    visibility: hidden;
+                    line-height: 0;
+                    &::after{
+                        content: 'Less';
+                        display: block;
+                        visibility: visible;
+                        background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="20" fill="%233384D8" viewBox="0 -960 960 960" width="20"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>') ;
+                        line-height: 20px;
+                        background-repeat: no-repeat;
+                        background-position: right;
+                    }
+                }
+            }
+        }
+        .read-more-text{
+            display: none;
+            transition: 0.10s linear;
+            border-top: 1px solid $secondary-rgb4;
+            padding-top: 10px;
+        }
+        label{
+            display: inline-block;
+            cursor: pointer;
+            font-size: $font-size-sm;
+            font-weight: $font-700;
+            color: $secondary;
+            position: absolute;
+            right: 5px;
+            bottom: 5%;
+        }
+    }
+    .transaction-card{
+        padding: 10px;
+        .img-part{
+            img{
+                height: 80px;
+                border-radius: $radius-lg;
+                margin-right: 10px;
+                box-shadow: $shadow-sm;
+            }
+        }
+    }
+}
+
+.card-group{
+    height: 110px;
+    background-color: $grey-4;
+    border: 1px solid $grey-5;
+    box-shadow: inset 0px 0px 10px $grey-5, 0px 1px 6px #FFFFFF80;
+    border-radius: $radius-lg;
+    max-width: 26.4%;
+    width: 100%;
+    .content{
+        color: $grey-5;
+        font-size: $font-size-md;
+        font-weight: $font-700;
+        margin: auto;
+    }
+    &.card-group-lg{
+        height: 200px;
+        max-width: 23.7%;
+        box-shadow: none;
+        .content{
+            font-weight: 400;
+            text-transform: $text-uppercase;
+        }
+    }
+}
+
+.card-material-group{
+    height: 165px;
+    width: 15.1%;
+    background-color: $white;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-md;
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.footer-strip{
+    background-color: $grey-4;
+    padding: 10px 15px;
+}
+
+.signature-card{
+    width: 100%;
+    height: 100px;
+    background-color: $white;
+    border: 1px solid #D3D3D3;
+    .top-part{
+        height: 80%;
+        .left-part{
+            border-right: 1px solid #D3D3D3;
+            width: 80%;
+        }
+        .right-part{
+            width: 20%;
+        }
+    }
+    .bottom-part{
+        height: 20%;
+        background-color: $grey-4;
+        padding: 10px;
+        font-size: $font-size-sm;
+        font-weight: $font-700;
+    }
+}
+
+.calc-display{
+    height: 110px;
+    background-color: $primary;
+    box-shadow: inset 0px 0px 30px #0000008C, 0px 1px 6px #FFFFFF80;
+    border: 1px solid $grey-5;
+    border-radius: $radius-lg;
+    position: relative;
+    display: flex;
+
+    .information-text{
+        color: $white;
+        font-size: $font-size-13;
+        position: absolute;
+        right: 15px;
+        bottom: 0px;
+    }
+
+    &::before { 
+        width:120px; 
+        height:1px; 
+        background: $white; 
+        position: absolute; 
+        content:""; 
+        bottom: 20px; 
+        right: 20px;
+    }
+
+    .buy-sell {
+        display: inline-flex;
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        justify-content: space-around;
+        z-index: 99999999;
+        a {
+           color: #fff;
+           text-decoration: none;
+           font-weight: 700;
+           background-color: rgba(255, 255, 255, 0.1);
+           padding: 5px 10px;
+           display: inline-flex;
+           
+           &:hover {
+              text-decoration: underline;
+              background-color: rgba(255, 255, 255);
+              color: $secondary;
+           }
+
+           &.selectedbuySell {
+            text-decoration: underline;
+            background-color: rgba(255, 255, 255);
+            color: $secondary;
+          }
+        }
+
+        .selectedbuySell{
+            a {
+                   text-decoration: underline;
+                   background-color: rgba(255, 255, 255);
+                   color: $secondary;
+                
+     
+
+             }
+        }
+        
+
+       
+
+        a.back{
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            background-color: transparent;
+            padding: 5px 10px;
+            display: inline-flex;
+
+            span{
+                color: $white;
+            }
+        }
+     
+     }
+
+     .text-area{
+        width: 70%;
+        .form-control{
+            background-color: transparent;
+            border: 0px;
+            color: $white;
+            font-size: $font-size-23;
+            margin-top: 25px;
+        }
+     }
+
+
+}
+
+.blank-box{
+    height: 365px;
+    background-color: $grey-4;
+    border-radius: $radius-lg;
+    border: 1px solid $grey-5;
+}
+
+.white-blank-box{
+    height: 230px;
+    max-width: 32%;
+    width: 100%;
+    background-color: $white;
+    border-radius: $radius-lg;
+    border: 1px solid $light-blue-4;
+    box-shadow: $shadow-md;
+}
+
+.map-box{
+    border-radius: $radius-lg;
+    border: 1px solid $light-blue-4;
+    box-shadow: $shadow-md;
+    height: 230px;
+    width: 100%;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.material-card{
+    background-color: $white;
+    box-shadow: $shadow-md;
+    border-radius: 10px;
+    .head-part{
+        border-bottom:1px solid $light-blue-4;
+        padding: 10px;
+        .button-part{
+            .btn-light{
+                text-transform: uppercase;
+                &.btn-md{
+                    padding: 10px;
+                }
+                span{
+                    font-size: 30px;
+                    label{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .input-part{
+        padding: 10px;
+        box-shadow: $shadow-md;
+        .form-group{
+            max-width: 18%;
+            width: 100%;
+        }
+    }
+    .bottom-part{
+        padding: 10px;
+        .left-part{
+            width: 66%;
+            margin-right: 20px;
+        }
+        .right-part{
+            .calculator-section{
+                table{
+                    tr{
+                        td{
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ticket-card{
+    background-color: $white;
+    box-shadow: 0px 5px 10px #0000001A;
+    border-radius: 10px;
+
+    &.update-search{
+        border-radius: 0px;
+    }
+    .head-part{
+        padding: 15px;
+        box-shadow: $shadow-md;
+        .row-1{
+            margin-bottom: 15px;
+            .left-part{
+                .btn-part{
+                    display: flex;
+                    align-items: flex-end;
+                }
+            }
+            .right-part{
+                align-items: flex-end;
+            }
+        }
+    }
+    .bottom-part{
+        padding: 20px 0;
+        table{
+            margin-bottom: 20px;
+        }
+        .footer{
+            width: 55%;
+            padding-left: 20px;
+        }
+    }
+}
+
+.dispatch-board{
+    background-color: $light-blue-4;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-md;
+    width: 22.4%;
+    .head-part{
+        padding: 15px 10px;
+    }
+    .card-part{
+        padding: 10px;
+        .card{
+            margin-bottom: 10px;
+        }
+    }
+    &.card-grey{
+        background-color: $grey-4;
+        overflow: hidden;
+        .head-part{
+            padding: 0;
+            border-bottom: 1px solid rgb(51, 132, 216, 0.4);
+            .profile-section{
+                .profile-pic{
+                    background-color: rgb(0, 0, 0, 0.1);
+                    margin-right: 10px;
+                    height: 60px;
+                    width: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        height: 60px;
+                        width: 60px;
+                    }
+                }
+            }
+            .icon-part{
+                padding: 12px;
+                border-left: 1px solid rgb(51, 132, 216, 0.4);
+                a{
+                    span{
+                        font-size: $font-size-30;
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+    &.white-board{
+        background-color: $white;
+        .card-part{
+            .card{
+                border: 1.5px solid $grey-10;
+            }
+        }
+    }
+}
+
+.inventory-card{
+    box-shadow: $shadow-md;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    .blue-strip{
+        background-color: $light-blue-3;
+    }
+    .title-strip{
+        background-color: $grey-4;
+        box-shadow: $shadow-md;
+        height: 50px;
+    }
+    &.inventory-card-4{
+        .card-section{
+            .inventory-left-menu{
+                width: 100%;
+                max-width: 23%;
+                border-right: 1px solid $grey-5;
+                .address-part{
+                    border-bottom: $border-grey;
+                    .inner-left{
+                        padding: 15px;
+                        padding-left: 20px;
+                    }
+                }
+                .total-section{
+                    .inner-total-left{
+                        .total-detail{
+                            border-bottom: $border-grey;
+                            padding-left: 20px;
+                            padding: 5px; 
+                        }
+                        .total{
+                            border-bottom: $border-grey;
+                        }
+                    }
+                    .inner-total-right{
+                        padding: 10px;
+                    }
+                }
+            }
+            .inventory-content{
+                .test-details{
+                    border-top: $border-grey;
+                    border-bottom: $border-grey;
+                    padding: 10px 20px;
+                }
+                .calc-section{
+                    table{
+                        tr{
+                          td{
+                            width: 25%;
+                          }
+                        }
+                      }
+                }
+            }
+        }
+    }
+}
+
+.barcode-card{
+    box-shadow: 0px 0px 10px #0000001A;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    .bg-form-box-blue3{
+        padding: 10px;
+    }
+    img{
+        height: 130px;
+        width: 145px;
+        padding: 5px;
+    }
+}
+
+// TABBING GREY-BLUE BOX
+.combo-box{
+    border-radius: $radius-lg;
+    .blue-box{
+        border: 3px solid $white;
+        padding: 15px;
+        border-radius: $radius-lg;
+        &.border-sm{
+            border: 1px solid $white;
+        }
+    }
+    .form-content-part{
+        padding: 15px;
+    }
+}
+
+// TIME CLOCK CARD
+.time-clock-card{
+    position: relative;
+    .total-section{
+        border-top: 6px solid $grey-5;
+        border-bottom: 1px solid $light-blue-6;
+    }    
+
+    .bullet-tag{
+        position:absolute;
+        right: 25px;
+        top: 10px;
+    }
+
+    .time-clock-list{
+        .timelist-row{
+            padding: 10px 0;
+            border-bottom: 1px solid $grey-5;
+        }
+    }
+}
+
+// TRANSLATION CARD
+.translation-card{
+   .head-part{
+        border-bottom:1px solid $grey-4;
+   }
+}
+
+//  PAY PREFERENCES - 5 COIN DISPENSER CARD
+.coin-dispenser-card{
+    border: 0.5px solid $grey-7;
+    border-radius: $radius-lg;
+    .title{
+        position: absolute;
+        top: -10px;
+        left: 20px;
+    }
+}
+
+
+// AP TABLE TOP
+.table-top{
+    .form-group{
+        .form-label{
+            color: $white;
+        }
+    }
+}
+
+@media (max-width : 1024px){
+    .card-material-group{
+        height: 100px;
+        width: 98px;
+        margin-right: 5px!important;
+        padding: 10px;
+        text-align: center;
+        .fs-23{
+          font-size: $font-size-sm;
+        }
+    }
+    .material-card{
+            .head-part{
+                    .title{
+                            h6{
+                                &.fs-26{
+                                    font-size: $font-size-xl;
+                                }
+                            }
+                    }
+            }
+        .input-part{
+            padding: 20px 10px;
+            .form-group{
+                .form-control{
+                    width: 135px;
+                }
+                label{
+                    &.fs-md{
+                        font-size: $font-size-13;
+                    }
+                    &.margin-b-10{
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+        .bottom-part{
+            .left-part{
+                margin-right: 10px;
+                .blank-box{
+                    &.mb-4{
+                        margin-bottom: 10px!important;
+                    }
+                }
+            }
+        }
+    }
+    .blank-box{
+        height: 270px;
+    }
+    .calc-display{
+        height: 115px;
+    }
+}
+
+
+.material-box{
+    height: 80px;
+    .material-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: $white;
+        border-radius: $radius-lg;
+        box-shadow: $shadow-md;
+        color: $black;
+        text-decoration: none;
+        font-size: $font-size-16;
+        font-weight: $font-700;
+
+        &:hover{
+            background-color: $light-blue-6;
+            color: $secondary;
+        }
+    }
+}
+
+/* New Ticket Hide section Style*/
+
+.material-card{
+    &.note-attachement-box{
+        .input-part{
+            .form-group{
+                max-width: inherit;
+                width: auto;
+
+                &.w-25p{
+                    width: 25%;
+                }
+                &.w-50p{
+                    width: 50%;
+                    .form-label{
+                        width: 30%;
+                    }
+                }
+
+                textarea{
+                    height: 100px;
+                    resize: auto;
+                }
+            }
+        }
+    }
+    
+    &.ticket-payout-box{
+        .blank-box{
+            height: 180px;
+        }
+    }
+}
+
+
+
+
+
+
+// OLD DESIGN TICKETS //
+#divPackageContent #ticket {
+    background: #fff;
+    width: 300px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.30);
+    font-size: 12px;
+    padding: 15px;
+}
+
+#divPackageContent #ticket #barcode {
+        margin: 0px auto;
+        height: 145px;
+        width: 200px;
+        text-align: center;
+}
+
+#divPackageContent #ticket #date {
+    float: right;
+    margin-right: 10px;
+}
+
+#divPackageContent #ticket #number {
+    float: left;
+}
+
+#divPackageContent #ticket #numbermergediv {
+    float: left;
+    margin: 0px 0 0 3px;
+    font-size: 13px;
+    width: 80px;
+    height: 21px;
+}
+
+#divPackageContent #ticket #numberValue {
+    float: left;
+}
+
+#divPackageContent #ticket #startTime, #divPackageContent #ticket #endTime {
+    float: right;
+    margin: 0 10px 0 0;
+}
+
+#divPackageContent #ticket #startTime .timeLabel, #divPackageContent #ticket #endTime .timeLabel {
+        float: left;
+        margin-right: 3px;
+    }
+
+    #divPackageContent #ticket #startTime .timePart, #divPackageContent #ticket #endTime .timePart {
+        float: left;
+        width: 15px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #divPackageContent #ticket #startTime .timeDivider, #divPackageContent #ticket #endTime .timeDivider {
+        float: left;
+        width: 3px;
+        text-align: center;
+    }
+
+    #divPackageContent #ticketItemTitles {
+    margin-top: 5px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #000;
+    width: 260px;
+    height: 14px;
+}
+
+#divPackageContent #ticketItemTitleGross {
+    float: left;
+    width: 80px;
+    text-align: right;
+}
+
+#divPackageContent #ticketItemTitleTare {
+    float: left;
+    margin-left: 5px;
+    width: 80px;
+    text-align: right;
+}
+
+#divPackageContent #ticketItemTitleNet {
+    float: left;
+    margin-left: 5px;
+    width: 80px;
+    text-align: right;
+}
+
+#divPackageContent #pkgticketItems {
+    width: 260px;
+    height: 228px;
+    margin-top: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+#divPackageContent.grossLabel, #divPackageContent .tareLabel {
+    float: left;
+}
+
+#divPackageContent.grossValue, #divPackageContent .tareValue {
+    float: right;
+}
+
+#divPackageContent .netValue {
+    font-size: 25px;
+    height: 35px;
+}
+
+#divPackageContent .pkgNoParent {
+    float: right;
+}
+
+#divPackageContent .pkgNoLabel {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#divPackageContent .pkgNoValue {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#divPackageContent .pkgTypeLabel {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#divPackageContent .pkgMaterial {
+    border: 1px solid #000;
+    background-color: silver;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.blank-box-payment {
+    background-color: #f7f7f7;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    height: 235px;
+}
+
+.inner-camera-card{
+    border-radius: $radius-lg;
+    box-shadow: $shadow-md;
+    background-color: $white;
+    overflow: hidden;
+    height: 220px;
+    .top-part{
+        background-color: rgba(51, 132, 216, 0.6);
+        padding: 10px;
+    }
+}
+
+.camera-grouping-card{
+    .row-camera-group{
+        &:not(:last-child){
+            border-bottom: $border-grey5;
+        }
+    }
+}
+
+.udb-ticket-card{
+    border: 1px solid $light-blue-4;
+    box-shadow: $shadow-md;
+    border-radius: $radius-lg;  
+    padding: 15px;
+    .title{
+        font-size: $font-size-md;
+        font-weight: $font-700;
+        text-transform: $text-uppercase;
+        color: $grey-1;
+        line-height: $line-height-20;
+    }
+    .number{
+        font-size: $font-size-22;
+        font-weight: $font-800;
+        line-height: $line-height-30;
+    }
+    .triangle-up {
+        border-bottom: 11px solid $green;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        height: 0;
+        width: 0;
+    }
+    .triangle-down {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 11px solid $red;
+        height: 0;
+        width: 0;
+    }
+    .text{
+        font-size: $font-size-md;
+        font-weight: $font-600;
+        &.green{
+            color: $green;
+        }
+        &.red{
+            color: $red;
+        }
+    }
+}
+
+
+

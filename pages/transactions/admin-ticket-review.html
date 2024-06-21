@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- CSS -->
+  <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+  <title>ScrapRight</title>
+</head>
+
+<body>
+  <div class="layout-1 style-5 wrapper">
+    <nav class="navbar main-navbar navbar-expand-xl">
+      <div class="d-flex justify-content-between w-100">
+        <div class="navbar-left-links d-flex">
+          <div class="logo-part">
+            <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+            <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+          </div>
+          <div class="link-part d-flex">
+            <a href="javascript:void(0);" class="nav-link">dashboard</a>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                transactions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <div class="btn-group dropend">
+                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Action
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <a href="javascript:void(0);" class="nav-link">materials</a>
+            <a href="javascript:void(0);" class="nav-link">customers</a>
+            <a href="javascript:void(0);" class="nav-link">reports</a>
+            <a href="javascript:void(0);" class="nav-link">admin</a>
+          </div>
+        </div>
+        <div class="navbar-right-part d-flex align-items-center">
+          <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+          <div class="text-caps color-orange fs-md fw-extrabold me-3">
+            <div class="username-tag">nick v</div>
+          </div>
+          <div class="icon-part">
+            <a href="#">
+              <span class="material-symbols-rounded">logout</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content-section d-flex">
+      <div class="ticket-review-leftmenu">
+        <div class="pxy15-20">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="d-flex align-items-center">
+              <div class="fs-sm fw-extrabold letter-space7 me-2">TICKET SEARCH: Name</div>
+              <!-- <div class="menu-btn w-88 h-36 d-flex align-items-center p-0">
+                                <button class="btn list w-50 h-100">
+                                <span class="material-symbols-rounded fs-xl color-secondary">List</span>
+                                </button>
+                                <button class="btn grid w-50 h-100">
+                                <span class="material-symbols-rounded fs-xl color-secondary">Grid_view</span>
+                                </button>
+                            </div> -->
+            </div>
+            <div class="text-end align-items-center d-inline-flex">
+              <a class="text-dark"><span class="material-symbols-rounded mt-1 text-caps fs-xl">Search</span></a>
+              <a href="#" class="fs-sm fw-extrabold letter-space7 color-secondary text-caps">Clear</a>
+            </div>
+          </div>
+          
+            <div class="d-flex align-items-center w-100p mb-2">
+              <div class="form-group w-33p me-2">
+                <select class="selectpicker" data-live-search="true">
+                  <option value="0">Customer name/license/ticket no/ref#</option>
+                  <option value="1">Date Range</option>
+                  <option value="2">Start User</option>
+                  <option value="3">Amount</option>
+                  <option value="4">Amount Range</option>
+                  <option value="5">Ticket Status</option>
+                  <option value="6">Material Group</option>
+                  <option value="7">VIN</option>
+                  <option value="8">ZIP</option>
+                  <option value="9">Pay Type</option>
+                  <option value="a">Material Type</option>
+                  <option value="b">Workstation</option>
+                  <option value="c">Ticket Note</option>
+                  <option value="d">End User</option>
+                  <option value="e">Weight Range</option>
+                  <option value="f">Time Duration</option>
+                  <option value="h">Category</option>
+                </select>
+              </div>
+              <div class="form-group w-66p justify-content-between d-flex">
+                <input type="email" class="form-control h-36" placeholder="">
+                <input type="email" class="form-control h-36" placeholder="">
+                <input type="email" class="form-control h-36" placeholder="">
+              </div>
+            
+            </div>
+            
+          
+          <div class="d-flex text-end align-items-center w-100 justify-content-end">
+            <a class="bg-icon bg-dark">
+              <span class="material-symbols-rounded color-white fs-xl">add</span>
+            </a>
+            <button class="btn btn-new-ticket with-icon h-38 mx-1">Go</button>
+            <button class="btn btn-new-ticket with-icon h-38">Mat</button>
+          </div>
+        </div>
+        <table class="table table-bottom-no-border inventory-order-table ticket-leftmenu-table shadow-none mb-0">
+          <thead>
+            <tr>
+              <th scope="col" class="fw-extrabold">ticket</th>
+              <th scope="col" class="fw-extrabold">customer</th>
+              <th scope="col" class="fw-extrabold">amount</th>
+              <th scope="col" class="fw-extrabold">status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-green color-green fs-11 fw-semibold text-caps">open</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-red color-red fs-11 fw-semibold text-caps">void</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-grey color-grey fs-11 fw-semibold text-caps">replica</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-red color-red fs-11 fw-semibold text-caps">cancel</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-secondary color-secondary fs-11 fw-semibold text-caps">paid</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-orange color-orange fs-11 fw-semibold text-caps">delay</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-green color-green fs-11 fw-semibold text-caps">open</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-red color-red fs-11 fw-semibold text-caps">void</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-grey color-grey fs-11 fw-semibold text-caps">replica</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-red color-red fs-11 fw-semibold text-caps">cancel</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-secondary color-secondary fs-11 fw-semibold text-caps">paid</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-orange color-orange fs-11 fw-semibold text-caps">delay</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-green color-green fs-11 fw-semibold text-caps">open</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-red color-red fs-11 fw-semibold text-caps">void</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-grey color-grey fs-11 fw-semibold text-caps">replica</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-red color-red fs-11 fw-semibold text-caps">cancel</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-secondary color-secondary fs-11 fw-semibold text-caps">paid</div>
+              </td>
+            </tr>
+            <tr>
+              <td>30122</td>
+              <td>NICK</td>
+              <td>$100.00</td>
+              <td>
+                <div class="box box-orange color-orange fs-11 fw-semibold text-caps">delay</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="bg-grey-4 pxy25-15 d-flex justify-content-between">
+          <div class="fs-11 fw-bold letter-space7">
+            TOTAL RECORDS<br>4096
+          </div>
+          <div class="fs-11 fw-bold letter-space7">
+            TOTAL TICKET AMOUNT<br>$124249937514.68
+          </div>
+          <button class="btn btn-new-ticket with-icon h-38"><span
+              class="material-symbols-rounded">download</span></button>
+        </div>
+      </div>
+      <div class="end-col d-flex justify-content-between flex-wrap row ">
+        <div class="col-md-4">
+          <div id="carouselExampleControls" class="carousel slide custom-slide mb-3  w-100">
+            <div class="carousel-inner  w-100">
+              <div class="carousel-item h-100 active">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_back_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_forward_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div id="carouselExampleControls" class="carousel slide custom-slide mb-3  w-100">
+            <div class="carousel-inner  w-100">
+              <div class="carousel-item h-100 active">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_back_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_forward_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="carouselExampleControls" class="carousel slide custom-slide mb-3  w-100">
+            <div class="carousel-inner  w-100">
+              <div class="carousel-item h-100 active">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_back_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_forward_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="carouselExampleControls" class="carousel slide custom-slide mb-3  w-100">
+            <div class="carousel-inner  w-100">
+              <div class="carousel-item h-100 active">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_back_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_forward_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="carouselExampleControls" class="carousel slide custom-slide mb-3  w-100">
+            <div class="carousel-inner  w-100">
+              <div class="carousel-item h-100 active">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_back_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_forward_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="carouselExampleControls" class="carousel slide custom-slide mb-3  w-100">
+            <div class="carousel-inner  w-100">
+              <div class="carousel-item h-100 active">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_back_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_forward_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="carouselExampleControls" class="carousel slide custom-slide mb-3  w-100">
+            <div class="carousel-inner  w-100">
+              <div class="carousel-item h-100 active">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_back_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_forward_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="carouselExampleControls" class="carousel slide custom-slide mb-3  w-100">
+            <div class="carousel-inner  w-100">
+              <div class="carousel-item h-100 active">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_back_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_forward_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="carouselExampleControls" class="carousel slide custom-slide mb-3  w-100">
+            <div class="carousel-inner  w-100">
+              <div class="carousel-item h-100 active">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="../../images/backgrounds/a1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="card-overlay">
+                  <div class="content w-100">
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        SCRAPRIGHT SOFTWARE
+                      </div>
+                      <div class="fs-13 fw-bold letter-space07 color-white">
+                        #1003
+                      </div>
+                    </div>
+                    <div class="fs-13 fw-bold letter-space07 color-white">
+                      Copper
+                    </div>
+                    <table class="w-80p">
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">200.00</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">0.0</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">Gross Image</div>
+                        </td>
+                        <td>
+                          <div class="fs-13 fw-bold letter-space07 color-white">1</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_back_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="material-symbols-rounded color-black fs-15">
+                  arrow_forward_ios
+                </span>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../assets/dist/js/all.min.js"></script>
+</body>
+
+</html>

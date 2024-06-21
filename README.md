@@ -1,0 +1,3 @@
+# SCRAP RIGHT HTML
+
+All Pages HTML Repo

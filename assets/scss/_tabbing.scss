@@ -1,0 +1,828 @@
+.tabs {
+    border-radius: $radius-lg;
+    overflow: hidden;
+    background-color: $white;
+
+    .nav {
+        // max-width: 15%;
+        width: 100%;
+        background: #f7f7f7;
+
+        &.nav-pills {
+            .nav-link {
+                border-radius: 0;
+                border-bottom: $border-grey;
+                font-size: $font-size-sm;
+                font-weight: $font-700;
+                color: $black;
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                span {
+                    color: $grey-6;
+                    font-size: $font-size-16;
+                }
+
+                &.active {
+                    background-color: $secondary;
+                    color: $white;
+
+                    span {
+                        color: $white;
+                    }
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: $secondary;
+                    color: $white;
+
+                    span {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 15px 30px;
+        width: 100%;
+
+        .tab-pane {
+            .tab-input-row {
+                padding: 20px 0;
+                border-bottom: 1px solid rgb(51, 132, 216, 0.3);
+
+                &:first-child {
+                    padding-top: 0;
+                }
+
+                &.input-margin-right {
+                    .form-group {
+                        margin-right: 20px;
+                    }
+                }
+
+                table {
+                    width: 100%;
+
+                    tr {
+                        margin-bottom: 40px;
+
+                        td {
+                            width: 270px;
+                        }
+
+                        &:not(:last-child) {
+                            td {
+                                .form-check {
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.material-tabs {
+    .nav {
+        background-color: $light-blue-3;
+        box-shadow: $shadow-sm;
+        padding: 15px 25px;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+
+        .nav-link {
+            padding: 14px 20px;
+
+            &.btn-sm {
+                padding: 10px;
+            }
+
+            &.active {
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+
+    .tab-content {
+        a {
+            &:hover {
+                color: $secondary;
+
+                span {
+                    color: $secondary;
+                }
+            }
+        }
+
+        #v-pills-info {
+            .compliance-part {
+                padding: 10px 25px;
+                background-color: $grey-4;
+            }
+
+            .form-input {
+                padding: 20px 25px;
+
+                .form-input-row {
+                    margin-bottom: 20px;
+
+                    .form-group {
+                        a {
+                            &.icon-tag {
+                                &:visited {
+                                    color: $black;
+                                }
+                            }
+
+                            .file-icon {
+                                color: $black;
+
+                                &:hover {
+                                    color: $secondary;
+                                }
+                            }
+                        }
+                    }
+
+                    .form-check {
+                        &.modal-checkbox {
+                            align-items: end;
+
+                            .form-check-input[type=checkbox] {
+                                &.add-after {
+                                    top: 25px;
+
+                                    &:checked {
+                                        &+svg {
+                                            top: 24px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .form-check-label {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pricing-part {
+                background-color: $grey-4;
+                padding: 20px 25px;
+
+                .bg-icon {
+                    margin-left: 35px;
+                }
+            }
+
+            .btn-part {
+                padding: 25px;
+            }
+        }
+
+        .material-tab-inside {
+            .compliance-part {
+                padding: 10px 25px;
+                background-color: $grey-4;
+            }
+
+            .form-input {
+                padding: 20px 25px;
+
+                .form-input-row {
+                    margin-bottom: 20px;
+
+                    .form-group {
+                        a {
+                            &.icon-tag {
+                                &:visited {
+                                    color: $black;
+                                }
+                            }
+
+                            .file-icon {
+                                color: $black;
+
+                                &:hover {
+                                    color: $secondary;
+                                }
+                            }
+                        }
+                    }
+
+                    .form-check {
+                        height: 24px;
+                        margin-bottom: 0px;
+                        margin-top: 6px;
+
+                        .form-check-label {
+                            margin-bottom: 0px;
+                        }
+
+                        &.modal-checkbox {
+                            align-items: end;
+
+                            .form-check-input[type=checkbox] {
+                                &.add-after {
+                                    top: 0px;
+
+                                    &:checked {
+                                        &+svg {
+                                            top: 0px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .form-check-label {
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pricing-part {
+                background-color: $grey-4;
+                padding: 20px 25px;
+
+                .bg-icon {
+                    margin-left: 35px;
+                }
+            }
+
+            .btn-part {
+                padding: 25px;
+            }
+        }
+
+        #v-pills-userp-1 {
+            .info-tab-content {
+                .left-info-tab {
+                    width: 100%;
+                    max-width: 38%;
+                    border-right: 1px solid $secondary-rgb4;
+                }
+
+                .right-info-tab {
+                    .card-tabbing {
+                        border-radius: $radius-lg;
+                        box-shadow: $shadow-xl;
+                    }
+                }
+            }
+        }
+
+        .common-component {
+            &#v-pills-edit6 {
+                .inventory-order-table {
+                    thead {
+                        tr {
+                            th {
+                                &:last-child {
+                                    text-align: end;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #v-pills-userp-2 {
+            table {
+                &.user-permission {
+                    tr {
+                        td {
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.inventory-order-tabs {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+
+        .nav-link-part {
+            padding: 12px 10px;
+            padding-bottom: 0;
+            padding-right: 0;
+            display: flex;
+
+            .nav-link {
+                padding: 14px 20px;
+
+                &.active {
+                    background-color: $secondary;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        .v-pills-cust {
+            .title-strip {
+                padding: 10px 20px;
+
+                .left-title {
+                    width: 50%;
+                }
+            }
+
+            .box-part {
+                padding: 20px;
+
+                .right-box {
+                    border-radius: $radius-lg;
+                    padding: 15px;
+                }
+            }
+        }
+
+        .v-pills-po {
+            .title-strip {
+                padding: 10px 20px;
+            }
+
+            .form-box-part {
+                padding: 20px;
+
+                .bg-form-box-blue3 {
+                    padding: 15px;
+
+                    .right-input-part {
+                        .form-group {
+                            textarea {
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+
+                .bg-grey-4 {
+                    padding: 10px 15px;
+                }
+            }
+
+            .inventory-order-table {
+                margin-bottom: 55px;
+            }
+
+            .btn-part {
+                padding: 15px 0;
+            }
+
+            &#v-pills-ticket {
+                .title-strip {
+                    padding: 10px 20px;
+
+                    .left-title {
+                        width: 50%;
+                    }
+                }
+
+                .form-box-part {
+                    .bg-grey-4 {
+                        .right-input-part {
+                            .form-group {
+                                textarea {
+                                    height: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .inventory-order-table {
+                    margin-bottom: 0;
+                }
+
+                .primary-footer-strip {
+                    margin-bottom: 55px;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .v-pill-common {
+            .title-strip {
+                .nav-link-part {
+                    padding: 5px 20px;
+
+                    .nav-link {
+                        padding: 6px 15px;
+
+                        &.active {
+                            background-color: $black;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .form-content-box {
+                padding: 20px;
+
+                .right-input-part {
+                    .form-group {
+                        textarea {
+                            height: 100px;
+                        }
+                    }
+                }
+
+                .bg-form-box-blue3 {
+                    a {
+                        &.article {
+                            height: 24px;
+                            width: 24px;
+                            position: absolute;
+                        }
+                    }
+                }
+
+                .shipper-inner-tab {
+                    background-color: $grey-4;
+
+                    .nav-item {
+                        border-bottom: 0;
+
+                        .nav-link {
+                            width: 100%;
+                            font-size: $font-size-sm;
+                            font-weight: $font-800;
+                            text-transform: uppercase;
+                            color: $grey-1;
+
+                            &.active {
+                                background-color: transparent;
+                                color: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btn-part {
+                padding: 15px;
+
+                .footer-link {
+                    &:hover {
+                        color: $secondary;
+
+                        span {
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        #v-pills-payments {
+            .title-strip {
+                padding: 10px 20px;
+            }
+
+            .box-content {
+                padding: 20px;
+                margin-bottom: 55px;
+
+                .form-content-box {
+                    padding: 10px;
+                    border-radius: $radius-lg;
+
+                    .input-row {
+                        .bg-form-box-blue3 {
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #v-pills-shipper {
+            .table {
+                &.inventory-order-table {
+                    &.table-bottom-no-border {
+                        tbody {
+                            tr {
+                                td {
+                                    padding: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.inbound-tabbing {
+    .nav {
+        &.nav-pills {
+            .nav-link-part {
+                border: 1px solid $secondary;
+                border-radius: $radius-lg;
+                box-shadow: $shadow-md;
+
+                .nav-link {
+                    color: $black;
+                    font-size: $font-size-16;
+                    border-radius: $radius-lg;
+                    width: 50%;
+
+                    &.active {
+                        background-color: $secondary;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        #v-pills-inbound {
+            button {
+                background-color: $white;
+                position: relative;
+
+                &.ticket-detail {
+                    .txt-color {
+                        color: $black;
+                    }
+                }
+
+                &:hover {
+                    background-color: $secondary;
+
+                    &.ticket-detail {
+                        .txt-color {
+                            color: $white;
+                        }
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        border-top: 20px solid transparent;
+                        border-bottom: 20px solid transparent;
+                        border-left: 13px solid $secondary;
+                        top: 25%;
+                        right: -13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.new-ticket-leftmenu {
+    .inbound-tabbing {
+        .tab-content {
+            #v-pills-inbound {
+                button {
+
+                    &:hover {
+                        background-color: $secondary;
+
+                        &.ticket-detail {
+                            .txt-color {
+                                color: $white;
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            border-top: 0px solid transparent;
+                            border-bottom: 0px solid transparent;
+                            border-left: 0px solid $secondary;
+                            top: 0%;
+                            right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*Steps Form Design*/
+
+#msform {
+    fieldset {
+        &:not(:first-of-type) {
+            display: none;
+        }
+    }
+}
+
+select {
+    &.list-dt {
+        border: none;
+        outline: 0;
+        border-bottom: 1px solid #ccc;
+        padding: 2px 5px 3px 5px;
+        margin: 2px;
+
+        &:focus {
+            border-bottom: 2px solid skyblue;
+        }
+    }
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#progressbar {
+
+    margin: 0 auto 30px auto;
+    max-width: 80%;
+    overflow: hidden;
+    color: lightgrey;
+
+    .active {
+        color: #000000;
+    }
+
+    li {
+        list-style-type: none;
+        font-size: 12px;
+        width: 33%;
+        float: left;
+        position: relative;
+
+        &:before {
+            width: 50px;
+            height: 50px;
+            line-height: 45px;
+            display: block;
+            font-size: 18px;
+            color: #ffffff;
+            background: lightgray;
+            border-radius: 50%;
+            margin: 0 auto 10px auto;
+            padding: 2px;
+
+        }
+
+        &:after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: lightgray;
+            position: absolute;
+            left: 0;
+            top: 25px;
+            z-index: -1;
+
+        }
+    }
+
+    #aboutyou {
+        &:before {
+
+            content: "1";
+        }
+    }
+
+    #aboutvehicle {
+        &:before {
+
+            content: "2";
+        }
+    }
+
+    #vehicledetails {
+        &:before {
+
+            content: "3";
+        }
+    }
+
+    #review {
+        &:before {
+            content: "4";
+        }
+    }
+
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #0d3967;
+}
+
+.modal {
+    #progressbar {
+        max-width: 100%;
+        padding: 0px;
+
+        li {
+            width: 25%;
+            line-height: 24px;
+            align-items: center;
+            display: inline-flex;
+            text-align: center;
+            background: #f9f9f9;
+            padding-right: 30px;
+            padding-left: 10px;
+
+            span {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                display: inline-block;
+                font-size: 18px;
+                color: #ffffff;
+                background: lightgray;
+                border-radius: 50%;
+                padding: 0px;
+                margin-right: 5px;
+            }
+
+
+            &:before {
+                display: none;
+            }
+
+            &::after {
+                position: absolute;
+                top: calc(var(--border-size) * -1);
+                left: calc(100% - 15px);
+                width: 0;
+                height: 0;
+                border-top: 1rem solid transparent;
+                border-bottom: 1rem solid transparent;
+                border-left: 1rem solid #f9f9f9;
+                background: #fff;
+                z-index: 9;
+            }
+
+            &.active {
+                background: #d8ffd7;
+
+                &::after {
+
+                    border-left: 1rem solid #d8ffd7;
+                    background: #fff;
+
+                }
+
+                span {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    display: inline-block;
+                    font-size: 18px;
+                    color: #ffffff;
+                    background: green;
+                    border-radius: 50%;
+                    padding: 0px;
+                    margin-right: 5px;
+                }
+            }
+
+        }
+    }
+}
+img{max-width: 100%;}

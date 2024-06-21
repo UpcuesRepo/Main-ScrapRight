@@ -1,0 +1,36 @@
+// Plugins
+@import '../plugins/bootstrap-select/sass/bootstrap-select.scss';
+@import '../plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.scss';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css';
+
+// Styles
+// @import 'theme';
+@import 'helpers';  
+@import 'typography';
+@import 'form';
+@import 'buttons';
+// @import 'links';
+@import 'badge';
+// @import 'icons';
+// @import 'lists';
+@import 'cards';    
+@import 'common';
+@import 'filter';
+@import 'table';
+// @import 'countdown';
+// @import 'navs';
+// @import 'media';
+// @import 'footer';
+@import 'main-leftmenu';
+@import 'collapse';
+@import 'modals';
+@import 'navbar';
+// @import 'homepage';
+@import 'page-structure';
+// @import 'steps';
+@import 'calender';
+@import 'tabbing';
+@import 'developer-updates'
+// @import 'developer';
+// @import 'inner-leftmenu';
+// @import 'chatscreen';

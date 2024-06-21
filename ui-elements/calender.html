@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   
+  
+   <!-- CSS -->
+   <link href="../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+    <section class="calender-content">
+      <div class="cal-section">
+          <div class="header">
+            <div>
+              <button class="btn btn-light btn-md with-icon" id="btnBack"><span class="material-symbols-rounded me-1">chevron_left</span>prev month</button>
+              <button class="btn btn-light btn-md with-icon" id="btnNext">Next month<span class="material-symbols-rounded ms-1">chevron_right</span></button>
+            </div>
+            <div id="month" class="month fs-22 text-caps color-secondary fw-extrabold"></div>
+            <div class="calender-group-btn d-flex">
+              <button class="btn btn-light text-caps left-radius10 border-right me-0">Month</button>
+              <button class="btn btn-light text-caps border-radius0 border-right me-0">week</button>
+              <button class="btn btn-light text-caps border-radius0 border-right me-0">day</button>
+              <button class="btn btn-light text-caps right-radius10 me-0">list</button>
+            </div>
+          </div>
+          <div class="calender-section">
+            <div class="weekdays">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div class="color-orange">Sat</div>
+                <div class="color-orange">Sun</div>
+            </div>
+            <div id="calendar" class="calender"></div>
+          </div>
+      </div>
+      <div id="modal" class="modal"></div>
+      <div id="addEvent" class="addEvent">
+        <h6 class="color-black fs-22 letter-space7 fw-extrabold mb-3">Add Event</h6>
+        <div class="form-group">
+            <input type="text" class="form-control h-36 mb-4" id="txtTitle" placeholder="Event Title">
+        </div>
+        <button class="btn btn-blue me-2" id="btnSave">save</button>
+        <button class="btn btn-grey btnClose">close</button>
+      </div>
+      <div id="viewEvent" class="viewEvent">
+        <h2>Event</h2>
+        <p id="eventText" class="fs-lg fw-bold color-black">This is Sample Event</p>
+        <button class="btn btn-dark me-2" id="btnDelete">delete</button>
+        <button class="btn btn-grey btnClose">Close</button>
+      </div>
+    </section>
+
+    <!-- DASHBOARD CALENDER -->
+    <section class="calender-content">
+      <div class="cal-section">
+          <div class="header">
+            <div>
+              <button class="btn btn-light btn-md with-icon" id="btnBack"><span class="material-symbols-rounded me-1">chevron_left</span>prev month</button>
+              <button class="btn btn-light btn-md with-icon" id="btnNext">Next month<span class="material-symbols-rounded ms-1">chevron_right</span></button>
+            </div>
+            <div class="month fs-22 text-caps color-secondary fw-extrabold">june 2023</div>
+            <div class="calender-group-btn d-flex">
+              <button class="btn btn-light text-caps left-radius10 border-right me-0">Month</button>
+              <button class="btn btn-light text-caps border-radius0 border-right me-0">week</button>
+              <button class="btn btn-light text-caps border-radius0 border-right me-0">day</button>
+              <button class="btn btn-light text-caps right-radius10 me-0">list</button>
+            </div>
+          </div>
+          <div class="calender-section">
+            <div class="weekdays">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div class="color-orange">Sat</div>
+                <div class="color-orange">Sun</div>
+            </div>
+            <table class="calender-table">
+              <tr>
+                <td class="disabled"><span >30</span></td>
+                <td>1</td>
+                <td>2</td>
+                <td class="date-red"><div>3</div><br>
+                  <div class="fs-lg">XYZ Exporters SO C</div>
+                </td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td class="date-green"><div>13</div><br>
+                  <div class="fs-lg">Riya Birthday<br> (12:00 PM) <br> <img src="../images/backgrounds/a1.jpg" class="h-40 w-40 rounded-circle" alt=""></div>
+                </td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+              </tr>
+            </table>
+          </div>
+      </div>
+      
+    </section>
+
+
+
+  <script src="../assets/dist/js/all.min.js"></script>
+  </body>
+</html>

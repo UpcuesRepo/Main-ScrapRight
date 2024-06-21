@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   
+  
+   <!-- CSS -->
+   <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+    <div class="layout-1 style-2 height-100">
+        <nav class="navbar main-navbar navbar-expand-xl">
+          <div class="d-flex justify-content-between w-100">
+              <div class="navbar-left-links d-flex">
+                  <div class="logo-part">
+                      <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+                      <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                  </div>
+                  <div class="link-part d-flex">
+                      <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                      <div class="dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              transactions
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                              <div class="btn-group dropend">
+                                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Action
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                              </div>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                      </div>
+                      <a href="javascript:void(0);" class="nav-link">materials</a>
+                      <a href="javascript:void(0);" class="nav-link">customers</a>
+                      <a href="javascript:void(0);" class="nav-link">reports</a>
+                      <a href="javascript:void(0);" class="nav-link">admin</a>
+                  </div>
+              </div>
+              <div class="navbar-right-part d-flex align-items-center">
+                  <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                  <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                      <div class="username-tag">nick v</div>
+                  </div>
+                  <div class="icon-part">
+                      <a href="#">
+                          <span class="material-symbols-rounded">logout</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </nav>
+        <nav class="navbar-h-98 navbar-expand-xl">
+            <div class="d-flex align-items-center justify-content-between w-100">
+              <div class="color-secondary text-caps fw-extrabold fs-xl">translation</div>
+              <div class="d-flex w-33p">
+                <div class="form-group w-41p me-3">
+                  <label class="form-label">Language</label>
+                  <select class="selectpicker" data-live-search="true">
+                    <option data-tokens="ketchup mustard">1</option>
+                    <option data-tokens="mustard">2</option>
+                    <option data-tokens="frosting">3</option>
+                  </select>
+                </div>
+                <div class="form-group w-59p">
+                  <label class="form-label">Page</label>
+                  <div class="d-flex">
+                    <div class="form-group w-72p me-3">
+                      <select class="selectpicker" data-live-search="true">
+                        <option data-tokens="ketchup mustard">1</option>
+                        <option data-tokens="mustard">2</option>
+                        <option data-tokens="frosting">3</option>
+                      </select>
+                    </div>
+                    <button type="button" class="btn btn-dark with-icon radius-sm h-36">save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <div class="content-section d-flex height-100">
+            <div class="translation-card bg-white w-100 overflow-hidden radius-lg shadow-md">
+                <div class="head-part pad-15 d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center w-55p">
+                        <div class="fs-lg fw-extrabold text-caps me-3">upload a csv file</div>     
+                        <form method="post" class="browse-file w-30p me-3" enctype="multipart/form-data" action="">
+                            <span id="filename" class="filename"></span>
+                            <div class="button-part d-flex justify-content-end h-100">
+                              <label for="file-upload">Choose File<input type="file" id="file-upload" class="file-upload"></label>
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-dark with-icon radius-sm h-36 me-3"><span class="material-symbols-rounded me-1">upload_file</span>upload csv</button>
+                        <button type="button" class="btn btn-blue with-icon radius-sm h-36"><span class="material-symbols-rounded me-1">download</span>download sample csv</button>
+                    </div>
+                    <div class="pad-15 radius-lg bg-grey-4 d-flex align-items-center w-34p">
+                        <div class="form-group d-flex align-items-center me-3 w-100">
+                            <label class="form-label me-2">Language</label>
+                            <div class="w-100">
+                                <select class="selectpicker" data-live-search="true">
+                                    <option data-tokens="ketchup mustard">1</option>
+                                    <option data-tokens="mustard">2</option>
+                                    <option data-tokens="frosting">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-lightblue3 with-icon h-36 radius-sm">translate with google</button>
+                    </div>
+                </div>
+                <div class="pad-15">
+                    <div class="d-flex flex-wrap justify-content-between mb-3">
+                        <div class="form-group w-12p">
+                            <label class="form-label">User</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Scan License</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">ID/License</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Vehicle Plate</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Payee Info</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Name</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Make/Model</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Gross</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between mb-3">
+                        <div class="form-group w-12p">
+                            <label class="form-label">Thumbprint</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Cash Drawer</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Start</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Net</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Total</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Signature</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">#Items</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between mb-3">
+                        <div class="form-group w-12p">
+                            <label class="form-label">Cancel Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Pay Out Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Print Receipt</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Finish Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Workstation</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">End</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Customer Info</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Change Material Group</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between mb-3">
+                        <div class="form-group w-12p">
+                            <label class="form-label">Tare</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Price</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Seller</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Select a material group</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Advance Balance</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Start a New Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Add a Material</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">RePay Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between mb-3">
+                        <div class="form-group w-12p">
+                            <label class="form-label">Payable Now</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Search For Tickets</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Print Weight Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Ticket Not Compliant</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Commit Inv</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">PreWeight Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Ticket is Compliant</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Uncancel Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between mb-3">
+                        <div class="form-group w-12p">
+                            <label class="form-label">Unvoid Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Find</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Qty</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Total Ticket Amount</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Void Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Edit</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Pay Details For Ticket</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Total Eligible Pay Amount</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between mb-3">
+                        <div class="form-group w-12p">
+                            <label class="form-label">Amount</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Select a(n)</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Attach Files/Notes</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Change Material</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Method</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Material</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Buy A</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Require Sort</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between mb-3">
+                        <div class="form-group w-12p">
+                            <label class="form-label">Select Package Type</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">No</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Tag & Hold</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">VIN Information</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Yes</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Contam Material</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Delete Material</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                        <div class="form-group w-12p">
+                            <label class="form-label">Back</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+</html> 

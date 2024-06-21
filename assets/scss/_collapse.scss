@@ -1,0 +1,62 @@
+.inventory-contol-collapse{
+    .collapse-horizontal{
+        .collapse-content{
+            padding: 20px;
+            width: 40rem;
+            .list-group{
+                h1{
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+// PAY PREFERENCE COLLAPSE
+.pay-collapse{
+    .btn{
+        &.btn-blue{
+            &:hover,&:focus{
+                background-color: $secondary;
+                color: white;
+            }
+        }
+        &:not(.collapsed){
+            border-radius: 10px 10px 0 0;
+            &::after{
+                content: "save";
+                background-image: none;
+                position: absolute;
+                border-left: 1px solid $white;
+                height: 60px;
+                width: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+            }
+        }
+        &::after{
+            background-image: url("../../../images/icons/expand_more.svg");
+            background-repeat: no-repeat;
+            content: "";
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            right: 20px;
+        }
+    }
+    .card{
+        border-radius: 0 0 10px 10px;
+        box-shadow: none;
+        border: 0;
+        padding: 0;
+        background-color: $grey-4;
+        .state-link{
+            color: $secondary;
+            padding: 10px 20px;
+            &:not(:last-child){
+                border-bottom: $border-grey;
+            }
+        }
+    }
+}

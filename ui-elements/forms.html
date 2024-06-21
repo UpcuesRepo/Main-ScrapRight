@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <!-- FAVICON -->
+     <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+     <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+     <link rel="manifest" href="../images/favicon/manifest.json">
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+     <meta name="theme-color" content="#ffffff">
+     
+    
+     <!-- CSS -->
+     <link href="../assets/dist/css/default.css" rel="stylesheet" />
+     <title>ScrapRight</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Forms</h1>
+      <div class="row mb-5 mt-5"> 
+        <div class="col-md-3">
+          <div class="form-group mb-3">
+            <label class="form-label">Floating Select</label>
+            <select class="selectpicker" data-live-search="true">
+              <option data-tokens="ketchup mustard">1</option>
+              <option data-tokens="mustard">2</option>
+              <option data-tokens="frosting">3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group drop-down-small mb-3">
+            <label class="form-label">Floating Select</label>
+            <select class="selectpicker" data-live-search="true">
+              <option data-tokens="ketchup mustard">1</option>
+              <option data-tokens="mustard">2</option>
+              <option data-tokens="frosting">3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group drop-down-small border-black mb-3">
+            <label class="form-label">Floating Select</label>
+            <select class="selectpicker" data-live-search="true">
+              <option data-tokens="ketchup mustard">1</option>
+              <option data-tokens="mustard">2</option>
+              <option data-tokens="frosting">3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-3 mb-5">
+          <div class="form-group" role="search">
+            <label class="form-label"></label>
+            <input class="form-control me-2 search-icon" type="search" placeholder="Search" aria-label="Search">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <input class="form-control secondary-form-control user-icon" type="text" placeholder="Username">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group bg-white d-flex secondary-form-control">
+            <input class="form-control lock-icon" type="password" id="myInput" placeholder="Password">
+            <a href="#" class="eye-icon" onclick="showPassword();"></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label class="form-label"></label>
+            <input class="form-control me-2 scale-icon" type="text" placeholder="Search" aria-label="Search">
+          </div>
+        </div>
+        <div class="col-md-3 mb-5">
+          <div class="form-group">
+            <label class="form-label">weight</label>
+            <input class="form-control me-2 outbound-icon" type="text" placeholder="" aria-label="Search">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-group">
+            <label class="form-label">ID / Registration #:</label>
+            <input type="email" class="form-control h-36" placeholder="">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-group">
+            <label class="form-label">ID / Registration #:</label>
+            <input type="email" class="form-control black-border h-30" placeholder="">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-group">
+            <label class="form-label">Phone 1</label>
+            <div class="form-control h-36 p-0 d-flex justify-content-between">
+              <input type="email" class="border-none focus-none radius-sm w-100 p-2" placeholder="">
+              <div class="dropdown mobile-dropdown">
+                <button class="btn btn-dropdown-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Mobile</button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Work</button></li>
+                  <li><button class="dropdown-item" type="button">Home</button></li>
+                  <li><button class="dropdown-item" type="button">Phone</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-group">
+            <label class="form-label">Container#: <span class="color-red">*</span></label>
+            <input type="email" class="form-control h-36" placeholder="">
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-group">
+            <label class="form-label">Pickup Date:</label>
+            <input type="date" class="form-control h-36" placeholder="">
+          </div>
+        </div>
+      </div>
+      <!--CHECKBOX & RADIOS BUTTONS-->
+      <div class="row mb-5">
+        <div class="col-md-3 mb-3">
+          <div class="form-check form-inline me-3">
+            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+            <label class="form-check-label style-1" for="check1">Default checkbox</label>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-check form-check-20 form-inline">
+            <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+            <label class="form-check-label style-1" for="check1-20">20 size Default checkbox</label>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-check form-check-sm form-inline">
+            <input class="form-check-input add-after" type="checkbox" value="" id="check1sm">
+            <label class="form-check-label style-1" for="check1sm">small Default checkbox</label>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-check form-inline me-3">
+            <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+            <label class="form-check-label" for="radio1">Default radio</label>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-check form-inline me-3">
+            <input class="form-check-input form-check-sm add-after2" type="radio" name="flexRadioDefault" id="radio1">
+            <label class="form-check-label" for="radio1">Default radio</label>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-group">
+            <label class="form-label">Notes</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-check form-switch">
+            <label class="form-check-label ms-2" for="radio2">
+              Default radio
+            </label>
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"> 
+          </div>
+      </div>
+
+      <!-- FORM BOX -->
+      <div class="row mb-5">
+        <div class="col-md-6 mb-5">
+          <div class="form-box form-box-sm bg-form-box radius-lg shadow-small pad-10">
+            <div class="row-1 d-flex">
+              <div class="form-group me-2">
+                <input type="email" class="form-control h-36" placeholder="">
+              </div>
+              <div class="form-group m-0 me-2">
+                <input type="email" class="form-control h-36" placeholder="">
+              </div>
+              <div class="form-group w-70p me-2">
+                <select class="selectpicker" data-live-search="true">
+                  <option data-tokens="ketchup mustard">1</option>
+                  <option data-tokens="mustard">2</option>
+                  <option data-tokens="frosting">3</option>
+                </select>
+              </div>
+              <div class="form-group w-70p">
+                <input type="email" class="form-control h-36" placeholder="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 mb-5">
+          <div class="form-box bg-form-box radius-lg shadow-small pad-15 mb-3">
+            <div class="row-1 d-flex justify-content-between">
+              <div class="form-group w-48p">
+                <label class="form-label">Location</label>
+                <input type="email" class="form-control h-36" placeholder="">
+              </div>
+              <div class="form-group w-48p m-0">
+                <label class="form-label">Street</label>
+                <input type="email" class="form-control h-36" placeholder="">
+              </div>
+            </div>
+            <div class="row-2 d-flex justify-content-between">
+              <div class="left-part w-48p d-flex justify-content-between me-3">
+                <div class="form-group w-48p">
+                  <label class="form-label">City</label>
+                  <input type="email" class="form-control h-36" placeholder="">
+                </div>
+                <div class="form-group w-48p m-0">
+                  <label class="form-label">State</label>
+                  <select class="selectpicker" data-live-search="true">
+                    <option data-tokens="ketchup mustard">1</option>
+                    <option data-tokens="mustard">2</option>
+                    <option data-tokens="frosting">3</option>
+                  </select> 
+                </div>
+              </div>
+              <div class="right-part w-48p d-flex justify-content-between">
+                <div class="form-group">
+                  <label class="form-label">Zip Code</label>
+                  <input type="email" class="form-control h-36" placeholder="">
+                </div>
+                <div class="btn-part d-flex align-items-end">
+                  <button class="btn btn-blue btn-xs me-2"><span class="material-symbols-rounded">done</span></button>
+                  <button class="btn btn-grey btn-xs"><span class="material-symbols-rounded">close</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUPING -->
+      <div class="input-btn-group d-flex align-items-center mb-5 p-0">
+        <div class="input-part">
+          <div class="form-group drop-down-xs mb-1">
+            <select class="selectpicker" data-live-search="true">
+              <option data-tokens="ketchup mustard">Trip Type</option>
+              <option data-tokens="mustard">2</option>
+              <option data-tokens="frosting">3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control h-30" placeholder="Search by customer">
+          </div>
+        </div>
+        <div class="btn-part">
+          <div class="btn-1">
+            <button class="btn btn-blue btn-sm radius-0"><span class="material-symbols-rounded">search</span></button>
+          </div>
+          <div class="btn-2">
+            <button class="btn btn-sm bg-primary-rgba color-primary radius-0"><span class="material-symbols-rounded">refresh</span></button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- BROWSE FILES -->
+      <div class="col-md-4 mb-5">
+        <form method="post" class="browse-file" enctype="multipart/form-data" action="">
+          <span id="filename" class="filename"></span>
+          <div class="button-part d-flex justify-content-end">
+            <label for="file-upload">Choose File<input type="file" id="file-upload" class="file-upload"></label>
+          </div>
+        </form>
+      </div>
+
+      <!-- TIME PICKER -->
+      <div class="col-md-4 mb-5">
+        <div class="form-group">
+          <input type="time" class="form-control" value="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-5">
+      <div class="form-group">
+        <label class="form-label">xyz</label>
+        <input class="form-control me-2 briefcase-icon" type="text" placeholder="" aria-label="Search">
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-5">
+      <div class="form-group">
+        <label class="form-label">xyz</label>
+        <input class="form-control me-2 delete-icon" type="text" placeholder="" aria-label="Search">
+      </div>
+    </div>
+    
+    <script src="../assets/dist/js/all.min.js"></script>
+  </body>
+</html>

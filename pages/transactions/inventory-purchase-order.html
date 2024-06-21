@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- CSS -->
+  <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+  <title>ScrapRight</title>
+</head>
+
+<body>
+<!--
+  <select class="selectpicker2">
+    <optgroup label="Picnic">
+      <option selected>Mustard</option>
+      <option>Ketchup</option>
+      <option>Relish</option>
+    </optgroup>
+    <optgroup label="Camping">
+      <option>Tent</option>
+      <option>Flashlight</option>
+      <option>Toilet Paper</option>
+    </optgroup>
+  </select>
+
+
+  <br><br>
+
+  <select class="selectpicker">
+    <option>Mustard</option>
+    <option>Ketchup</option>
+    <option>Relish</option>
+  </select>
+  
+  <br><br>
+  <br><br>
+
+
+  <select class="selectpicker3">
+    <optgroup label="Condiments" data-max-options="2">
+      <option>Value 1</option>
+      <option>KetValue 2</option>
+      <option>Value 3</option>
+    </optgroup>
+    <optgroup label="Breads" data-max-options="2">
+      <option>Value 4</option>
+      <option>Value 5</option>
+      <option>Value 6</option>
+    </optgroup>
+  </select>
+  
+  <br><br>
+-->
+
+  <!-- FILTER -->
+  <div class="offcanvas offcanvas-end left-radius10" tabindex="-1" id="offcanvasWithBackdrop"
+    aria-labelledby="offcanvasWithBackdropLabel">
+    <div class="offcanvas-header">
+      <button class="btn btn-dark color-white btn-lg filter-close-btn offcanvas-close" data-bs-dismiss="offcanvas"
+        aria-label="Close"><span class="material-symbols-rounded">cancel</span></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="form-group mb-3 d-flex">
+        <input type="email" class="form-control h-36" placeholder="">
+        <a href="#" class="underline-none me-2 h-36 py-2 btn btn-blue">
+          <span class="material-symbols-rounded text-white"> search</span>
+        </a>
+      </div>
+
+      <div class="form-group">
+        <div id="divPackageSearch">
+          <div class="d-flex justify-content-start mt-2">
+              <div id="invSearchBox" class="searchbox-auto">
+                  <div class="sb_down"></div>
+                  <input class="sb_input" type="text">
+                  <input class="sb_search" type="submit" value="">
+                  <ul class="sb_dropdown" style="display: none;">
+                      <li class="sb_filter d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                              <span id="spPkgFrom">FROM</span>
+                              <input type="date" id="txtPkgFrom" class="rounded form-control" placeholder="">
+                          </div>
+                          <div class="d-flex align-items-center">
+                              <span id="spPkgTo">TO</span>
+                              <input type="date" id="txtPkgTo" class="rounded form-control" placeholder="">
+                          </div>
+                      </li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_0" checked="checked"><label for="chksearchfilter_0" role="button"><strong>All</strong></label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_5" checked="checked" disabled="disabled"><label for="chksearchfilter_5" role="button">open</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_1" checked="checked" disabled="disabled"><label for="chksearchfilter_1" role="button">adj/shipper</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_6" checked="checked" disabled="disabled"><label for="chksearchfilter_6" role="button">completed</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_2" checked="checked" disabled="disabled"><label for="chksearchfilter_2" role="button">packages</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_7" checked="checked" disabled="disabled"><label for="chksearchfilter_7" role="button">shipped</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_3" checked="checked" disabled="disabled"><label for="chksearchfilter_3" role="button">sales quotes</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_8" checked="checked" disabled="disabled"><label for="chksearchfilter_8" role="button">available</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_4" checked="checked" disabled="disabled"><label for="chksearchfilter_4" role="button">sales contracts</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_10" checked="checked" disabled="disabled"><label for="chksearchfilter_10" role="button">allocated</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_9" checked="checked" disabled="disabled"><label for="chksearchfilter_9" role="button">packing list</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_12" checked="checked" disabled="disabled"><label for="chksearchfilter_12" role="button">awaiting sort</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_11" checked="checked" disabled="disabled"><label for="chksearchfilter_11" role="button">packing order</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_15" checked="checked" disabled="disabled"><label for="chksearchfilter_15" role="button">brokerage</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_13" checked="checked" disabled="disabled"><label for="chksearchfilter_13" role="button">purchase order</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_16" checked="checked" disabled="disabled"><label for="chksearchfilter_16" role="button">rev. brokerage</label></li>
+                      <li>
+                          <input type="checkbox" id="chksearchfilter_14" checked="checked" disabled="disabled"><label for="chksearchfilter_14" role="button">tickets</label></li>
+                      <li></li>
+
+                  </ul>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+      <!-- Div base table start-->
+      <div class="div-base-table">
+        <div class="tr thead">
+          <div class="td">#</div>
+          <div class="td">Name/Desc</div>
+          <div class="td">Status</div>
+
+        </div>
+        <div class="tr">
+          <div class="td text-nowrap">ADJ-2380 </div>
+          <div class="td">0 </div>
+          <div class="td">Finalized</div>
+        </div>
+        <div class="tr">
+          <div class="td text-nowrap">ADJ-2380 </div>
+          <div class="td">0 </div>
+          <div class="td">Watting for bookng status</div>
+        </div>
+        <div class="tr">
+          <div class="td text-nowrap">ADJ-2380 </div>
+          <div class="td">0 </div>
+          <div class="td">Open</div>
+        </div>
+        <div class="tr">
+          <div class="td text-nowrap">ADJ-2380 </div>
+          <div class="td">0 </div>
+          <div class="td">Open</div>
+        </div>
+
+      </div>
+      <!-- Div base table End-->
+    </div>
+    <!-- <div class="offcanvas-footer">
+          <div class="row">
+            <div class="col-md-6"><button class="btn btn-grey btn-md">clear</button></div>
+            <div class="col-md-6"><button class="btn btn-blue btn-md">search</button></div>
+          </div>
+        </div> -->
+  </div>
+  <div class="layout-1 style-inventory style-4">
+    <nav class="navbar main-navbar navbar-expand-xl">
+      <div class="d-flex justify-content-between w-100">
+        <div class="navbar-left-links d-flex">
+          <div class="logo-part">
+            <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+            <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+          </div>
+          <div class="link-part d-flex">
+            <a href="javascript:void(0);" class="nav-link">dashboard</a>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                transactions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <div class="btn-group dropend">
+                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Action
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <a href="javascript:void(0);" class="nav-link">materials</a>
+            <a href="javascript:void(0);" class="nav-link">customers</a>
+            <a href="javascript:void(0);" class="nav-link">reports</a>
+            <a href="javascript:void(0);" class="nav-link">admin</a>
+          </div>
+        </div>
+        <div class="navbar-right-part d-flex align-items-center">
+          <h6 class="color-white fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+          <div class="text-caps color-orange fs-md fw-extrabold me-3">
+            <div class="username-tag">nick v</div>
+          </div>
+          <div class="icon-part">
+            <a href="#">
+              <span class="material-symbols-rounded">logout</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="inventory-contol-collapse d-flex h-100">
+      <div>
+        <div class="collapse collapse-horizontal collapse-group" id="collapse1">
+          <div class="collapse-content p-0">
+            <div class="inventory-order-tabs">
+              <div class="nav nav-pills bg-dark" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="nav-link-part">
+                  <button class="nav-link btn btn-topborder bg-white-rgba2 btn-topborder-blue me-2 active"
+                    id="v-pills-invent1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-invent1" type="button"
+                    role="tab" aria-controls="v-pills-invent1" aria-selected="true">inventory</button>
+                  <button class="nav-link btn btn-topborder bg-white-rgba2 btn-topborder-blue me-2"
+                    id="v-pills-invent2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-invent2" type="button"
+                    role="tab" aria-controls="v-pills-invent2" aria-selected="true">contract</button>
+                  <button class="nav-link btn btn-topborder bg-white-rgba2 btn-topborder-blue me-2"
+                    id="v-pills-invent3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-invent3" type="button"
+                    role="tab" aria-controls="v-pills-invent3" aria-selected="true">finished goods</button>
+                </div>
+                <a href="#" class="date-part underline-none d-flex align-items-center me-2">
+                  <span class="material-symbols-rounded color-white"> cached</span>
+                </a>
+              </div>
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade v-pills-cust show active" id="v-pills-invent1" role="tabpanel"
+                  aria-labelledby="v-pills-invent1-tab" tabindex="0">
+                  <table class="table table-responsive collapsible-table mb-0 border-radius0">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>MATERIAL DESCRIPTION</th>
+                        <th>WIP INVENTORY</th>
+                        <th>FG INVENTORY </th>
+                        <th>AVG COST</th>
+                        <th>VALUE</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true"
+                        aria-controls="collapseExample">
+                        <td>
+                          <div class="bg-icon bg-black-rgba6">
+                            <span class="material-symbols-rounded color-white fs-xl">expand_more</span>
+                          </div>
+                        </td>
+                        <td>ALUM RUSA</td>
+                        <td>72,189.01 lbs</td>
+                        <td>1,000.00 lb</td>
+                        <td>$0.3406 /lb</td>
+                        <td>$26,334.06</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample">
+                        <td></td>
+                        <td>AL,ALUCABOND</td>
+                        <td>25,046.00 lb</td>
+                        <td>5,138.00 lbs</td>
+                        <td>$0.0389 /lb</td>
+                        <td>$1,014.19</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample">
+                        <td></td>
+                        <td>ALUM CAST</td>
+                        <td>5,873.00 lb</td>
+                        <td>98.00 lb</td>
+                        <td>$0.3397 /lb</td>
+                        <td>$2,028.40</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample">
+                        <td></td>
+                        <td>ALUM SIDING</td>
+                        <td>25,046.00 lb</td>
+                        <td>5,138.00 lbs</td>
+                        <td>$0.0389 /lb</td>
+                        <td>$1,014.19</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample">
+                        <td></td>
+                        <td>IRONY ALUM</td>
+                        <td>5,873.00 lb</td>
+                        <td>98.00 lb</td>
+                        <td>$0.3397 /lb</td>
+                        <td>$2,028.40</td>
+                      </tr>
+                      <tr data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true"
+                        aria-controls="collapseExample2">
+                        <td>
+                          <div class="bg-icon bg-black-rgba6">
+                            <span class="material-symbols-rounded color-white fs-xl">expand_more</span>
+                          </div>
+                        </td>
+                        <td>ALUMINUM</td>
+                        <td>184,324.94 lbs</td>
+                        <td>22,373.00 lbs</td>
+                        <td>$0.8621 /lb</td>
+                        <td>$178,190.67</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample2">
+                        <td></td>
+                        <td>AL,ALUCABOND</td>
+                        <td>25,046.00 lb</td>
+                        <td>5,138.00 lbs</td>
+                        <td>$0.0389 /lb</td>
+                        <td>$1,014.19</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample2">
+                        <td></td>
+                        <td>ALUM CAST</td>
+                        <td>5,873.00 lb</td>
+                        <td>98.00 lb</td>
+                        <td>$0.3397 /lb</td>
+                        <td>$2,028.40</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample2">
+                        <td></td>
+                        <td>ALUM SIDING</td>
+                        <td>25,046.00 lb</td>
+                        <td>5,138.00 lbs</td>
+                        <td>$0.0389 /lb</td>
+                        <td>$1,014.19</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample2">
+                        <td></td>
+                        <td>IRONY ALUM</td>
+                        <td>5,873.00 lb</td>
+                        <td>98.00 lb</td>
+                        <td>$0.3397 /lb</td>
+                        <td>$2,028.40</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample2">
+                        <td></td>
+                        <td>AL,ALUCABOND</td>
+                        <td>25,046.00 lb</td>
+                        <td>5,138.00 lbs</td>
+                        <td>$0.0389 /lb</td>
+                        <td>$1,014.19</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample2">
+                        <td></td>
+                        <td>ALUM CAST</td>
+                        <td>5,873.00 lb</td>
+                        <td>98.00 lb</td>
+                        <td>$0.3397 /lb</td>
+                        <td>$2,028.40</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample2">
+                        <td></td>
+                        <td>ALUM SIDING</td>
+                        <td>25,046.00 lb</td>
+                        <td>5,138.00 lbs</td>
+                        <td>$0.0389 /lb</td>
+                        <td>$1,014.19</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample2">
+                        <td></td>
+                        <td>IRONY ALUM</td>
+                        <td>5,873.00 lb</td>
+                        <td>98.00 lb</td>
+                        <td>$0.3397 /lb</td>
+                        <td>$2,028.40</td>
+                      </tr>
+                      <tr data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="true"
+                        aria-controls="collapseExample3">
+                        <td>
+                          <div class="bg-icon bg-black-rgba6">
+                            <span class="material-symbols-rounded color-white fs-xl">expand_more</span>
+                          </div>
+                        </td>
+                        <td>ALUMINUM</td>
+                        <td>184,324.94 lbs</td>
+                        <td>22,373.00 lbs</td>
+                        <td>$0.8621 /lb</td>
+                        <td>$178,190.67</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample3">
+                        <td></td>
+                        <td>AL,ALUCABOND</td>
+                        <td>25,046.00 lb</td>
+                        <td>5,138.00 lbs</td>
+                        <td>$0.0389 /lb</td>
+                        <td>$1,014.19</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample3">
+                        <td></td>
+                        <td>ALUM CAST</td>
+                        <td>5,873.00 lb</td>
+                        <td>98.00 lb</td>
+                        <td>$0.3397 /lb</td>
+                        <td>$2,028.40</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample3">
+                        <td></td>
+                        <td>ALUM SIDING</td>
+                        <td>25,046.00 lb</td>
+                        <td>5,138.00 lbs</td>
+                        <td>$0.0389 /lb</td>
+                        <td>$1,014.19</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample3">
+                        <td></td>
+                        <td>IRONY ALUM</td>
+                        <td>5,873.00 lb</td>
+                        <td>98.00 lb</td>
+                        <td>$0.3397 /lb</td>
+                        <td>$2,028.40</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample3">
+                        <td></td>
+                        <td>AL,ALUCABOND</td>
+                        <td>25,046.00 lb</td>
+                        <td>5,138.00 lbs</td>
+                        <td>$0.0389 /lb</td>
+                        <td>$1,014.19</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample3">
+                        <td></td>
+                        <td>ALUM CAST</td>
+                        <td>5,873.00 lb</td>
+                        <td>98.00 lb</td>
+                        <td>$0.3397 /lb</td>
+                        <td>$2,028.40</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample3">
+                        <td></td>
+                        <td>ALUM SIDING</td>
+                        <td>25,046.00 lb</td>
+                        <td>5,138.00 lbs</td>
+                        <td>$0.0389 /lb</td>
+                        <td>$1,014.19</td>
+                      </tr>
+                      <tr class="collapse show" id="collapseExample3">
+                        <td></td>
+                        <td>IRONY ALUM</td>
+                        <td>5,873.00 lb</td>
+                        <td>98.00 lb</td>
+                        <td>$0.3397 /lb</td>
+                        <td>$2,028.40</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane fade v-pills-cust" id="v-pills-invent2" role="tabpanel"
+                  aria-labelledby="v-pills-invent2-tab" tabindex="0">
+                  2
+                </div>
+                <div class="tab-pane fade v-pills-cust" id="v-pills-invent3" role="tabpanel"
+                  aria-labelledby="v-pills-invent3-tab" tabindex="0">
+                  3
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-section w-100">
+        <div class="btn-group w-100">
+          <nav class="navbar-h-98 inventory-navbar navbar-expand-xl w-100">
+            <div class="title-part d-flex align-items-center">
+              <button type="button" class="btn btn-skyblue color-black btn-lg" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse1"><span class="material-symbols-rounded">menu_open</span></button>
+              <h6 class="fs-xl color-secondary text-caps fw-extrabold mb-0 ms-3">inventory control center</h6>
+            </div>
+            <div class="select-input-part d-flex align-items-center justify-content-end w-50">
+              <div class="form-group w-23p me-3">
+                <select class="selectpicker" data-live-search="true">
+                  <option data-tokens="ketchup mustard">Search By Material</option>
+                  <option data-tokens="mustard">2</option>
+                  <option data-tokens="frosting">3</option>
+                </select>
+              </div>
+              <div class="form-group w-16p me-3">
+                <select class="selectpicker" data-live-search="true">
+                  <option data-tokens="ketchup mustard">Choose Location</option>
+                  <option data-tokens="mustard">2</option>
+                  <option data-tokens="frosting">3</option>
+                </select>
+              </div>
+              <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                aria-controls="offcanvasWithBackdrop" class="btn btn-dark color-white btn-lg"><span
+                  class="material-symbols-rounded">tune</span></button>
+            </div>
+          </nav>
+        </div>
+        <div class="content-section d-flex flex-column flex-wrap justify-content-between height-100">
+          <div class="p-20">
+            <div class="inventory-order-tabs bg-white inventory-card">
+              <div class="nav nav-pills blue-strip" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="nav-link-part">
+                  <button class="nav-link btn btn-topborder btn-topborder-blue me-2 active" id="v-pills-cust-tab"
+                    data-bs-toggle="pill" data-bs-target="#v-pills-cust" type="button" role="tab"
+                    aria-controls="v-pills-cust" aria-selected="true">customer</button>
+                  <button class="nav-link btn btn-topborder btn-topborder-blue me-2" id="v-pills-po-tab"
+                    data-bs-toggle="pill" data-bs-target="#v-pills-po" type="button" role="tab"
+                    aria-controls="v-pills-po" aria-selected="false">po quote</button>
+                  <button class="nav-link btn btn-topborder btn-topborder-blue me-2" id="v-pills-contr-tab"
+                    data-bs-toggle="pill" data-bs-target="#v-pills-contr" type="button" role="tab"
+                    aria-controls="v-pills-contr" aria-selected="false">po contract</button>
+                  <button class="nav-link btn btn-topborder btn-topborder-blue me-2" id="v-pills-ticket-tab"
+                    data-bs-toggle="pill" data-bs-target="#v-pills-ticket" type="button" role="tab"
+                    aria-controls="v-pills-ticket" aria-selected="false">ticket fulfillment</button>
+                </div>
+                <div class="date-part d-flex align-items-center">
+                  <div class="date color-primary fs-sm fw-extrabold text-caps me-3">
+                    <span class="color-grey">date:</span> 5/25/2023 1:07:55 AM
+                  </div>
+                  <button class="btn btn-blue color-white btn-lg"><span
+                      class="material-symbols-rounded">more_vert</span></button>
+                </div>
+              </div>
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show v-pills-cust active" id="v-pills-cust" role="tabpanel"
+                  aria-labelledby="v-pills-cust-tab" tabindex="0">
+                  <div class="title-strip d-flex align-items-center">
+                    <div class="left-title me-3">
+                      <h6 class="fs-md text-caps fw-extrabold mb-0">vendor</h6>
+                    </div>
+                    <div class="right-title">
+                      <h6 class="fs-md text-caps fw-extrabold mb-0">contact</h6>
+                    </div>
+                  </div>
+                  <div class="box-part d-flex">
+                    <div class="combo-box bg-grey-4 w-50 me-3">
+                      <div class="blue-box bg-form-box-blue3">
+                        <div class="form-group w-65p">
+                          <label class="form-label">Select Vendor</label>
+                          <select class="selectpicker" data-live-search="true">
+                            <option data-tokens="ketchup mustard">1</option>
+                            <option data-tokens="mustard">2</option>
+                            <option data-tokens="frosting">3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-content-part">
+                        <div class="input-row mb-2">
+                          <div class="form-group w-50">
+                            <label class="form-label">Country</label>
+                            <select class="selectpicker" data-live-search="true">
+                              <option data-tokens="ketchup mustard">1</option>
+                              <option data-tokens="mustard">2</option>
+                              <option data-tokens="frosting">3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="input-row d-flex justify-content-between mb-2">
+                          <div class="form-group w-100 me-3">
+                            <label class="form-label">Address 1</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+                          <div class="form-group w-100">
+                            <label class="form-label">Address 2</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+                        </div>
+                        <div class="input-row d-flex justify-content-between mb-2">
+                          <div class="form-group w-100 me-3">
+                            <label class="form-label">State</label>
+                            <select class="selectpicker" data-live-search="true">
+                              <option data-tokens="ketchup mustard">1</option>
+                              <option data-tokens="mustard">2</option>
+                              <option data-tokens="frosting">3</option>
+                            </select>
+                          </div>
+                          <div class="form-group w-100 me-3">
+                            <label class="form-label">City</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+                          <div class="form-group w-100">
+                            <label class="form-label">ZIP code</label>
+                            <input type="email" class="form-control h-36" placeholder="e.g. 98103">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right-box bg-grey-4 w-50">
+                      <div class="form-content-part">
+                        <div class="input-row mb-2">
+                          <div class="form-group w-100">
+                            <label class="form-label">Contact Person Name</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+                        </div>
+                        <div class="input-row d-flex justify-content-between mb-2">
+                          <div class="form-group w-100 me-3">
+                            <label class="form-label">Phone</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+                          <div class="form-group w-100">
+                            <label class="form-label">Fax</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+                        </div>
+                        <div class="input-row d-flex justify-content-between mb-2">
+                          <div class="form-group w-100 me-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+                          <div class="form-group w-100">
+                            <label class="form-label">Trader/Buyer</label>
+                            <select class="selectpicker" data-live-search="true">
+                              <option data-tokens="ketchup mustard">1</option>
+                              <option data-tokens="mustard">2</option>
+                              <option data-tokens="frosting">3</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade v-pills-po" id="v-pills-po" role="tabpanel" aria-labelledby="v-pills-po-tab"
+                  tabindex="0">
+                  <div class="title-strip d-flex align-items-center">
+                    <h6 class="fs-md fw-extrabold text-caps color-secondary mb-0">QUOTE # <span
+                        class="fs-lg color-black">81</span></h6>
+                  </div>
+                  <div class="form-box-part">
+                    <div class="radius-lg bg-form-box-blue3 d-flex mb-3">
+                      <div class="left-input-part me-3">
+                        <div class="d-flex mb-3">
+                          <div class="form-group w-100 me-2">
+                            <label class="form-label">Date</label>
+                            <input type="date" class="form-control h-36" placeholder="">
+                          </div>
+                          <div class="form-group w-100">
+                            <label class="form-label">Expire Date</label>
+                            <input type="date" class="form-control h-36" placeholder="">
+                          </div>
+                        </div>
+                        <div class="d-flex">
+                          <div class="form-group w-100 me-2">
+                            <label class="form-label">FOB</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+                          <div class="form-group w-100">
+                            <label class="form-label">Payment Terms</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right-input-part mw-20p">
+                        <div class="form-group">
+                          <label class="form-label mb-2">Special Instruction</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-grey-4 radius-lg d-flex">
+                      <div class="d-flex align-items-center w-100">
+                        <div class="form-group me-2">
+                          <label class="form-label">Add Material</label>
+                        </div>
+                        <div class="form-group mw-20p me-2">
+                          <select class="selectpicker" data-live-search="true">
+                            <option data-tokens="ketchup mustard">1</option>
+                            <option data-tokens="mustard">2</option>
+                            <option data-tokens="frosting">3</option>
+                          </select>
+                        </div>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="mdi-briefcase-plus-outline" width="24" height="24" fill="#000000"
+                            viewBox="0 0 24 24">
+                            <path
+                              d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V13.53C21.42,13 20.75,12.6 20,12.34V8H4V19H12.08C12.2,19.72 12.45,20.39 12.8,21H4A2,2 0 0,1 2,19V8A2,2 0 0,1 4,6H8V4A2,2 0 0,1 10,2M14,6V4H10V6H14M14,17H17V14H19V17H22V19H19V22H17V19H14V17Z" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Div base table start
+                  <div class="div-base-table">
+                    <div class="tr thead">
+                      <div class="td">material</div>
+                      <div class="td">DESCRIPTION</div>
+                      <div class="td">QTY</div>
+                      <div class="td">UOM</div>
+                      <div class="td">PRICE</div>
+                      <div class="td">TOTAL</div>
+                      <div class="td">&nbsp;</div>
+                    </div>
+                    <div class="tr">
+                      <div class="td">STEEL #222222 </div>
+                      <div class="td">Discription </div>
+                      <div class="td">0.0</div>
+                      <div class="td">LB</div>
+                      <div class="td">3.551</div>
+                      <div class="td">$0.00 </div>
+                      <div class="td"><a href="#" class="me-2">
+                          <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                        </a>
+
+                        <a href="#">
+                          <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="tr">
+                      <div class="td">STEEL #222222 </div>
+                      <div class="td">Discription </div>
+                      <div class="td">0.0</div>
+                      <div class="td">LB</div>
+                      <div class="td">3.551</div>
+                      <div class="td">$0.00 </div>
+                      <div class="td"><a href="#" class="me-2">
+                          <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                        </a>
+
+                        <a href="#">
+                          <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="tr">
+                      <div class="td">STEEL #222222 </div>
+                      <div class="td">Discription </div>
+                      <div class="td">0.0</div>
+                      <div class="td">LB</div>
+                      <div class="td">3.551</div>
+                      <div class="td">$0.00 </div>
+                      <div class="td"><a href="#" class="me-2">
+                          <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                        </a>
+
+                        <a href="#">
+                          <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                        </a>
+                      </div>
+                    </div>
+
+
+                    <div class="tr tfoot">
+                      <div class="td">&nbsp;</div>
+                      <div class="td"># of Item: 1 </div>
+                      <div class="td">0.0</div>
+                      <div class="td">&nbsp;</div>
+                      <div class="td">$.00</div>
+                      <div class="td">&nbsp;</div>
+                      <div class="td">&nbsp;</div>
+                    </div>
+                  </div>-->
+                  <!-- Div base table End-->
+
+
+
+                  <!-- Div base table start-->
+
+                  <table class="table table-bottom-no-border mt-5">
+                    <thead>
+                      <tr>
+                        <th width="10%">MATERIAL</thtd>
+                        <th width="20%">DESCRIPTION</th>
+                        <th width="20%">QTY</th>
+                        <th width="20%">UOM</th>
+                        <th width="10%">PRICE</th>
+                        <th width="10%">TOTAL</th>
+                        <th width="10%">&nbsp;</th>
+                      </tr>
+                    </thead>
+
+
+                    <tbody class="div-table">
+                      <tr>
+                        <td colspan="7" class="p-0">
+                          <div id="divPQuoteMaterialItem" class="">
+
+                          <div id="ticketItem_24" class="ticketItem ticketItemCurrent table table-bottom-no-border">
+                            <div class="ticketItemDetail tr">
+                              <div class="ticketItemMat td" style="width:10%">
+                                
+                                <div class="ticketItemCode">D101</div>
+                                
+                              </div>
+                              
+                              <div class="ticketItemMatDescEdit td" style="width:20%"><input class="ticketItemMatDesc" value="D101"></div>
+                              
+                              <div class="ticketItemUnitEdit td" style="width:20%"><input type="text" class="ticketItemUnit" value="0.0">
+                              </div>
+
+                             
+                              <div class="ticketItemUomEdit td" style="width:20%"><input class="ticketItemUom ac_input" value="LB"
+                                  autocomplete="off"></div>
+                              
+                              <div class="ticketItemPriceEdit td" style="width:10%"><input class="ticketItemPrice" value="0"></div>
+                              <div class="ticketItemAmount td" style="width:10%">$0.00</div>
+                              <div class="ticketItemIcon td" id="ticketItemIcon_24" style="width:10%"><a href="#" class="note me-2"
+                                  title="Note"><span
+                                    class="material-symbols-rounded fs-lg color-black">chat</span></a><a href="#"
+                                  class="deleteticketitem me-2" title="Delete Item"><span
+                                    class="material-symbols-rounded fs-lg color-black">delete</span></a></div>
+                            </div>
+                            <div>
+                              
+                            </div>
+                          </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+
+
+
+
+                  </table>
+
+
+
+               
+                  <!-- Div base table End-->
+
+
+                  <!-- <table class="table table-bottom-no-border shadow-none inventory-order-table mb-0">
+                              <thead>
+                                <tr>
+                                  <th scope="col" class="fw-extrabold">material</th>
+                                  <th scope="col" class="fw-extrabold">description</th>
+                                  <th scope="col" class="fw-extrabold">qty</th>
+                                  <th scope="col" class="fw-extrabold">uom</th>
+                                  <th scope="col" class="fw-extrabold">price</th>
+                                  <th scope="col" class="fw-extrabold">total</th>
+                                  <th scope="col" class="fw-extrabold"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>STEEL #222222</td>
+                                  <td>STEEL #222222</td>
+                                  <td>0.0</td>
+                                  <td>LB</td>
+                                  <td>3.551</td>
+                                  <td>$0.00</td>
+                                  <td class="d-flex">
+                                    <a href="#" class="me-2">
+                                      <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                                    </a>
+                                    <a href="#">
+                                      <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>STEEL #222222</td>
+                                  <td>STEEL #222222</td>
+                                  <td>0.0</td>
+                                  <td>LB</td>
+                                  <td>3.551</td>
+                                  <td>$0.00</td>
+                                  <td class="d-flex">
+                                    <a href="#" class="me-2">
+                                      <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                                    </a>
+                                    <a href="#">
+                                      <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>STEEL #222222</td>
+                                  <td>STEEL #222222</td>
+                                  <td>0.0</td>
+                                  <td>LB</td>
+                                  <td>3.551</td>
+                                  <td>$0.00</td>
+                                  <td class="d-flex">
+                                    <a href="#" class="me-2">
+                                      <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                                    </a>
+                                    <a href="#">
+                                      <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>STEEL #222222</td>
+                                  <td>STEEL #222222</td>
+                                  <td>0.0</td>
+                                  <td>LB</td>
+                                  <td>3.551</td>
+                                  <td>$0.00</td>
+                                  <td class="d-flex">
+                                    <a href="#" class="me-2">
+                                      <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                                    </a>
+                                    <a href="#">
+                                      <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                              <tfoot>
+                                <tr>
+                                  <td></td>
+                                  <td># of Item: 1 </td>
+                                  <td>0.0</td>
+                                  <td></td>
+                                  <td>$.00</td>
+                                  <td></td>
+                                  <td class="d-flex"></td>
+                                </tr>
+                              </tfoot>
+                            </table> -->
+
+                  <div class="btn-part justify-content-center align-items-center d-flex bg-grey-4">
+                    <button class="btn btn-grey btn-h40 me-3">save</button>
+                    <button class="btn btn-grey btn-h40">close</button>
+                  </div>
+                </div>
+                <div class="tab-pane fade v-pills-po" id="v-pills-contr" role="tabpanel"
+                  aria-labelledby="v-pills-contr-tab" tabindex="0">
+                  <div class="title-strip d-flex align-items-center">
+                    <h6 class="fs-md fw-extrabold text-caps color-secondary mb-0">contract # <span
+                        class="fs-lg color-black">102</span></h6>
+                  </div>
+                  <div class="form-box-part">
+                    <div class="radius-lg bg-form-box-blue3 d-flex mb-3">
+                      <div class="left-input-part w-100 me-4">
+                        <div class="d-flex mb-3">
+                          <div class="form-group w-24p me-3">
+                            <label class="form-label">Date</label>
+                            <input type="date" class="form-control h-36" placeholder="">
+                          </div>
+                          <div class="form-group w-24p me-3">
+                            <label class="form-label">Expire Date</label>
+                            <input type="date" class="form-control h-36" placeholder="">
+                          </div>
+                          <div class="form-group w-24p me-3">
+                            <label class="form-label">Customer PO#</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+                          <div class="form-group w-24p">
+                            <label class="form-label">Payment Terms</label>
+                            <select class="selectpicker" data-live-search="true">
+                              <option data-tokens="ketchup mustard">1</option>
+                              <option data-tokens="mustard">2</option>
+                              <option data-tokens="frosting">3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="form-group w-24p me-3">
+                            <label class="form-label">Shipping Term</label>
+                            <select class="selectpicker" data-live-search="true">
+                              <option data-tokens="ketchup mustard">1</option>
+                              <option data-tokens="mustard">2</option>
+                              <option data-tokens="frosting">3</option>
+                            </select>
+                          </div>
+                          <div class="form-group w-24p me-3">
+                            <label class="form-label">Special Instruction</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+                          <div class="form-group w-24p me-3">
+                            <label class="form-label">COMEX</label>
+                            <input type="email" class="form-control h-36" placeholder="">
+                          </div>
+
+                        </div>
+                        <div class="d-flex align-items-center">
+
+                          <div class="form-check form-inline me-2 mt-3">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                            <label class="form-check-label style-1" for="check1">
+                              Predetermined Load
+                            </label>
+                          </div>
+                          <div class="form-check form-inline me-2 mt-3">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                            <label class="form-check-label style-1" for="check1">
+                              Brokerage
+                            </label>
+                          </div>
+                          <div class="form-check form-inline mt-3">
+                            <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                            <label class="form-check-label style-1" for="check1">
+                              Rev. Brokerage
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right-input-part mw-30p d-flex">
+                        <div class="form-group w-50 me-4">
+                          <label class="form-label">Terms & Conditions</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+                        </div>
+                        <div class="form-group w-50">
+                          <label class="form-label">Fulfill Against Sales Contract</label>
+                          <select class="selectpicker" data-live-search="true">
+                            <option data-tokens="ketchup mustard">1</option>
+                            <option data-tokens="mustard">2</option>
+                            <option data-tokens="frosting">3</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-grey-4 radius-lg d-flex">
+                      <div class="d-flex align-items-center w-100">
+                        <div class="form-group me-2">
+                          <label class="form-label">Add Material</label>
+                        </div>
+                        <div class="form-group mw-20p me-2">
+                          <select class="selectpicker" data-live-search="true">
+                            <option data-tokens="ketchup mustard">1</option>
+                            <option data-tokens="mustard">2</option>
+                            <option data-tokens="frosting">3</option>
+                          </select>
+                        </div>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="mdi-briefcase-plus-outline" width="24" height="24" fill="#000000"
+                            viewBox="0 0 24 24">
+                            <path
+                              d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V13.53C21.42,13 20.75,12.6 20,12.34V8H4V19H12.08C12.2,19.72 12.45,20.39 12.8,21H4A2,2 0 0,1 2,19V8A2,2 0 0,1 4,6H8V4A2,2 0 0,1 10,2M14,6V4H10V6H14M14,17H17V14H19V17H22V19H19V22H17V19H14V17Z" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="table table-bottom-no-border shadow-none inventory-order-table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="fw-extrabold">material</th>
+                        <th scope="col" class="fw-extrabold">description</th>
+                        <th scope="col" class="fw-extrabold">qty</th>
+                        <th scope="col" class="fw-extrabold">uom</th>
+                        <th scope="col" class="fw-extrabold">price</th>
+                        <th scope="col" class="fw-extrabold">total</th>
+                        <th scope="col" class="fw-extrabold">fulfillment</th>
+                        <th scope="col" class="fw-extrabold"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>STEEL #222222</td>
+                        <td>STEEL #222222</td>
+                        <td>0.0</td>
+                        <td>LB</td>
+                        <td>3.551</td>
+                        <td>$0.00</td>
+                        <td></td>
+                        <td class="d-flex">
+                          <a href="#" class="me-2">
+                            <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                          </a>
+                          <a href="#">
+                            <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>STEEL #222222</td>
+                        <td>STEEL #222222</td>
+                        <td>0.0</td>
+                        <td>LB</td>
+                        <td>3.551</td>
+                        <td>$0.00</td>
+                        <td></td>
+                        <td class="d-flex">
+                          <a href="#" class="me-2">
+                            <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                          </a>
+                          <a href="#">
+                            <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>STEEL #222222</td>
+                        <td>STEEL #222222</td>
+                        <td>0.0</td>
+                        <td>LB</td>
+                        <td>3.551</td>
+                        <td>$0.00</td>
+                        <td></td>
+                        <td class="d-flex">
+                          <a href="#" class="me-2">
+                            <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                          </a>
+                          <a href="#">
+                            <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>STEEL #222222</td>
+                        <td>STEEL #222222</td>
+                        <td>0.0</td>
+                        <td>LB</td>
+                        <td>3.551</td>
+                        <td>$0.00</td>
+                        <td></td>
+                        <td class="d-flex">
+                          <a href="#" class="me-2">
+                            <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                          </a>
+                          <a href="#">
+                            <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td></td>
+                        <td># of Item: 1 </td>
+                        <td>0.0</td>
+                        <td></td>
+                        <td>$.00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <div class="btn-part justify-content-center align-items-center d-flex bg-grey-4">
+                    <button class="btn btn-grey btn-h40 me-3">save</button>
+                    <button class="btn btn-grey btn-h40">close</button>
+                  </div>
+                </div>
+                <div class="tab-pane fade v-pills-po" id="v-pills-ticket" role="tabpanel"
+                  aria-labelledby="v-pills-ticket-tab" tabindex="0">
+                  <div class="title-strip d-flex align-items-center">
+                    <div class="left-title me-3">
+                      <h6 class="fs-md text-caps fw-extrabold mb-0">details</h6>
+                    </div>
+                    <div class="right-title">
+                      <h6 class="fs-md text-caps fw-extrabold mb-0">weight in / out</h6>
+                    </div>
+                  </div>
+                  <div class="form-box-part">
+                    <div class="inner-boxes d-flex">
+                      <div class="radius-lg bg-grey-4 w-50 me-3 d-flex mb-3">
+                        <div class="left-input-part w-70p me-3">
+                          <div class="d-flex mb-3">
+                            <div class="form-group w-100 me-3">
+                              <label class="form-label">Date</label>
+                              <input type="date" class="form-control h-36" placeholder="">
+                            </div>
+                            <div class="form-group w-100">
+                              <label class="form-label">Time In / Out</label>
+                              <input type="date" class="form-control h-36" placeholder="">
+                            </div>
+                          </div>
+                          <div class="d-flex">
+                            <div class="form-group w-100  me-3">
+                              <label class="form-label">Plate #</label>
+                              <input type="email" class="form-control h-36" placeholder="">
+                            </div>
+                            <div class="form-group w-100">
+                              <label class="form-label">Status</label>
+                              <input type="email" class="form-control h-36" placeholder="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="right-input-part mw-30p">
+                          <div class="form-group w-100">
+                            <label class="form-label mb-2">Notes</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="radius-lg bg-form-box-blue3 w-50 d-flex mb-3">
+                        <div class="form-group w-100 me-3">
+                          <label class="form-label">Heavy Weight</label>
+                          <div class="form-group">
+                            <input class="form-control me-2 " type="text" placeholder="" aria-label="Search">
+                            <button type="button" class="btn btn-white p-0 input-icon"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"
+                                fill="#3384D8">
+                                <path
+                                  d="M580-538v94q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625 12.825 0 21.325-8.625T640-444v-166q0-12.75-8.625-21.375T610-640H444q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T444-580h93L325-368q-9 9-9 21.158 0 12.158 8.609 21Q334-317 346.467-317q12.466 0 21.533-9l212-212ZM480.266-80q-82.734 0-155.5-31.5t-127.266-86q-54.5-54.5-86-127.341Q80-397.681 80-480.5q0-82.819 31.5-155.659Q143-709 197.5-763t127.341-85.5Q397.681-880 480.5-880q82.819 0 155.659 31.5Q709-817 763-763t85.5 127Q880-563 880-480.266q0 82.734-31.5 155.5T763-197.684q-54 54.316-127 86Q563-80 480.266-80Zm.234-60Q622-140 721-239.5t99-241Q820-622 721.188-721 622.375-820 480-820q-141 0-240.5 98.812Q140-622.375 140-480q0 141 99.5 240.5t241 99.5Zm-.5-340Z" />
+                              </svg></button>
+                          </div>
+                        </div>
+                        <div class="form-group w-100">
+                          <label class="form-label">Light Weight</label>
+                          <div class="form-group">
+                            <input class="form-control me-2 " type="text" placeholder="" aria-label="Search">
+                            <button type="button" class="btn btn-white p-0 input-icon"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"
+                                fill="#3384D8">
+                                <path
+                                  d="M580-538v94q0 12.75 8.675 21.375 8.676 8.625 21.5 8.625 12.825 0 21.325-8.625T640-444v-166q0-12.75-8.625-21.375T610-640H444q-12.75 0-21.375 8.675-8.625 8.676-8.625 21.5 0 12.825 8.625 21.325T444-580h93L325-368q-9 9-9 21.158 0 12.158 8.609 21Q334-317 346.467-317q12.466 0 21.533-9l212-212ZM480.266-80q-82.734 0-155.5-31.5t-127.266-86q-54.5-54.5-86-127.341Q80-397.681 80-480.5q0-82.819 31.5-155.659Q143-709 197.5-763t127.341-85.5Q397.681-880 480.5-880q82.819 0 155.659 31.5Q709-817 763-763t85.5 127Q880-563 880-480.266q0 82.734-31.5 155.5T763-197.684q-54 54.316-127 86Q563-80 480.266-80Zm.234-60Q622-140 721-239.5t99-241Q820-622 721.188-721 622.375-820 480-820q-141 0-240.5 98.812Q140-622.375 140-480q0 141 99.5 240.5t241 99.5Zm-.5-340Z" />
+                              </svg></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-grey-4 radius-lg d-flex">
+                      <div class="d-flex align-items-center w-100">
+                        <div class="form-group me-2">
+                          <label class="form-label">Add Material</label>
+                        </div>
+                        <div class="form-group mw-20p me-2">
+                          <select class="selectpicker" data-live-search="true">
+                            <option data-tokens="ketchup mustard">1</option>
+                            <option data-tokens="mustard">2</option>
+                            <option data-tokens="frosting">3</option>
+                          </select>
+                        </div>
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="mdi-briefcase-plus-outline" width="24" height="24" fill="#000000"
+                            viewBox="0 0 24 24">
+                            <path
+                              d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V13.53C21.42,13 20.75,12.6 20,12.34V8H4V19H12.08C12.2,19.72 12.45,20.39 12.8,21H4A2,2 0 0,1 2,19V8A2,2 0 0,1 4,6H8V4A2,2 0 0,1 10,2M14,6V4H10V6H14M14,17H17V14H19V17H22V19H19V22H17V19H14V17Z" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Div base table start-->
+                  <div class="div-base-table">
+                    <div class="tr thead">
+                      <div class="td">material</div>
+                      <div class="td">shipped gross</div>
+                      <div class="td">rec.gross</div>
+                      <div class="td">shipped tare</div>
+                      <div class="td">rec.tare</div>
+                      <div class="td">net</div>
+                      <div class="td">Price</div>
+                      <div class="td">total</div>
+                      <div class="td">&nbsp;</div>
+                    </div>
+                    <div class="tr">
+                      <div class="td">SAMPLE SELL </div>
+                      <div class="td"> <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="mdi-briefcase-plus-outline" width="24" height="24" fill="#3384D8"
+                            viewBox="0 0 24 24">
+                            <path
+                              d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V13.53C21.42,13 20.75,12.6 20,12.34V8H4V19H12.08C12.2,19.72 12.45,20.39 12.8,21H4A2,2 0 0,1 2,19V8A2,2 0 0,1 4,6H8V4A2,2 0 0,1 10,2M14,6V4H10V6H14M14,17H17V14H19V17H22V19H19V22H17V19H14V17Z" />
+                          </svg>
+                        </a> </div>
+                      <div class="td">500.0M</div>
+                      <div class="td"> <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="mdi-briefcase-plus-outline" width="24" height="24" fill="#3384D8"
+                            viewBox="0 0 24 24">
+                            <path
+                              d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V13.53C21.42,13 20.75,12.6 20,12.34V8H4V19H12.08C12.2,19.72 12.45,20.39 12.8,21H4A2,2 0 0,1 2,19V8A2,2 0 0,1 4,6H8V4A2,2 0 0,1 10,2M14,6V4H10V6H14M14,17H17V14H19V17H22V19H19V22H17V19H14V17Z" />
+                          </svg>
+                        </a></div>
+                      <div class="td">0.0M</div>
+                      <div class="td">500.0</div>
+                      <div class="td">$1.55/Ib</div>
+                      <div class="td">$-775.00</div>
+                      <div class="td"> <a href="#" class="me-2">
+                          <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                        </a>
+                        <a href="#">
+                          <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Div base table End-->
+                  <div class="form-box-part">
+                    <div class="bg-grey-4 radius-lg d-flex">
+                      <div class="d-flex align-items-center w-100">
+                        <div class="form-group me-3">
+                          <h6 class="fw-bold text-black mb-0"> SORTED MATERIALS</h6>
+                        </div>
+                        <div class="form-group me-2">
+                          <label class="form-label">Add Material</label>
+                        </div>
+                        <div class="form-group mw-20p me-2">
+                          <select class="selectpicker" data-live-search="true">
+                            <option data-tokens="ketchup mustard">1</option>
+                            <option data-tokens="mustard">2</option>
+                            <option data-tokens="frosting">3</option>
+                          </select>
+                        </div>
+                        <a href="#" class=" me-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="mdi-briefcase-plus-outline" width="24" height="24" fill="#000000"
+                            viewBox="0 0 24 24">
+                            <path
+                              d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V13.53C21.42,13 20.75,12.6 20,12.34V8H4V19H12.08C12.2,19.72 12.45,20.39 12.8,21H4A2,2 0 0,1 2,19V8A2,2 0 0,1 4,6H8V4A2,2 0 0,1 10,2M14,6V4H10V6H14M14,17H17V14H19V17H22V19H19V22H17V19H14V17Z" />
+                          </svg>
+                        </a>
+                        <div class="form-check form-inline ">
+                          <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+
+                          <label class="form-check-label style-1" for="check1">
+                            Require Sortation
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Div base table start-->
+                  <div class="div-base-table">
+                    <div class="tr thead">
+                      <div class="td">material</div>
+                      <div class="td">shipped gross</div>
+                      <div class="td">rec.gross</div>
+                      <div class="td">shipped tare</div>
+                      <div class="td">rec.tare</div>
+                      <div class="td">net</div>
+                      <div class="td">Price</div>
+                      <div class="td">total</div>
+                      <div class="td">&nbsp;</div>
+                    </div>
+                    <div class="tr">
+                      <div class="td">SAMPLE SELL </div>
+                      <div class="td"> <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="mdi-briefcase-plus-outline" width="24" height="24" fill="#3384D8"
+                            viewBox="0 0 24 24">
+                            <path
+                              d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V13.53C21.42,13 20.75,12.6 20,12.34V8H4V19H12.08C12.2,19.72 12.45,20.39 12.8,21H4A2,2 0 0,1 2,19V8A2,2 0 0,1 4,6H8V4A2,2 0 0,1 10,2M14,6V4H10V6H14M14,17H17V14H19V17H22V19H19V22H17V19H14V17Z" />
+                          </svg>
+                        </a> </div>
+                      <div class="td">500.0M</div>
+                      <div class="td"> <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" id="mdi-briefcase-plus-outline" width="24" height="24" fill="#3384D8"
+                            viewBox="0 0 24 24">
+                            <path
+                              d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V13.53C21.42,13 20.75,12.6 20,12.34V8H4V19H12.08C12.2,19.72 12.45,20.39 12.8,21H4A2,2 0 0,1 2,19V8A2,2 0 0,1 4,6H8V4A2,2 0 0,1 10,2M14,6V4H10V6H14M14,17H17V14H19V17H22V19H19V22H17V19H14V17Z" />
+                          </svg>
+                        </a></div>
+                      <div class="td">0.0M</div>
+                      <div class="td">500.0</div>
+                      <div class="td">$1.55/Ib</div>
+                      <div class="td">$-775.00</div>
+                      <div class="td"> <a href="#" class="me-2">
+                          <span class="material-symbols-rounded fs-lg color-black">chat</span>
+                        </a>
+                        <a href="#">
+                          <span class="material-symbols-rounded fs-lg color-black">delete</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Div base table End-->
+
+                  <div class="primary-footer-strip bg-primary d-flex justify-content-between mt-3">
+                    <div class="color-white fs-sm fw-extrabold"># OF ITEMS: 0</div>
+                    <div class="color-white fs-sm fw-extrabold">SCALE NET WT: 500.0 LB</div>
+                    <div class="color-white fs-sm fw-extrabold">ITEM NET WT: 500.0 LB</div>
+                    <div class="color-white fs-sm fw-extrabold">NET DISCREPANCY: 0.00 LB</div>
+                  </div>
+
+                  <div class="form-check form-inline mx-3 mb-3 ">
+                    <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+
+                    <label class="form-check-label style-1" for="check1">
+                      Add To Calendar
+                    </label>
+                  </div>
+                  <div class="btn-part justify-content-center align-items-center d-flex bg-grey-4">
+                    <button class="btn btn-grey btn-h40 me-3">cancel ticket</button>
+                    <button class="btn btn-grey btn-h40 me-3">send to ap review</button>
+                    <button class="btn btn-grey btn-h40 me-3">save</button>
+                    <button class="btn btn-grey btn-h40">close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 action-btn d-flex justify-content-end align-items-end">
+            <button class="btn btn-skyblue btn-md left-top-radius10 border-right">
+              <span class="material-symbols-rounded">note_add</span><br>
+              purchase<br>order
+            </button>
+            <button class="btn btn-skyblue btn-md border-right border-radius0">
+              <span class="material-symbols-rounded">collections_bookmark</span><br>
+              sales<br>order
+            </button>
+            <button class="btn btn-skyblue btn-md border-right border-radius0">
+              <span class="material-symbols-rounded">donut_small</span><br>
+              material <br>stats
+            </button>
+            <button class="btn btn-skyblue btn-md border-right border-radius0">
+              <span class="material-symbols-rounded">picture_as_pdf</span><br>
+              generate <br>report
+            </button>
+            <button class="btn btn-skyblue btn-md border-right border-radius0">
+              <span class="material-symbols-rounded">package</span><br>
+              create <br>package
+            </button>
+            <button class="btn btn-skyblue border-right border-radius0">
+              <span class="material-symbols-rounded">bar_chart</span><br>
+              adjust <br>inventory
+            </button>
+            <button class="btn btn-skyblue border-radius0">
+              <span class="material-symbols-rounded">match_word</span><br>
+              regrade <br> material
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../assets/dist/js/all.min.js"></script>
+</body>
+
+</html>

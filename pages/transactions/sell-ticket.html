@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <!-- FAVICON -->
+ <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+ <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+ <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+ <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+ <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+ <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+ <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+ <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+ <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+ <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+ <link rel="manifest" href="../images/favicon/manifest.json">
+ <meta name="msapplication-TileColor" content="#ffffff">
+ <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+ <meta name="theme-color" content="#ffffff">
+
+
+ <!-- CSS -->
+
+ <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+ <title>ScrapRight</title>
+</head>
+
+<body>
+
+ <div class="offcanvas offcanvas-end left-radius10" tabindex="-1" id="offcanvasWithBackdrop"
+  aria-labelledby="offcanvasWithBackdropLabel" aria-modal="true" role="dialog">
+  <div class="offcanvas-header">
+   <button class="btn btn-dark color-white btn-lg filter-close-btn offcanvas-close" data-bs-dismiss="offcanvas"
+    aria-label="Close"><span class="material-symbols-rounded">cancel</span></button>
+  </div>
+  <div class="offcanvas-body p-0">
+   <div class="new-ticket-leftmenu tabbing-bg">
+    <div class="inbound-tabbing">
+
+     <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade v-pills-cust show active" id="v-pills-inbound" role="tabpanel"
+       aria-labelledby="v-pills-inbound-tab" tabindex="0">
+       <button class="ticket-detail w-100 pad-10 border-bottom-tabbing">
+        <div class="d-flex justify-content-between mb-2">
+         <div class="text-caps fs-11 fw-extrabold txt-color">
+          TICKET NUMBER
+         </div>
+         <div class="text-caps fs-11 fw-extrabold txt-color">
+          #123456
+         </div>
+        </div>
+        <div class="text-caps fs-sm fw-extrabold txt-color text-align-left letter-space7 mb-2">
+         TICKET NUMBER
+        </div>
+        <div class="d-flex justify-content-between">
+         <div class="text-caps fs-11 fw-extrabold txt-color">
+          VEHICLE INFO
+         </div>
+         <div class="text-caps fs-11 fw-extrabold txt-color">
+          WHITE FORD NJE 123
+         </div>
+        </div>
+       </button>
+
+      </div>
+
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="offcanvas-footer">
+   <div class="row">
+    <div class="col-md-6"><button class="btn btn-grey btn-md">clear</button></div>
+    <div class="col-md-6"><button class="btn btn-blue btn-md">search</button></div>
+   </div>
+  </div>
+ </div>
+ <div class="layout-1 style-2 height-100">
+
+
+
+  <nav class="navbar main-navbar navbar-expand-xl">
+   <div class="d-flex justify-content-between w-100">
+    <div class="navbar-left-links d-flex">
+     <div class="logo-part">
+      <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+      <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+     </div>
+     <div class="link-part d-flex">
+      <a href="javascript:void(0);" class="nav-link">dashboard</a>
+      <!-- <a href="javascript:void(0);" class="nav-link">transactions</a> -->
+      <div class="dropdown">
+       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        transactions
+       </a>
+       <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li>
+         <div class="btn-group dropend">
+          <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">
+           Action
+          </a>
+          <ul class="dropdown-menu">
+           <li><a class="dropdown-item active" href="#">Action</a></li>
+           <li><a class="dropdown-item" href="#">Another action</a></li>
+           <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+         </div>
+        </li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+       </ul>
+      </div>
+      <a href="javascript:void(0);" class="nav-link">materials</a>
+      <a href="javascript:void(0);" class="nav-link">customers</a>
+      <a href="javascript:void(0);" class="nav-link">reports</a>
+      <a href="javascript:void(0);" class="nav-link">admin</a>
+     </div>
+    </div>
+    <div class="navbar-right-part d-flex align-items-center">
+     <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+     <div class="text-caps color-orange fs-md fw-extrabold me-3">
+      <div class="username-tag">nick v</div>
+     </div>
+     <div class="icon-part">
+      <a href="#">
+       <span class="material-symbols-rounded">logout</span>
+      </a>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <div class="d-flex height-100">
+
+   <div class="ticket-leftmenu w-35p">
+    <h6 class="color-dark fs-lg fw-bold text-center mb-0 py-3 border-bottom">Outbound Ticket</h6>
+    <div class="ticket-part d-flex justify-content-between align-items-center">
+     <div class="left-part">
+      <div class="color-dark fs-sm ">User: superadmin superadmin</div>
+     </div>
+     <div class="right-part d-flex align-items-center">
+      <div class="color-dark fs-sm">02/03/2024
+      </div>
+     </div>
+    </div>
+
+    <table class="table table-bottom-no-border border-radius0 mb-0">
+     <thead>
+      <tr>
+       <td class="fs-sm ">Ship To:</td>
+       <td class="fs-sm ">Sold To:</td>
+       <td class="fs-sm "><a href="">Edit</a></td>
+      </tr>
+      <tr>
+       <td class="fs-sm ">Contact Name:</td>
+       <td class="fs-sm ">Carrier Info:</td>
+       <td class="fs-sm "><a href="">Truck #:</a></td>
+      </tr>
+     </thead>
+
+    </table>
+    <div class="row p-2">
+        <div class="col-md-6">
+            <select id="drpCarrierName" class="selectpicker">
+                <option value="0">Select</option>
+                
+                <option value="5">
+                    SEA - CRIME LAB BABY</option>
+                
+                <option value="35">
+                    testing 123</option>
+                
+                <option value="37">
+                    TEST 23412341</option>
+                
+                <option value="66">
+                    MaxTest</option>
+                
+            </select>
+        </div>
+        <div class="col-md-6"><input type="text" class="form-control"></div>
+    </div>
+    <table class="table table-bottom-no-border border-radius0 mb-0">
+     <thead>
+      <tr>
+       <th scope="col" class="fs-sm fw-extrabold">tare</th>
+       <th scope="col" class="fs-sm fw-extrabold">gross</th>
+       <th scope="col" class="fs-sm fw-extrabold">net</th>
+       <th scope="col" class="fs-sm fw-extrabold">price</th>
+       <th scope="col" class="fs-sm fw-extrabold">total</th>
+      </tr>
+     </thead>
+     <tbody>
+
+      <tr>
+       <td>12</td>
+       <td>12</td>
+       <td>12</td>
+       <td>14</td>
+       <td>14</td>
+      </tr>
+      <tr>
+       <td>44</td>
+       <td>44</td>
+       <td>44</td>
+       <td>14</td>
+       <td>14</td>
+      </tr>
+      <tr>
+       <td>14</td>
+       <td>14</td>
+       <td>14</td>
+       <td>14</td>
+       <td>14</td>
+      </tr>
+     </tbody>
+    </table>
+    <table class="blue-table h-auto">
+     <tbody>
+      <tr>
+
+       <td>TOTAL <span class="color-green">$100.00</span></td>
+      </tr>
+     </tbody>
+    </table>
+    <div class="p-3">
+     <label>Note:</label>
+     <textarea class="form-control"></textarea>
+
+    </div>
+   </div>
+
+   <div class="content-section d-flex flex-column justify-content-between p-3 height-100 w-100">
+
+    <div class="bg-white p-3 radius-lg height-100">
+     <div class="d-flex">
+      <div class="">
+       <div class="row">
+        <div class="col-md-6">
+         <div class="form-group w-100 row d-flex justify-content-between">
+          <div class="col-md-6">
+           <label>Light Weight</label>
+           <input type="text" class="form-control h-36 d-inline-block" placeholder="Light Weight">
+          </div>
+          <div class="col-md-6">
+           <label>Heavy Weight</label>
+           <input type="text" class="form-control h-36 d-inline-block" placeholder="Heavy Weight">
+          </div>
+         </div>
+        </div>
+        <div class="col-md-6">
+         <label>Add Material</label>
+         <div class="form-group w-100  d-flex">
+          <input type="text" class="form-control h-36 d-inline-block mr-3" placeholder="Material Code">
+          <button type="button" class="btn btn-sm fs-11 btn-blue radius-sm mr-3">Add Package</button>
+          <button type="button" class="btn btn-skyblue color-black btn-sm p-1 align-items-center d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"><span class="material-symbols-rounded">menu_open</span></button> 
+        </div>
+        </div>
+       </div>
+       <div class="form-row fs-sm">
+        <ul class="list-none">
+         <li>Light Truck Weight : <span>2</span> </li>
+         <li>Heavy Truck Weight :<span>2</span> </li>
+         <li>Net Weight :<span>2</span> </li>
+         <li>Number of Items :<span>2</span> </li>
+         <li>Net Discrepency :<span>2</span> </li>
+
+        </ul>
+       </div>
+       <h6 class="bold">Select a material group:
+       </h6>
+       <div class="scroll-y p-2">
+        <div class=" row ">
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center h-100px mb-3 fs-md fw-bold">
+           A Million </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px mb-3 fs-md fw-bold">
+           Alloys </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center h-100px  mb-3 fs-md fw-bold">
+           ALUM RUSA </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center h-100px  mb-3 fs-md fw-bold">
+           ALUMINUM </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center h-100px   mb-3 fs-md fw-bold">
+           best material </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center h-100px   mb-3 fs-md fw-bold">
+           BRASS </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center h-100px   mb-3 fs-md fw-bold">
+           Candy Cane </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center h-100px    mb-3 fs-md fw-bold">
+           CARS2 </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center h-100px   mb-3 fs-md fw-bold">
+           cast iron </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           Cast iron group </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           CATS </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           COPPER </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           Demo123 </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           Earn Points</div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           FEE TEST </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           Import meterial grp </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           ND TEST </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           NJ TEST </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           pallets </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           PAPER </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           PayLater Test</div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           PRECIOUS METALS </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           QA Test 1004 </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           Rajkot </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           REDMI </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           Stainless Steel </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           STEEL </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           Steel </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           steel </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           test </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           Test Group </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           Test material group </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           video setup </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           VIDEO SETUP </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           Workshop </div>
+         </div>
+         <div class="col-md-3 ">
+          <div
+           class="card-material-group w-100 text-center d-flex align-items-center justify-content-center  h-100px  mb-3 fs-md fw-bold">
+           Workshop </div>
+         </div>
+
+        </div>
+       </div>
+      </div>
+     
+     </div>
+
+    </div>
+
+   </div>
+
+   
+    <div class="collapse collapse-horizontal collapse-group ticket-leftmenu " id="collapse1">
+       
+        <div class="p-3 pr-0">
+         <div class="form-row mb-3">
+         <select class="selectpicker">
+          <option value="0">fsdfsf</option>
+          
+          <optgroup label="ALUMINUM">
+              
+              <option value="6">
+                  Aluminum Sheet</option>
+              
+              <option value="7">
+                  Aluminum Cans</option>
+              
+              <option value="12">
+                  Aluminum Extrusion</option>
+              
+              <option value="13">
+                  Aluminum MLC (sort)</option>
+              
+              <option value="14">
+                  Aluminum Turnings</option>
+              
+              <option value="15">
+                  Cast Aluminum</option>
+              
+              <option value="32">
+                  REG1</option>
+              
+              <option value="33">
+                  REG1-LINKED</option>
+              
+              <option value="34">
+                  AVG8</option>
+              
+              <option value="35">
+                  AVG8-REG</option>
+              
+              <option value="36">
+                  AVG10</option>
+              
+              <option value="37">
+                  Alum Tires w Wheels</option>
+              
+              <option value="38">
+                  CAR RIMS</option>
+              
+              <option value="40">
+                  Fruits</option>
+              
+              <option value="44">
+                  Candy Cane$</option>
+              
+              <option value="46">
+                  Test Aluminium</option>
+              
+              <option value="47">
+                  SELL ITEM</option>
+              
+              <option value="49">
+                  FIFOTEST1</option>
+              
+              <option value="56">
+                  inspection</option>
+              
+              <option value="57">
+                  AVGTEST1</option>
+              
+              <option value="58">
+                  AVGTEST2</option>
+              
+              <option value="66">
+                  NickWheels</option>
+              
+              <option value="67">
+                  NickWheels2</option>
+              
+              <option value="69">
+                  Aluminum MLC</option>
+              
+              <option value="70">
+                  Aluminum Breakage (sort)</option>
+              
+              <option value="71">
+                  Aluminum Grade A</option>
+              
+              <option value="72">
+                  Aluminum Grade B</option>
+              
+              <option value="74">
+                  Aluminum Car Rims</option>
+              
+              <option value="75">
+                  69-CHILD</option>
+              
+              <option value="76">
+                  69-LINK1</option>
+              
+              <option value="77">
+                  69-LINK2</option>
+              
+              <option value="78">
+                  AVGC EASY TEST</option>
+              
+              <option value="80">
+                  TURNINGS (pricelist)</option>
+              
+              <option value="81">
+                  TEST-A</option>
+              
+              <option value="82">
+                  TEST-B</option>
+              
+              <option value="83">
+                  TEST-C</option>
+              
+              <option value="87">
+                  AVG-1</option>
+              
+              <option value="88">
+                  AVG-2</option>
+              
+              <option value="89">
+                  AVG-3</option>
+              
+              <option value="90">
+                  AVG-A</option>
+              
+              <option value="91">
+                  AVG-B</option>
+              
+              <option value="92">
+                  AVG-C</option>
+              
+              <option value="93">
+                  AVG-D</option>
+              
+              <option value="94">
+                  AVG-E</option>
+              
+              <option value="95">
+                  AVG-F</option>
+              
+              <option value="97">
+                  MAT-1</option>
+              
+              <option value="98">
+                  MAT-2</option>
+              
+              <option value="99">
+                  MAT-3</option>
+              
+              <option value="100">
+                  AP-EDIT</option>
+              
+              <option value="101">
+                  AP-EDIT-1</option>
+              
+              <option value="102">
+                  NEG-VOID-TEST</option>
+              
+              <option value="108">
+                  Sample Aluminum</option>
+              
+              <option value="109">
+                  Sample Aluminum 2</option>
+              
+              <option value="110">
+                  Sample Aluminum 3</option>
+              
+              <option value="111">
+                  AP-TEST-1</option>
+              
+              <option value="131">
+                  company paper</option>
+              
+              <option value="134">
+                  Alum Cans Each</option>
+              
+              <option value="135">
+                  FREIGHTFEE</option>
+              
+              <option value="139">
+                  sfsdfdfdfsd</option>
+              
+              <option value="168">
+                  SORT and Settle</option>
+              
+              <option value="188">
+                  SRU Material</option>
+              
+          </optgroup>
+          <optgroup label="BRASS">
+              
+              <option value="8">
+                  Yellow Brass</option>
+              
+              <option value="16">
+                  Red Brass</option>
+              
+              <option value="17">
+                  Mixed Brass</option>
+              
+              <option value="18">
+                  Brass Shells</option>
+              
+              <option value="138">
+                  Brass test</option>
+              
+              <option value="148">
+                  Brass choy</option>
+              
+              <option value="155">
+                  Test</option>
+              
+              <option value="166">
+                  Steel engine</option>
+              
+          </optgroup><optgroup label="STEEL">
+              
+              <option value="9">
+                  Shred</option>
+              
+              <option value="10">
+                  Unprepared Steel</option>
+              
+              <option value="30">
+                  Prepared, Steel</option>
+              
+              <option value="41">
+                  Basic Car</option>
+              
+              <option value="42">
+                  Basic Car Metal</option>
+              
+              <option value="48">
+                  STEEL #222222</option>
+              
+              <option value="50">
+                  BB STEEL TESTING</option>
+              
+              <option value="60">
+                  Check Weight</option>
+              
+              <option value="112">
+                  UNKNOWN MATERIAL</option>
+              
+              <option value="114">
+                  LIGHT IRON</option>
+              
+              <option value="115">
+                  SHRED2</option>
+              
+              <option value="116">
+                  ZORBA</option>
+              
+              <option value="117">
+                  FLUFF</option>
+              
+              <option value="170">
+                  TRUCK FRAMES</option>
+              
+              <option value="173">
+                  TEST DRIVE</option>
+              
+          </optgroup><optgroup label="CATS">
+              
+              <option value="11">
+                  Breadloaf</option>
+              
+              <option value="23">
+                  Toyota Pre</option>
+              
+              <option value="24">
+                  GM Large</option>
+              
+              <option value="25">
+                  Exotic</option>
+              
+              <option value="26">
+                  Domestic</option>
+              
+              <option value="27">
+                  Super Cat</option>
+              
+              <option value="113">
+                  UNGRADED CAT</option>
+              
+          </optgroup><optgroup label="COPPER">
+              
+              <option value="19">
+                  Bright &amp; Shiny Copper (fg)</option>
+              
+              <option value="20">
+                  Copper #1 (fg)</option>
+              
+              <option value="21">
+                  Copper #2</option>
+              
+              <option value="22">
+                  Copper #3</option>
+              
+              <option value="31">
+                  ICW 20</option>
+              
+              <option value="39">
+                  Copper tubing</option>
+              
+              <option value="96">
+                  TEST </option>
+              
+              <option value="118">
+                  Copper </option>
+              
+              <option value="125">
+                  Supercop123</option>
+              
+          </optgroup><optgroup label="PAPER">
+              
+              <option value="28">
+                  Office Paper</option>
+              
+              <option value="29">
+                  OCC</option>
+              
+          </optgroup><optgroup label="Candy Cane">
+              
+              <option value="43">
+                  Candy Cane</option>
+              
+              <option value="143">
+                  Brass</option>
+              
+          </optgroup><optgroup label="Stainless Steel">
+              
+              <option value="45">
+                  Dirty Stainless</option>
+              
+              <option value="130">
+                  Material Test</option>
+              
+          </optgroup><optgroup label="ALUM RUSA">
+              
+              <option value="51">
+                  ALUM SIDING</option>
+              
+              <option value="52">
+                  AL,ALUCABOND</option>
+              
+              <option value="53">
+                  IRONY ALUM</option>
+              
+              <option value="54">
+                  SHREDDER FEED</option>
+              
+              <option value="55">
+                  ALUM CAST</option>
+              
+              <option value="62">
+                  RUSA1</option>
+              
+              <option value="63">
+                  RUSA2</option>
+              
+              <option value="64">
+                  RUSA3</option>
+              
+              <option value="65">
+                  RUSA4</option>
+              
+              <option value="140">
+                  fdsfsdf</option>
+              
+              <option value="156">
+                  Test 333</option>
+              
+              <option value="171">
+                  test</option>
+              
+              <option value="179">
+                  Demo</option>
+              
+          </optgroup><optgroup label="VIDEO SETUP">
+              
+              <option value="59">
+                  Video Test</option>
+              
+          </optgroup><optgroup label="test">
+              
+              <option value="61">
+                  GRAVEL</option>
+              
+              <option value="68">
+                  FEE</option>
+              
+              <option value="119">
+                  Sample Buy</option>
+              
+              <option value="120">
+                  SAMPLE SELL</option>
+              
+              <option value="121">
+                  DROPOFF FEE</option>
+              
+              <option value="123">
+                  Construction and Demo C&amp;D</option>
+              
+              <option value="124">
+                  LDPE plastic</option>
+              
+              <option value="159">
+                  Test 444</option>
+              
+              <option value="169">
+                  FEE dispatch</option>
+              
+              <option value="189">
+                  Test Material Recicladora</option>
+              
+              <option value="190">
+                  sample Test POS</option>
+              
+          </optgroup><optgroup label="Earn Points">
+              
+              <option value="79">
+                  $10 Gift Card (Scrap Points)</option>
+              
+              <option value="144">
+                  new brass</option>
+              
+          </optgroup><optgroup label="pallets">
+              
+              <option value="103">
+                  DECKING</option>
+              
+              <option value="104">
+                  CANTS</option>
+              
+              <option value="105">
+                  RUNNERS</option>
+              
+              <option value="106">
+                  NAILS</option>
+              
+              <option value="107">
+                  42 X 48 PALLETS</option>
+              
+          </optgroup><optgroup label="video setup">
+              
+              <option value="122">
+                  video test material</option>
+              
+          </optgroup><optgroup label="QA_Test_1004">
+              
+              <option value="127">
+                  QA_test</option>
+              
+              <option value="128">
+                  Dirty Steel</option>
+              
+          </optgroup><optgroup label="Alloys">
+              
+              <option value="129">
+                  Copper and Lead</option>
+              
+              <option value="167">
+                  playdoh</option>
+              
+              <option value="198">
+                  AVC test</option>
+              
+          </optgroup><optgroup label="best material">
+              
+              <option value="132">
+                  ALLUMINIUM </option>
+              
+              <option value="141">
+                  test</option>
+              
+              <option value="142">
+                  ddgg</option>
+              
+          </optgroup><optgroup label="Test Group">
+              
+              <option value="133">
+                  Copper</option>
+              
+              <option value="191">
+                  Mat test 1</option>
+              
+              <option value="192">
+                  Mat test 2</option>
+              
+              <option value="193">
+                  Mat test 3</option>
+              
+              <option value="194">
+                  Mat test 4</option>
+              
+              <option value="195">
+                  Mat Test Plastics</option>
+              
+              <option value="196">
+                  Mixed Plastics Test</option>
+              
+              <option value="197">
+                  Mat Test 5</option>
+              
+          </optgroup><optgroup label="PayLater Test">
+              
+              <option value="136">
+                  This is just a demo of pay later payment</option>
+              
+          </optgroup><optgroup label="data material in">
+              
+              <option value="145">
+                  testing per</option>
+              
+          </optgroup><optgroup label="steel">
+              
+              <option value="146">
+                  test cat</option>
+              
+              <option value="165">
+                  demosteel</option>
+              
+          </optgroup><optgroup label="Cast iron material">
+              
+              <option value="147">
+                  cast iron</option>
+              
+          </optgroup><optgroup label="Cast iron group">
+              
+              <option value="149">
+                  cast iron group</option>
+              
+          </optgroup><optgroup label="cast iron">
+              
+              <option value="150">
+                  test cast iron</option>
+              
+              <option value="151">
+                  test cast iron</option>
+              
+              <option value="152">
+                  test</option>
+              
+              <option value="153">
+                  test t</option>
+              
+          </optgroup><optgroup label="Workshop">
+              
+              <option value="157">
+                  Candy cane</option>
+              
+          </optgroup><optgroup label="Import meterial grp">
+              
+              <option value="158">
+                  import meterials</option>
+              
+          </optgroup><optgroup label="Test material group ">
+              
+              <option value="160">
+                  test material</option>
+              
+          </optgroup><optgroup label="PRECIOUS METALS">
+              
+              <option value="161">
+                  10KT GOLD</option>
+              
+              <option value="162">
+                  SILVER</option>
+              
+          </optgroup><optgroup label="Workshop">
+              
+              <option value="163">
+                  Candy Cane</option>
+              
+          </optgroup><optgroup label="Steel">
+              
+              <option value="164">
+                  Stainless Steel</option>
+              
+          </optgroup><optgroup label="Demo123">
+              
+              <option value="172">
+                  Testing</option>
+              
+          </optgroup><optgroup label="CARS2">
+              
+              <option value="174">
+                  Cars</option>
+              
+          </optgroup><optgroup label="A Million">
+              
+              <option value="175">
+                  Steel</option>
+              
+          </optgroup><optgroup label="ND TEST">
+              
+              <option value="176">
+                  TEST Drive</option>
+              
+          </optgroup><optgroup label="REDMI">
+              
+              <option value="177">
+                  RETEST</option>
+              
+              <option value="178">
+                  DRE TEST</option>
+              
+          </optgroup><optgroup label="FEE TEST">
+              
+              <option value="183">
+                  TRUCKING FEE</option>
+              
+          </optgroup><optgroup label="Rajkot">
+              
+              <option value="184">
+                  Bikes</option>
+              
+          </optgroup><optgroup label="NJ TEST">
+              
+              <option value="185">
+                  NJ TEST DRIVE</option>
+              
+              <option value="187">
+                  NJ TEST DRIVEE</option>
+              
+      </optgroup></select>
+     </div>
+         <div class="table-wrapper overflow-hidden shadow-xl">
+          <table
+            class="table nmvtis-table ap-review datatable head-center table-bottom-no-border mb-0 border-radius0 fs-11">
+            <thead>
+              <tr>
+                <th scope="col" class="fw-bold">Material Description</th>
+                <th scope="col" class="fw-bold">WIP Inventory</th>
+                <th scope="col" class="fw-bold">Avg CostAVG</th>
+                <th scope="col" class="fw-bold">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A Million</td>
+                <td>10,000.00 lbs</td>
+                <td>$0.0000 /lb	</td>
+                <td>$0.00</td>
+              </tr>
+           
+            </tbody>
+          </table>
+        </div>
+       
+      </div>
+   </div>
+  </div>
+
+ </div>
+ <script src="../../assets/dist/js/all.min.js"></script>
+</body>
+
+</html>

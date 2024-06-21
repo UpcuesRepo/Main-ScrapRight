@@ -1,0 +1,204 @@
+.leftmenu{
+    z-index: 10;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-right: 1px solid $light-blue-1;
+    .title{
+        padding: 0 20px;
+    }
+    .nav-links{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+
+            &.active{
+                a{
+                color: $white;  
+                background-color: $primary;  
+                }
+            }
+            a{
+                color: $black;
+                display: flex;  
+                margin: 0;
+                padding: 0px 20px;
+                text-decoration: none;
+                position: relative;
+                line-height: 50px;
+                font-size: $font-size-md;
+                font-weight: $font-700;
+                text-transform: $text-uppercase;
+                align-items: center;
+                span{
+                    font-size: $font-size-lg;
+                    color: $grey-2;
+                }
+                &:hover, &:focus, &:active{
+                    color: $white;  
+                    background-color: $primary;  
+                }
+
+                &.active{
+                    color: $white;  
+                    background-color: $primary;  
+                }
+            }
+        }
+    }
+}
+
+.dispatch-right-menu{
+    background-color: $grey-4;
+    width: 20%;
+    box-shadow: $shadow-lg;
+    .card-part{
+        padding: 15px 10px;
+        .card{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.dispatch-calender-leftmenu{
+    height: 100vh;
+    background-color: $grey-4;
+    padding: 25px 30px;
+    max-width: 29%;
+    width: 100%;
+    .form-group{
+        margin-bottom: 45px;
+    }
+}
+
+.ticket-leftmenu{
+    box-shadow: $shadow-lg;
+    background-color: $white;
+    .head-part{
+        box-shadow: $shadow-lg;
+        padding: 10px 20px;
+    }
+    .ticket-part{
+        padding: 20px;
+        border-bottom: $border-grey;
+        .left-part{
+            .ticket-num{
+                a{
+                    span{
+                        font-size: $font-size-20;
+                    }
+                }
+            }
+        }
+        .right-part{
+            .inner-right{
+                margin-left: 15px;
+            }
+        }
+    }
+    .customer-part{
+        padding: 15px 20px;
+        .heading{
+            .icon{
+                a{
+                    span{
+                        &:hover{
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+        .content-part{
+            .info{
+                width: 100%;
+                margin-right: 20px;
+                h6:not(:last-child){
+                    margin-bottom: 18px;
+                }
+                .right{
+                    text-align: end;
+                }
+            }
+        }
+    }
+    .signature-box{
+        padding: 20px;
+    }
+}
+
+.user-permission-left-menu{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 20.3%;
+    width: 100%;
+    position: relative;
+    border-right: 1px solid $light-blue-1;
+    .nav-links{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            a{
+                color: $black;
+                display: flex;  
+                margin: 0;
+                padding: 0px 20px;
+                text-decoration: none;
+                position: relative;
+                line-height: 46px;
+                font-size: $font-size-md;
+                font-weight: $font-700;
+                text-transform: $text-uppercase;
+                align-items: center;
+                justify-content: space-between;
+                letter-spacing: $letter-spacing-7;
+                span{
+                    font-size: $font-size-16;
+                }
+                &:hover, &:focus, &:active{
+                    color: $white;  
+                    background-color: $primary;  
+                }
+            }
+        }
+    }
+}
+
+.dashboard-calender-leftmenu{
+    .task-list{
+        .empty-class{
+            flex: 1;
+        }
+        .task-list{
+            flex: 1;
+        }
+    }
+}
+
+.ticket-review-leftmenu{
+    width: 450px;
+    box-shadow: 10px 0 20px $grey-2;
+}
+
+
+.ticketItemDetail{
+    display: flex;
+    justify-content: space-between;
+    .col-list{
+        display: table-cell;
+    }
+    
+}
+
+
+.ticket-review-list{
+    div{
+        a{
+            margin-bottom: 5px;
+        }
+    }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   
+  
+   <!-- CSS -->
+   <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+    <div class="layout-1 style-2 height-100">
+        <nav class="navbar main-navbar navbar-expand-xl">
+          <div class="d-flex justify-content-between w-100">
+              <div class="navbar-left-links d-flex">
+                  <div class="logo-part">
+                      <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+                      <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                  </div>
+                  <div class="link-part d-flex">
+                      <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                      <div class="dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              transactions
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                              <div class="btn-group dropend">
+                                  <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Action
+                                  </a>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                              </div>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                      </div>
+                      <a href="javascript:void(0);" class="nav-link">materials</a>
+                      <a href="javascript:void(0);" class="nav-link">customers</a>
+                      <a href="javascript:void(0);" class="nav-link">reports</a>
+                      <a href="javascript:void(0);" class="nav-link">admin</a>
+                  </div>
+              </div>
+              <div class="navbar-right-part d-flex align-items-center">
+                  <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                  <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                      <div class="username-tag">nick v</div>
+                  </div>
+                  <div class="icon-part">
+                      <a href="#">
+                          <span class="material-symbols-rounded">logout</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </nav>
+        <nav class="navbar-h-98 navbar-expand-xl">
+            <div class="d-flex align-items-center justify-content-between w-100">
+              <div class="color-secondary text-caps fw-extrabold fs-xl">do not buy csv upload</div>
+            </div>
+        </nav>
+        <div class="content-section d-flex height-100">
+            <div class="backup-card bg-white w-100 overflow-hidden radius-lg shadow-md">
+                <div class="d-flex justify-content-between">
+                    <div class="pxy30-25 d-flex">
+                        <div class="w-75p me-3">
+                            <form method="post" class="browse-file" enctype="multipart/form-data" action="">
+                                <span id="filename" class="filename"></span>
+                                <div class="button-part d-flex justify-content-end h-100">
+                                    <label for="file-upload">browse<input type="file" id="file-upload" class="file-upload"></label>
+                                </div>
+                            </form>
+                        </div>
+                        <button class="btn btn-dark with-icon h-36 p-2 px-3 me-3 radius-sm me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="me-2" id="mdi-microsoft-excel"fill="#fff" width="24" height="24" viewBox="0 0 24 24"><path d="M21.17 3.25Q21.5 3.25 21.76 3.5 22 3.74 22 4.08V19.92Q22 20.26 21.76 20.5 21.5 20.75 21.17 20.75H7.83Q7.5 20.75 7.24 20.5 7 20.26 7 19.92V17H2.83Q2.5 17 2.24 16.76 2 16.5 2 16.17V7.83Q2 7.5 2.24 7.24 2.5 7 2.83 7H7V4.08Q7 3.74 7.24 3.5 7.5 3.25 7.83 3.25M7 13.06L8.18 15.28H9.97L8 12.06L9.93 8.89H8.22L7.13 10.9L7.09 10.96L7.06 11.03Q6.8 10.5 6.5 9.96 6.25 9.43 5.97 8.89H4.16L6.05 12.08L4 15.28H5.78M13.88 19.5V17H8.25V19.5M13.88 15.75V12.63H12V15.75M13.88 11.38V8.25H12V11.38M13.88 7V4.5H8.25V7M20.75 19.5V17H15.13V19.5M20.75 15.75V12.63H15.13V15.75M20.75 11.38V8.25H15.13V11.38M20.75 7V4.5H15.13V7Z"></path></svg>
+                            view sample csv
+                        </button>
+                        <button class="btn btn-blue with-icon h-36 radius-sm me-3">add</button>
+                        <button class="btn btn-grey with-icon h-36 radius-sm">replace</button>
+                    </div>
+                    <div class="bg-grey-4 height-100 w-224p pxy30-25">
+                        <div class="fs-md fw-extrabold text-caps color-grey mb-2">
+                            sample csv format
+                        </div>
+                        <div class="radius-lg border-light-blue-6 mb-5 w-100 overflow-hidden">
+                            <table class="table csv-format mb-0">
+                              <thead>
+                                <tr>
+                                  <th>LICENSE #</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>RD0277981</td>
+                                </tr>
+                                <tr>
+                                  <td>RD0277981</td>
+                                </tr>
+                                <tr>
+                                  <td>RD0277981</td>
+                                </tr>
+                                <tr>
+                                  <td>RD0277981</td>
+                                </tr>
+                                <tr>
+                                  <td>RD0277981</td>
+                                </tr>
+                                <tr>
+                                  <td>RD0277981</td>
+                                </tr>
+                                <tr>
+                                  <td>RD0277981</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+</html> 

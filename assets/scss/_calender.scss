@@ -1,0 +1,164 @@
+.calender-content {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    .cal-section {
+        min-width: 70%;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: $shadow-md;
+        border-radius: $radius-lg;
+        overflow: hidden;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $light-blue-4;
+            padding: 25px 50px;
+            .btn{
+                padding: 15px 10px;
+                margin-right: 10px;
+            }
+        }
+        .calender-section{
+            padding: 15px 34px;
+            .weekdays {
+                width: 100%;
+                display: flex;
+                background-color: $grey-4;
+                font-size: $font-size-md;
+                color: $black;
+                font-weight: $font-800;
+                text-transform: $text-uppercase;
+                border-bottom: 2px solid $white;
+                div {
+                    width: 14.28%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: 15px;
+                    border-right: 1px solid $light-blue-4;
+                    &:first-child{
+                        border-left: 1px solid $light-blue-4;
+                    }
+                }
+            }
+            .calender {
+                width: 100%;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: $light-blue-2;
+                .day {
+                    width: 14.28%;
+                    height: 100px;
+                    padding: 10px;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    color: $black;
+                    font-weight: 500;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    border: 1px solid $light-blue-4;
+                    border-right: 0px;
+                    &:last-child{
+                        border-right: 1px solid $light-blue-4;
+                    }
+                    &:nth-child(7n){
+                        border-right: 1px solid $light-blue-4;
+                    }
+                    &:hover {
+                        background-color: rgba(204, 221, 245, 0.3);
+                        color: $black;
+                    }
+                    &#currentDay {
+                        background-color: $light-blue-4;
+                        color: #fff;
+                    }
+                    &.plain {
+                        cursor: default;
+                        border: 0;
+                    }
+                    .event {
+                        font-size: $font-size-xs;
+                        line-height: 12px;
+                        padding: 5px;
+                        background-color: $secondary;
+                        color: #fff;
+                        border-radius: 5px;
+                        max-height: 55px;
+                        overflow: hidden;
+                        word-wrap:break-word;
+                        &.holiday {
+                            background-color: $secondary;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    .addEvent,
+    .viewEvent {
+        display: none;
+        width: 350px;
+        background-color: #fff;
+        padding: 25px;
+        position: absolute;
+        z-index: 20;
+        border-radius: $radius-lg;
+        overflow: hidden;
+        word-wrap: break-word;
+        .btn{
+            padding: 10px;
+        }
+    }
+    .viewEvent  {
+        p{
+            margin-bottom: 20px;
+        }
+    }
+    .error {
+        border-color: $red !important;
+    }
+}
+
+  
+ 
+  
+  
+ 
+  
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   
+  
+   <!-- CSS -->
+   
+   <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+
+    <div class="offcanvas offcanvas-end left-radius10" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel" aria-modal="true" role="dialog">
+      <div class="offcanvas-header">
+        <button class="btn btn-dark color-white btn-lg filter-close-btn offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"><span class="material-symbols-rounded">cancel</span></button>
+      </div>
+      <div class="offcanvas-body p-0">
+          <div class="new-ticket-leftmenu tabbing-bg">
+            <div class="inbound-tabbing">
+              
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade v-pills-cust show active" id="v-pills-inbound" role="tabpanel" aria-labelledby="v-pills-inbound-tab" tabindex="0">
+                  <button class="ticket-detail w-100 pad-10 border-bottom-tabbing">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="text-caps fs-11 fw-extrabold txt-color">
+                        TICKET NUMBER
+                      </div>
+                      <div class="text-caps fs-11 fw-extrabold txt-color">
+                        #123456
+                      </div>
+                    </div>
+                    <div class="text-caps fs-sm fw-extrabold txt-color text-align-left letter-space7 mb-2">
+                      TICKET NUMBER
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="text-caps fs-11 fw-extrabold txt-color">
+                        VEHICLE INFO
+                      </div>
+                      <div class="text-caps fs-11 fw-extrabold txt-color">
+                        WHITE FORD  NJE 123
+                      </div>
+                    </div>
+                  </button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="offcanvas-footer">
+        <div class="row">
+          <div class="col-md-6"><button class="btn btn-grey btn-md">clear</button></div>
+          <div class="col-md-6"><button class="btn btn-blue btn-md">search</button></div>
+        </div>
+      </div>
+  </div>
+    <div class="layout-1 style-2 height-100">
+       
+  
+     
+        <nav class="navbar main-navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between w-100">
+                <div class="navbar-left-links d-flex">
+                    <div class="logo-part">
+                        <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+                        <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                    </div>
+                    <div class="link-part d-flex">
+                        <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                        <!-- <a href="javascript:void(0);" class="nav-link">transactions</a> -->
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                transactions
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <div class="btn-group dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="nav-link">materials</a>
+                        <a href="javascript:void(0);" class="nav-link">customers</a>
+                        <a href="javascript:void(0);" class="nav-link">reports</a>
+                        <a href="javascript:void(0);" class="nav-link">admin</a>
+                    </div>
+                </div>
+                <div class="navbar-right-part d-flex align-items-center">
+                    <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                    <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                        <div class="username-tag">nick v</div>
+                    </div>
+                    <div class="icon-part">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex height-100">
+         
+            <div class="ticket-leftmenu w-35p">
+              <div class="head-part d-flex justify-content-between align-items-center">
+                  <div class="left-part w-34p">
+                      <h6 class="color-grey-6 fs-15 fw-bold">User:<span class="fs-md color-secondary ms-2">Nick V</span></h6>
+                      <div class="form-group w-100">
+                          <input type="date" class="form-control h-36" placeholder="">
+                      </div>
+                  </div>
+                  <div class="right-part">
+                      <div class="arrow-btn d-flex">
+                          <button class="btn btn-light btn-md left-radius10 border-right">
+                            <span class="material-symbols-rounded">arrow_back_ios</span>
+                          </button>
+                          <button class="btn btn-light btn-md right-radius10">
+                            <span class="material-symbols-rounded">arrow_forward_ios</span>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="ticket-part d-flex justify-content-between align-items-center">
+                  <div class="left-part">
+                      <h6 class="color-grey-6 fs-md fw-bold">Ticket#:</h6>
+                      <div class="ticket-num d-flex">
+                          <h6 class="color-secondary fs-lg fw-bold me-2 mb-0">4603</h6>
+                          <a href="#"><span class="material-symbols-rounded me-2">merge</span></a>
+                          <a href="#"><span class="material-symbols-rounded">cancel</span></a>
+                      </div>
+                  </div>
+                  <div class="right-part d-flex align-items-center">
+                      <div class="inner-left">
+                          <h6 class="color-grey-6 fs-15 fw-bold">Start:</h6>
+                          <h6 class="color-grey-6 fs-15 fw-bold mb-0">End:</h6>
+                      </div>
+                      <div class="inner-right">
+                          <h6 class="color-black fs-md fw-bold">05:24:51am</h6>
+                          <h6 class="color-black fs-md fw-bold mb-0">03:06:57pm</h6>
+                      </div>
+                  </div>
+              </div>
+              <div class="customer-part">
+                  <div class="heading d-flex justify-content-between align-items-center mb-3">
+                      <h6 class="color-black fs-md fw-bold mb-0">Customer Info:</h6>
+                      <div class="icon d-flex">
+                          <a href="#"><span class="material-symbols-rounded me-2">edit</span></a>
+                          <a href="#"><span class="material-symbols-rounded">search</span></a>
+                      </div>
+                  </div>
+                  <div class="content-part d-flex justify-content-between">
+                      <div class="info d-flex justify-content-between">
+                          <div class="left">
+                              <h6 class="color-black fs-sm">Name</h6>
+                              <h6 class="color-black fs-sm">ID/License</h6>
+                              <h6 class="color-black fs-sm">Make/Model</h6>
+                              <h6 class="color-black fs-sm">Vehicle Plate</h6>
+                          </div>
+                          <div class="right">
+                              <h6 class="color-secondary fw-bold fs-sm">Nick V</h6>
+                              <h6 class="color-secondary fw-bold fs-sm">Nick V</h6>
+                              <h6 class="color-secondary fw-bold fs-sm">Acura/Legend</h6>
+                              <h6 class="color-secondary fw-bold fs-sm">AB1235</h6>
+                          </div>
+                      </div>
+                      <div class="card-group">
+                          <div class="content">
+                              Scan License
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <table class="table table-bottom-no-border border-radius0 mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="fs-sm fw-extrabold">gross</th>
+                      <th scope="col" class="fs-sm fw-extrabold">tare</th>
+                      <th scope="col" class="fs-sm fw-extrabold">net</th>
+                      <th scope="col" class="fs-sm fw-extrabold">price</th>
+                      <th scope="col" class="fs-sm fw-extrabold">total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>34</td>
+                      <td>34</td>
+                      <td>34</td>
+                      <td>34</td>
+                      <td>34</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>11</td>
+                      <td>11</td>
+                      <td>11</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td>00</td>
+                      <td>00</td>
+                      <td>00</td>
+                      <td>00</td>
+                      <td>00</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>44</td>
+                      <td>44</td>
+                      <td>44</td>
+                      <td>44</td>
+                      <td>44</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>14</td>
+                      <td>14</td>
+                      <td>14</td>
+                      <td>14</td>
+                    </tr>
+                  </tbody>
+              </table>
+              <table class="blue-table">
+                  <tbody>
+                    <tr>
+                      <td>GROSS <br> 100</td>
+                      <td>TARE <br> 200</td>
+                      <td>NET <br> 123</td>
+                      <td>#ITEMS <br> 120</td>
+                      <td>TOTAL <br> <span class="color-green">$100.00</span></td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>Payable Now:</td>
+                      <td></td>
+                      <td></td>
+                      <td></td> 
+                      <td><span class="color-green">$0.00</span></td>
+                    </tr>
+                  </tfoot>
+              </table>
+              <div class="signature-box">
+                  <div class="signature-card">
+                      <div class="top-part d-flex">
+                          <div class="left-part"></div>
+                          <div class="right-part"></div>
+                      </div>
+                      <div class="bottom-part d-flex justify-content-between align-items-center">
+                          <div class="left-part">
+                              SIGNATURE
+                          </div>
+                          <div class="right-part">
+                              THUMBPRINT
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-strip d-flex justify-content-between">
+                  <div class="left-part d-flex">
+                      <span class="material-symbols-rounded me-2">
+                          attach_file
+                      </span>
+                      <h6 class="color-black fs-sm text-caps fw-extrabold m-0">ATTACHED <br>  FILES &amp; NOTES</h6>
+                  </div>
+                  <div class="right-part d-flex">
+                      <span class="material-symbols-rounded me-2">
+                          account_circle
+                      </span>
+                      <h6 class="color-black fs-sm text-caps fw-extrabold m-0">SELLERS  <br>  IMAGE</h6>
+                  </div>
+              </div>
+             </div>
+          
+             <div class="content-section d-flex flex-column justify-content-between p-0 height-100 w-100">
+              <div class="top-part mb-5">
+                <div class="title-part">
+                    <div class="ticket-card update-search">
+                        <div class="head-part d-flex justify-content-between align-items-center">
+                            <div class="head-part-left w-70">
+                                <div class="row-1 d-flex align-items-center justify-content-between">
+                                    <div class="left-part d-flex w-100">
+                                        <div class="form-group w-24p me-2">
+                                            <label class="form-label">Ticket # / Customer Info:</label>
+                                            <input type="email" class="form-control h-36" placeholder="">
+                                        </div>
+                                        <div class="form-group me-2 w-17p">
+                                            <label class="form-label">From</label>
+                                            <input type="date" class="form-control h-36" placeholder="">
+                                        </div>
+                                        <div class="form-group me-2 w-17p">
+                                            <label class="form-label">To</label>
+                                            <input type="date" class="form-control h-36" placeholder="">
+                                        </div>
+                                        <div class="btn-part">
+                                            <button class="btn btn-dark with-icon h-36 me-2"><span class="material-symbols-rounded me-2">search</span>search ticket</button>
+                                            <button class="btn btn-light btn-xs"><span class="material-symbols-rounded color-grey">refresh</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-2 d-flex">
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio1">
+                                        <label class="form-check-label" for="radio1">My Tickets</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio2">
+                                        <label class="form-check-label" for="radio2">Open Tickets</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after2" type="radio" name="flexRadioDefault" id="radio3">
+                                        <label class="form-check-label" for="radio3">All Tickets</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label style-1" for="check1">Hide Cancelled</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check2">
+                                        <label class="form-check-label style-1" for="check2">Show Thumbnail</label>
+                                    </div>
+                                    <div class="form-check form-inline me-3">
+                                        <input class="form-check-input add-after" type="checkbox" value="" id="check3">
+                                        <label class="form-check-label style-1" for="check3">Show Dispatch Tickets</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="head-part-right d-flex">
+                                <div class="btn-part me-3">
+                                    <button class="btn btn-light with-icon h-36 btn-print"><span class="material-symbols-rounded me-2">print</span>print copy</button>
+                                </div>
+                                <div class="payment-part d-flex">
+                                    <div class="title me-2  ">
+                                        <div class="left text-align-right fs-md fw-bold">Last Paid#:</div>
+                                        <div class="left text-align-right fs-md fw-bold">Amt Paid:</div>
+                                    </div>
+                                    <div class="amount">
+                                        <div class="right text-align-right fs-md fw-bold color-secondary text-underline">4622</div>
+                                        <div class="right text-align-right fs-md fw-bold">$70.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-part p-3">
+                            <table class="table table-bottom-no-border border-radius0 table-font-14 shadow-none">
+                                <thead>
+                                  <tr>
+                                    <th scope="col" class="fw-bold">tkt#</th>
+                                    <th scope="col" class="fw-bold">customer</th>
+                                    <th scope="col" class="fw-bold">dispatch#</th>
+                                    <th scope="col" class="fw-bold">truck#</th>
+                                    <th scope="col" class="fw-bold">driver</th>
+                                    <th scope="col" class="fw-bold">reference#</th>
+                                    <th scope="col" class="fw-bold">grs img</th>
+                                    <th scope="col" class="fw-bold">plate#</th>
+                                    <th scope="col" class="fw-bold">date</th>
+                                    <th scope="col" class="fw-bold">amount</th>
+                                    <th scope="col" class="fw-bold">status</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>4625</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img105 me-2" alt=""><span class="text-caps">duane lee ottinger</span></td>
+                                    <td>214</td>
+                                    <td>214</td>
+                                    <td>Raymond Randall Davis</td>
+                                    <td>-</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img80" alt=""></td>
+                                    <td>AB12345</td>
+                                    <td>05/05/2023</td>
+                                    <td>$7.00</td>
+                                    <td>
+                                      <div class="d-flex align-items-center">
+                                        <span class="badge badge-open me-3">open</span>
+                                        <a href="#">
+                                          <span class="material-symbols-rounded">edit</span>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>4625</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img105 me-2" alt=""><span class="text-caps">duane lee ottinger</span></td>
+                                    <td>214</td>
+                                    <td>214</td>
+                                    <td>Raymond Randall Davis</td>
+                                    <td>-</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img80" alt=""></td>
+                                    <td>AB12345</td>
+                                    <td>05/05/2023</td>
+                                    <td>$7.00</td>
+                                    <td>
+                                      <div class="d-flex align-items-center">
+                                        <span class="badge badge-open me-3">open</span>
+                                        <a href="#">
+                                          <span class="material-symbols-rounded">edit</span>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>4625</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img105 me-2" alt=""><span class="text-caps">duane lee ottinger</span></td>
+                                    <td>214</td>
+                                    <td>214</td>
+                                    <td>Raymond Randall Davis</td>
+                                    <td>-</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img80" alt=""></td>
+                                    <td>AB12345</td>
+                                    <td>05/05/2023</td>
+                                    <td>$7.00</td>
+                                    <td>
+                                      <div class="d-flex align-items-center">
+                                        <span class="badge badge-open me-3">open</span>
+                                        <a href="#">
+                                          <span class="material-symbols-rounded">edit</span>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>4625</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img105 me-2" alt=""><span class="text-caps">duane lee ottinger</span></td>
+                                    <td>214</td>
+                                    <td>214</td>
+                                    <td>Raymond Randall Davis</td>
+                                    <td>-</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img80" alt=""></td>
+                                    <td>AB12345</td>
+                                    <td>05/05/2023</td>
+                                    <td>$7.00</td>
+                                    <td>
+                                      <div class="d-flex align-items-center">
+                                        <span class="badge badge-open me-3">open</span>
+                                        <a href="#">
+                                          <span class="material-symbols-rounded">edit</span>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>4625</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img105 me-2" alt=""><span class="text-caps">duane lee ottinger</span></td>
+                                    <td>214</td>
+                                    <td>214</td>
+                                    <td>Raymond Randall Davis</td>
+                                    <td>-</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img80" alt=""></td>
+                                    <td>AB12345</td>
+                                    <td>05/05/2023</td>
+                                    <td>$7.00</td>
+                                    <td>
+                                      <div class="d-flex align-items-center">
+                                        <span class="badge badge-open me-3">open</span>
+                                        <a href="#">
+                                          <span class="material-symbols-rounded">edit</span>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>4625</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img105 me-2" alt=""><span class="text-caps">duane lee ottinger</span></td>
+                                    <td>214</td>
+                                    <td>214</td>
+                                    <td>Raymond Randall Davis</td>
+                                    <td>-</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img80" alt=""></td>
+                                    <td>AB12345</td>
+                                    <td>05/05/2023</td>
+                                    <td>$7.00</td>
+                                    <td>
+                                      <div class="d-flex align-items-center">
+                                        <span class="badge badge-open me-3">open</span>
+                                        <a href="#">
+                                          <span class="material-symbols-rounded">edit</span>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>4625</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img105 me-2" alt=""><span class="text-caps">duane lee ottinger</span></td>
+                                    <td>214</td>
+                                    <td>214</td>
+                                    <td>Raymond Randall Davis</td>
+                                    <td>-</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img80" alt=""></td>
+                                    <td>AB12345</td>
+                                    <td>05/05/2023</td>
+                                    <td>$7.00</td>
+                                    <td>
+                                      <div class="d-flex align-items-center">
+                                        <span class="badge badge-open me-3">open</span>
+                                        <a href="#">
+                                          <span class="material-symbols-rounded">edit</span>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>4625</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img105 me-2" alt=""><span class="text-caps">duane lee ottinger</span></td>
+                                    <td>214</td>
+                                    <td>214</td>
+                                    <td>Raymond Randall Davis</td>
+                                    <td>-</td>
+                                    <td><img src="../../images/backgrounds/a3.jpg" class="table-img80" alt=""></td>
+                                    <td>AB12345</td>
+                                    <td>05/05/2023</td>
+                                    <td>$7.00</td>
+                                    <td>
+                                      <div class="d-flex align-items-center">
+                                        <span class="badge badge-open me-3">open</span>
+                                        <a href="#">
+                                          <span class="material-symbols-rounded">edit</span>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <div class="footer d-flex align-items-center justify-content-between">
+                                <h6 class="color-black fs-16 fw-bold m-0">Total Records: 956</h6>
+                                <div class="btn-part">
+                                    <button class="btn btn-grey btn-md">load more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="action-btn d-flex justify-content-end align-items-end">
+                  <button class="btn btn-skyblue btn-md left-top-radius10 border-right">
+                    <span class="material-symbols-rounded">bookmark_added</span><br>
+                    ticket is<br>compliant
+                  </button>
+                  <button class="btn btn-skyblue btn-md border-right border-radius0">
+                    <span class="material-symbols-rounded">print</span><br>
+                    print weight<br>ticket
+                  </button>
+                  <button class="btn btn-skyblue btn-md border-right border-radius0">
+                    <span class="material-symbols-rounded">print</span><br>
+                    print <br>receipt
+                  </button>
+                  <button class="btn btn-skyblue btn-md border-right border-radius0">
+                    <span class="material-symbols-rounded">payments</span><br>
+                    pay out <br>ticket
+                  </button>
+                  <button class="btn btn-skyblue btn-md border-right border-radius0">
+                    <span class="material-symbols-rounded">add_circle</span><br>
+                    ADD A <br>MATERIAL
+                  </button>
+                  <button class="btn btn-skyblue border-right border-radius0">
+                    <span class="material-symbols-rounded">cancel</span><br>
+                    CANCEL <br>TICKET
+                  </button>
+                  <button class="btn btn-skyblue border-right border-radius0">
+                    <span class="material-symbols-rounded">library_add</span><br>
+                    START A <br> NEW TICKET
+                  </button>
+                  <button class="btn btn-skyblue border-radius0">
+                    <span class="material-symbols-rounded">search</span><br>
+                    SEARCH <br> FOR TICKETS
+                  </button>
+              </div>        
+          </div>
+        </div>
+        
+    </div>
+    <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   
+  
+   <!-- CSS -->
+   <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+    <div class="layout-1 style-5 wrapper">
+        <nav class="navbar main-navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between w-100">
+                <div class="navbar-left-links d-flex">
+                    <div class="logo-part">
+                        <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+                        <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                    </div>
+                    <div class="link-part d-flex">
+                        <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                transactions
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <div class="btn-group dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="nav-link">materials</a>
+                        <a href="javascript:void(0);" class="nav-link">customers</a>
+                        <a href="javascript:void(0);" class="nav-link">reports</a>
+                        <a href="javascript:void(0);" class="nav-link">admin</a>
+                    </div>
+                </div>
+                <div class="navbar-right-part d-flex align-items-center">
+                    <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                    <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                        <div class="username-tag">nick v</div>
+                    </div>
+                    <div class="icon-part">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar-h-98 navbar-expand-xl">
+          <div class="color-primary text-caps fw-extrabold fs-xl me-5">AP REVIEW TICKETS</div>
+            <div class="btn-row d-flex align-items-center mb-1 w-40p">
+              <div class="form-group w-24p me-2">
+                <label class="form-label color-white">Sales Person</label>
+                <select class="selectpicker" data-live-search="true">
+                <option data-tokens="ketchup mustard">1</option>
+                <option data-tokens="mustard">2</option>
+                <option data-tokens="frosting">3</option>
+                </select>
+              </div>
+              <div class="form-group w-24p me-2">
+                  <label class="form-label">Ticket / Ref / Customer Info</label>
+                  <input type="email" class="form-control h-36" placeholder="">
+              </div>
+              <div class="form-group w-17p me-2">
+                  <label class="form-label">From</label>
+                  <input type="date" class="form-control h-36" placeholder="">
+              </div>
+              <div class="form-group w-17p me-2">
+                  <label class="form-label">To</label>
+                  <input type="date" class="form-control h-36" placeholder="">
+              </div>
+              <button class="btn btn-blue btn-xs mt-3"><span class="material-symbols-rounded">search</span></button>
+            </div>
+            <div class="d-flex">
+              <button class="btn btn-blue with-icon mt-3 h-36 radius-sm me-2">UPDATE BILLS</button>
+              <button class="btn btn-dark with-icon mt-3 h-36 radius-sm me-2">UPDATE PRICE LIST / PO PRICES</button>
+              <button class="btn btn-dark with-icon mt-3 h-36 radius-sm">APPROVE TICKETS</button>
+            </div>
+        </nav>
+        <div class="content-section bg-light-blue2 d-flex justify-content-between">
+          <div class="w-31p">
+            <div class="table-wrapper overflow-hidden shadow-xl">
+              <table class="table nmvtis-table ap-review head-center table-bottom-no-border mb-0 border-radius0 table-font-16">
+                <thead>
+                  <tr>
+                    <th scope="col" class="fw-extrabold">CUSTOMER</th>
+                    <th scope="col" class="fw-extrabold">TICKETS #</th>
+                    <th scope="col" class="fw-extrabold">AMOUNT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="d-flex"> 
+                      <div class="bg-icon bg-black-rgba6 me-2">
+                        <span class="material-symbols-rounded color-white fs-xl">navigate_next</span>
+                      </div>
+                      <div class="form-check form-check-20 form-inline me-2">
+                        <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                      </div>
+                      Jannett Christian Potter
+                    </td>
+                    <td>1672</td>
+                    <td>$619,669,800.00</td>
+                  </tr>
+                  <tr>
+                    <td class="d-flex"> 
+                      <div class="bg-icon bg-black-rgba6 me-2">
+                        <span class="material-symbols-rounded color-white fs-xl">navigate_next</span>
+                      </div>
+                      <div class="form-check form-check-20 form-inline me-2">
+                        <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                      </div>
+                      Jannett Christian Potter
+                    </td>
+                    <td>1672</td>
+                    <td>$619,669,800.00</td>
+                  </tr>
+                  <tr>
+                    <td class="d-flex"> 
+                      <div class="bg-icon bg-black-rgba6 me-2">
+                        <span class="material-symbols-rounded color-white fs-xl">navigate_next</span>
+                      </div>
+                      <div class="form-check form-check-20 form-inline me-2">
+                        <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                      </div>
+                      Jannett Christian Potter
+                    </td>
+                    <td>1672</td>
+                    <td>$619,669,800.00</td>
+                  </tr>
+                  <tr>
+                    <td class="d-flex"> 
+                      <div class="bg-icon bg-black-rgba6 me-2">
+                        <span class="material-symbols-rounded color-white fs-xl">navigate_next</span>
+                      </div>
+                      <div class="form-check form-check-20 form-inline me-2">
+                        <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                      </div>
+                      Jannett Christian Potter
+                    </td>
+                    <td>1672</td>
+                    <td>$619,669,800.00</td>
+                  </tr>
+                  <tr>
+                    <td class="d-flex"> 
+                      <div class="bg-icon bg-black-rgba6 me-2">
+                        <span class="material-symbols-rounded color-white fs-xl">navigate_next</span>
+                      </div>
+                      <div class="form-check form-check-20 form-inline me-2">
+                        <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                      </div>
+                      Jannett Christian Potter
+                    </td>
+                    <td>1672</td>
+                    <td>$619,669,800.00</td>
+                  </tr>
+                  <tr>
+                    <td class="d-flex"> 
+                      <div class="bg-icon bg-black-rgba6 me-2">
+                        <span class="material-symbols-rounded color-white fs-xl">navigate_next</span>
+                      </div>
+                      <div class="form-check form-check-20 form-inline me-2">
+                        <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                      </div>
+                      Jannett Christian Potter
+                    </td>
+                    <td>1672</td>
+                    <td>$619,669,800.00</td>
+                  </tr>
+                  <tr>
+                    <td class="d-flex"> 
+                      <div class="bg-icon bg-black-rgba6 me-2">
+                        <span class="material-symbols-rounded color-white fs-xl">navigate_next</span>
+                      </div>
+                      <div class="form-check form-check-20 form-inline me-2">
+                        <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                      </div>
+                      Jannett Christian Potter
+                    </td>
+                    <td>1672</td>
+                    <td>$619,669,800.00</td>
+                  </tr>
+                  <tr>
+                    <td class="d-flex"> 
+                      <div class="bg-icon bg-black-rgba6 me-2">
+                        <span class="material-symbols-rounded color-white fs-xl">navigate_next</span>
+                      </div>
+                      <div class="form-check form-check-20 form-inline me-2">
+                        <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                      </div>
+                      Jannett Christian Potter
+                    </td>
+                    <td>1672</td>
+                    <td>$619,669,800.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="w-68p">
+            <div class="table-wrapper overflow-hidden shadow-xl">
+              <table class="table nmvtis-table ap-review head-center grey-head table-bottom-no-border mb-0 border-radius0 table-font-16">
+                <thead>
+                  <tr>
+                    <th scope="col" class="fw-extrabold">TICKETS #</th>
+                    <th scope="col" class="fw-extrabold">DATE</th>
+                    <th scope="col" class="fw-extrabold">MATERIAL</th>
+                    <th scope="col" class="fw-extrabold">CUSTOMIZED NAME</th>
+                    <th scope="col" class="fw-extrabold">GROSS</th>
+                    <th scope="col" class="fw-extrabold">TARE</th>
+                    <th scope="col" class="fw-extrabold">NET</th>
+                    <th scope="col" class="fw-extrabold">PRICE</th>
+                    <th scope="col" class="fw-extrabold">TOTAL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1672</td>
+                    <td>09/12/2012</td>
+                    <td>Brass Shells</td>
+                    <td>Brass Shells</td>
+                    <td>200.00</td>
+                    <td>0.00</td>
+                    <td>200.00</td>
+                    <td>$1.44/lb</td>
+                    <td>$288.00</td>
+                  </tr>
+                  <tr>
+                    <td>1672</td>
+                    <td>09/12/2012</td>
+                    <td>Brass Shells</td>
+                    <td>Brass Shells</td>
+                    <td>200.00</td>
+                    <td>0.00</td>
+                    <td>200.00</td>
+                    <td>$1.44/lb</td>
+                    <td>$288.00</td>
+                  </tr>
+                  <tr>
+                    <td>1672</td>
+                    <td>09/12/2012</td>
+                    <td>Brass Shells</td>
+                    <td>Brass Shells</td>
+                    <td>200.00</td>
+                    <td>0.00</td>
+                    <td>200.00</td>
+                    <td>$1.44/lb</td>
+                    <td>$288.00</td>
+                  </tr>
+                  <tr>
+                    <td>1672</td>
+                    <td>09/12/2012</td>
+                    <td>Brass Shells</td>
+                    <td>Brass Shells</td>
+                    <td>200.00</td>
+                    <td>0.00</td>
+                    <td>200.00</td>
+                    <td>$1.44/lb</td>
+                    <td>$288.00</td>
+                  </tr>
+                  <tr>
+                    <td>1672</td>
+                    <td>09/12/2012</td>
+                    <td>Brass Shells</td>
+                    <td>Brass Shells</td>
+                    <td>200.00</td>
+                    <td>0.00</td>
+                    <td>200.00</td>
+                    <td>$1.44/lb</td>
+                    <td>$288.00</td>
+                  </tr>
+                  <tr>
+                    <td>1672</td>
+                    <td>09/12/2012</td>
+                    <td>Brass Shells</td>
+                    <td>Brass Shells</td>
+                    <td>200.00</td>
+                    <td>0.00</td>
+                    <td>200.00</td>
+                    <td>$1.44/lb</td>
+                    <td>$288.00</td>
+                  </tr>
+                  <tr>
+                    <td>1672</td>
+                    <td>09/12/2012</td>
+                    <td>Brass Shells</td>
+                    <td>Brass Shells</td>
+                    <td>200.00</td>
+                    <td>0.00</td>
+                    <td>200.00</td>
+                    <td>$1.44/lb</td>
+                    <td>$288.00</td>
+                  </tr>
+                  <tr>
+                    <td>1672</td>
+                    <td>09/12/2012</td>
+                    <td>Brass Shells</td>
+                    <td>Brass Shells</td>
+                    <td>200.00</td>
+                    <td>0.00</td>
+                    <td>200.00</td>
+                    <td>$1.44/lb</td>
+                    <td>$288.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+  <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+</html>

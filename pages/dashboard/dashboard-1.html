@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- FAVICON -->
+   <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="../images/favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../images/favicon/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   
+  
+   <!-- CSS -->
+   <link href="../../assets/dist/css/default.css" rel="stylesheet" />
+   <title>ScrapRight</title>
+  </head>
+  <body>
+    <div class="layout-1 style-2 height-100">
+        <nav class="navbar main-navbar navbar-expand-xl">
+            <div class="d-flex justify-content-between w-100">
+                <div class="navbar-left-links d-flex">
+                    <div class="logo-part">
+                        <img src="../../images/logo/scrap-right-logo.png" class="logo" alt="">
+                        <img src="../../images/logo/Version - 1.28.8.svg" class="version" alt="">
+                    </div>
+                    <div class="link-part d-flex">
+                        <a href="javascript:void(0);" class="nav-link">dashboard</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                transactions
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <div class="btn-group dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Action
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="nav-link">materials</a>
+                        <a href="javascript:void(0);" class="nav-link">customers</a>
+                        <a href="javascript:void(0);" class="nav-link">reports</a>
+                        <a href="javascript:void(0);" class="nav-link">admin</a>
+                    </div>
+                </div>
+                <div class="navbar-right-part d-flex align-items-center">
+                    <h6 class="color-white text-caps fs-md letter-space7 fw-extrabold m-0 me-2">username</h6>
+                    <div class="text-caps color-orange fs-md fw-extrabold me-3">
+                        <div class="username-tag">nick v</div>
+                    </div>
+                    <div class="icon-part">
+                        <a href="#">
+                            <span class="material-symbols-rounded">logout</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content-section p-20">
+            <div class="d-flex justify-content-between flex-wrap">
+                <div class="w-22p shadow-xl bg-white radius-lg h-500 overflow-hidden mb-3">
+                    <div class="bg-secondary d-flex align-items-center pad-15 h-55">
+                        <h6 class="mb-0 fs-16 fw-bold color-white">Today Events Scheduled</h6>
+                    </div>
+                    <div class="color-grey-8-rgb4 fs-16 fw-semibold d-flex justify-content-center align-items-center h-450">No Events have been scheduled</div>
+                </div>
+                <div class="w-39p shadow-xl bg-white radius-lg h-500 overflow-hidden">
+                    <div class="h-55 pxy10-15 bg-secondary d-flex align-items-center justify-content-between">
+                        <h6 class="mb-0 fs-16 fw-bold color-white">Aggregate Data</h6>
+                        <div class="d-flex align-items-center justify-content-end w-60p">
+                            <label for="" class="color-white fs-sm fw-semibold me-2">From</label>
+                            <input type="date" class="form-control h-36 w-37p me-2" placeholder="">
+                            <label for="" class="color-white fs-sm fw-semibold me-2">To</label>
+                            <input type="date" class="form-control h-36 w-37p" placeholder="">
+                        </div>
+                    </div>
+                    <div class="p-30">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="fs-16 mb-0 fw-semibold color-grey-9 text-caps">purchases</h6>
+                            <div class="purchase-details">
+                                <div class="d-flex">
+                                    <div class="left-part">
+                                        <div class="fs-md color-grey-8 mb-1 me-5">No. of Tickets:</div>
+                                        <div class="fs-md color-grey-8 mb-1 me-5">No. of Customers:</div>
+                                        <div class="fs-md color-grey-8 mb-1 me-5">No. of Business:</div>
+                                        <hr class="my-2 opacity-100 color-grey-8"><hr class="my-2 opacity-100 color-grey-8"><hr class="my-2 opacity-100 color-grey-8">
+                                        <div class="fs-md color-grey-8 mb-1 me-5">CAST:</div>
+                                        <div class="fs-md color-grey-8 mb-1 me-5">Vehicles:</div>
+                                    </div>
+                                    <div class="right-part">
+                                        <div class="fs-md color-grey-8 mb-1">0</div>
+                                        <div class="fs-md color-grey-8 mb-1">0</div>
+                                        <div class="fs-md color-grey-8 mb-1">0</div>
+                                        <hr class="my-2 opacity-100 color-grey-8"><hr class="my-2 opacity-100 color-grey-8"><hr class="my-2 opacity-100 color-grey-8">
+                                        <div class="fs-md color-grey-8 mb-1">0</div>
+                                        <div class="fs-md color-grey-8 mb-3">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-2 opacity-100 color-grey-8">
+                        <div class="d-flex justify-content-end p-20 px-0">
+                            <div class="form-check form-check-20 form-inline me-3">
+                                <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                                <label class="form-check-label style-1" for="">Sales</label>
+                            </div>
+                            <div class="form-check form-check-20 form-inline me-3">
+                                <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                                <label class="form-check-label style-1" for="">Purchases</label>
+                            </div>
+                            <div class="form-check form-check-20 form-inline me-3">
+                                <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                                <label class="form-check-label style-1" for="">Amount</label>
+                            </div>
+                            <div class="form-check form-check-20 form-inline">
+                                <input class="form-check-input add-after" type="checkbox" value="" id="check1-20">
+                                <label class="form-check-label style-1" for="">Weight</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-37p shadow-xl bg-white radius-lg h-500 position-relative overflow-hidden">
+                    <div class="p-20">
+                        <div class="d-flex align-items-center">
+                            <img src="../../images/backgrounds/a1.jpg" class="height-50 me-3 width-50 rounded-circle" alt="">
+                            <div class="fs-lg fw-semibold">ScraptRight Helpdesk</div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="fs-lg fw-extrabold">Welcome</div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-blue btn-h35 me-2">login</button>
+                            <button class="btn btn-grey btn-h35">sign up</button>
+                        </div>
+                    </div>
+                    <div class="h-65 pxy15-20 bg-secondary d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center w-80p">
+                            <div class="form-group w-75p me-2" role="search">
+                                <input class="form-control h-32 me-2 search-icon" type="search" placeholder="Enter Your Search" aria-label="Search">
+                            </div>
+                            <a href="#" class="bg-icon bg-white me-3">
+                                <span class="material-symbols-rounded color-secondary fs-xl">add</span>
+                            </a>
+                            <a href="#" class="bg-icon bg-white me-3">
+                                <span class="material-symbols-rounded color-secondary fs-xl">add</span>
+                            </a>
+                            <a href="#" class="bg-icon underline-none bg-white d-flex justify-content-center align-items-center">
+                                <span class="material-symbols-rounded color-secondary fs-16 text-center">call</span>
+                            </a>
+                        </div>
+                        <a href="#">
+                            <span class="material-symbols-rounded color-white fs-30">menu_open</span>
+                        </a>
+                    </div>
+                    <div class="overflow-scroll mh-285 p-20">
+                       <div class="fs-16 fw-bold">Knowledge base</div> 
+                       <div class="fs-md fw-semibold color-grey-1-rgb4">Version Notes</div> 
+                       <hr class="my-2 opacity-100">
+                       <div class="fs-16 fw-bold letter-space108 mb-2">*** Version Notes 1.28.8 *** (1)</div>
+                       <div class="fs-md fw-semibold color-grey d-flex align-items-center mb-2"><span class="material-symbols-rounded me-1 fs-sm">book</span>Release Notes - 1.28.8</div>
+                       <div class="fs-16 fw-bold letter-space108 mb-2">Version 1.25.1.16</div>
+                       <div class="fs-md fw-semibold color-grey d-flex align-items-center mb-2"><span class="material-symbols-rounded me-1 fs-sm">book</span>Version 1.25.1.16</div>
+                       <div class="fs-16 fw-bold letter-space108 mb-2">Version 1.21.0</div>
+                       <div class="fs-md fw-semibold color-grey d-flex align-items-center mb-2"><span class="material-symbols-rounded me-1 fs-sm">book</span>Release Notes - 1.21.0</div>
+                       <div class="fs-16 fw-bold letter-space108">Version 1.21.0</div>
+                       <div class="fs-md fw-semibold color-grey d-flex align-items-center"><span class="material-symbols-rounded me-1 fs-sm">book</span>Release Notes - 1.21.0</div>
+                    </div>
+                    <div class="sticky-bottom position-absolute right-20 bottom-20 w-85 h-85">
+                        <a href="#" class="bg-black position-absolute w-100 h-100 radius-msg-icon d-flex align-items-center justify-content-center underline-none"><span class="material-symbols-rounded color-white fs-40">chat</span></a>
+                    </div>
+                </div>
+                <div class="w-22p shadow-xl bg-white radius-lg h-480 overflow-hidden">
+                    <div class="bg-form-box d-flex align-items-center pxy15-20">
+                        <h6 class="mb-0 fs-16 fw-bold color-black">ScrapRight Message Center</h6>
+                    </div>
+                    <div class="p-20">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="../../images/backgrounds/a2.jpg" class="h-190 w-78p" alt="">
+                        </div>
+                        <div class="fs-16 fw-bold mb-1">IMPORTANT:</div>
+                        <div class="fs-16 fw-bold mb-1">What if my system goes down? click <a href="#" class="color-secondary text-underline">here</a> for Randy's Recommendations.</div>
+                        <div class="fs-16 fw-bold mb-1">Important instructions on setting up your My Billing page. Please click <a href="#" class="color-secondary text-underline">HERE</a> to watch!</div>
+                        <hr>
+                        <a href="#" class="color-secondary fs-16 fw-bold text-underline">Please Click here to go our Online Store</a>
+                    </div>
+                </div>
+                <div class="w-11p shadow-xl bg-white radius-lg h-480 overflow-hidden">
+                    <div class="bg-form-box d-flex align-items-center pxy15-20">
+                        <h6 class="mb-0 fs-16 fw-bold color-black">Cash Drawers</h6>
+                    </div>
+                    <div class="p-20">
+                        <div class="fs-16 fw-bold text-caps mb-3">live cash drawer</div>
+                        <div class="fs-md fw-bold text-underline mb-2">Default: CLOSED: $0.00</div>
+                        <div class="fs-md fw-bold text-underline mb-2">Nick Drawer: $0.00</div>
+                        <div class="fs-md fw-bold text-underline mb-2">SAFE: CLOSED</div>
+                        <div class="fs-md fw-bold text-underline mb-2">RD3 Drawer: CLOSED</div>
+                        <div class="fs-md fw-bold text-underline mb-2">Michelle Drawer: CLOSED</div>
+                        <div class="fs-md fw-bold text-underline mb-2">Choys safe: CLOSED</div>
+                    </div>
+                </div>
+                <div class="w-11p shadow-xl bg-white radius-lg h-480 overflow-hidden">
+                    <div class="bg-form-box d-flex align-items-center pxy15-20">
+                        <h6 class="mb-0 fs-16 fw-bold color-black">Product Spotlight</h6>
+                    </div>
+                    <div class="p-20">
+                        <div class="d-flex justify-content-center">
+                            <img src="../../images/backgrounds/a3.jpg" class="h-170 w-88p m-y-25 border-grey5 radius-lg" alt="">
+                        </div>
+                        <hr>
+                        <div class="fs-md mb-2">3 Inch Paper Rolls (qty50)</div>
+                        <div class="fs-md mb-2">(0 Reviews)</div>
+                        <div class="fs-md mb-3 fw-bold">Price: $109.90</div>
+                        <button class="btn btn-grey btn-h30">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="w-15p shadow-xl bg-white radius-lg h-480 overflow-hidden">
+                    <div class="bg-form-box d-flex align-items-center pxy15-20">
+                        <h6 class="mb-0 fs-16 fw-bold color-black">Support Hours</h6>
+                    </div>
+                    <div class="p-20">
+                        <div class="fs-16 color-secondary fw-bold text-underline mb-3">+1 (877) 897 - 6422</div>
+                        <div class="fs-16 fw-bold mb-1">Mon-Fri: 7am - 7pm EST</div>
+                        <div class="fs-16 fw-bold mb-1">Sat: 9am - 2pm EST</div>
+                        <div class="fs-16 fw-bold mb-1">Press 4 for tech support. Presione 7 para soporte en espanol.</div>
+                        <div class="fs-16 fw-bold mb-1">Leaving a voicemail will create a support ticket</div>
+                        <div class="fs-16 fw-bold mb-3">Download Remote Access:</div>
+                        <a href="#" class="fs-16 color-secondary fw-bold text-underline">https://my.splashtop.com/team</a>
+                    </div>
+                </div>
+                <div class="w-37p shadow-xl bg-white radius-lg h-480 overflow-hidden">
+                    <div class="bg-form-box d-flex align-items-center pxy15-20">
+                        <h6 class="mb-0 fs-16 fw-bold color-black">SRU</h6>
+                    </div>
+                    <div class="p-20">
+                        <div class="d-flex justify-content-center">
+                            <div class="w-90p bg-grey-4 shadow-md2 radius-lg overflow-hidden d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-40">
+                                    <div class="form-group w-100 mb-3">
+                                        <input class="form-control secondary-form-control user-icon" type="text" placeholder="Username">
+                                    </div>
+                                    <div class="form-group w-100 mb-4 bg-white d-flex secondary-form-control">
+                                        <input class="form-control lock-icon" type="password" id="myInput" placeholder="Password">
+                                        <a href="#" class="eye-icon" onclick="showPassword();"></a>
+                                    </div>
+                                    <button class="btn btn-blue w-100 btn-h66">sign in</button>
+                                </div>
+                                <div class="bg-white p-20 d-flex justify-content-center w-100">
+                                    <a href="#" class="letter-space09 underline-none fs-lg fw-semibold color-black">Forgot Password <span class="color-grey-1-rgb5">or</span> Need Help?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="../../assets/dist/js/all.min.js"></script>
+  </body>
+</html>
